@@ -1,6 +1,11 @@
 @import "tailwindcss";
 
+@theme {
+  --color-bg: #f6f4f0;
+  --color-fg: #000000;
+}
+
 body {
-  background: #fafafa;
-  color: #171717;
+  background: var(--color-bg);
+  color: var(--color-fg);
 }
