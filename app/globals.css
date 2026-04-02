@@ -10,3 +10,22 @@ body {
   background: var(--color-bg);
   color: var(--color-fg);
 }
+
+figure {
+  margin: 2rem 0;
+}
+
+figure img {
+  max-height: 40rem;
+  max-width: 32rem;
+  width: 100%;
+  object-fit: contain;
+  margin: 0 auto;
+}
+
+figcaption {
+  text-align: center;
+  font-size: 0.8rem;
+  color: color-mix(in srgb, var(--color-fg) 40%, transparent);
+  margin-top: 0.5rem;
+}

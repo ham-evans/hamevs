@@ -18,7 +18,8 @@ export type Race = {
 };
 
 export function getAllRaces(): Race[] {
-  const files = fs.readdirSync(racesDir).filter((f) => f.endsWith(".md"));
+  const hidden = ["grandave.md", "grandave-supplemental.md", "p-38-farmington.md", "foreword-hamilton.md", "mooney-mite.md"];
+  const files = fs.readdirSync(racesDir).filter((f) => f.endsWith(".md") && !hidden.includes(f));
   const races = files.map((file) => {
     const slug = file.replace(/\.md$/, "");
     const { data } = matter(fs.readFileSync(path.join(racesDir, file), "utf8"));
@@ -38,10 +39,18 @@ export async function getRace(slug: string) {
   const filePath = path.join(racesDir, `${slug}.md`);
   const file = fs.readFileSync(filePath, "utf8");
   const { data, content } = matter(file);
-  const remarkResult = await remark().use(html).process(content);
+  const remarkResult = await remark().use(html, { sanitize: false }).process(content);
+  // Wrap images in <figure> with <figcaption> from alt text
+  const htmlWithFigures = remarkResult.toString().replace(
+    /<p><img src="([^"]*)" alt="([^"]*)"[^>]*><\/p>/g,
+    (_match, src, alt) =>
+      alt
+        ? `<figure><img src="${src}" alt="${alt}"><figcaption>${alt}</figcaption></figure>`
+        : `<figure><img src="${src}" alt="${alt}"></figure>`
+  );
   const result = await rehype()
     .use(rehypeExternalLinks, { target: "_blank", rel: ["noopener", "noreferrer"] })
-    .process(remarkResult.toString());
+    .process(htmlWithFigures);
   return {
     slug,
     title: data.title,
