@@ -18,7 +18,7 @@ export type Race = {
 };
 
 export function getAllRaces(): Race[] {
-  const hidden = ["grandave.md", "grandave-supplemental.md", "p-38-farmington.md", "foreword-hamilton.md", "mooney-mite.md"];
+  const hidden = ["grandave.md", "grandave-supplemental.md", "p-38-farmington.md", "foreword-hamilton.md", "mooney-mite.md", "rotc-colonel.md"];
   const files = fs.readdirSync(racesDir).filter((f) => f.endsWith(".md") && !hidden.includes(f));
   const races = files.map((file) => {
     const slug = file.replace(/\.md$/, "");

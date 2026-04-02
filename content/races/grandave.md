@@ -17,7 +17,11 @@ In this document I have focused almost exclusively on events that I directly rel
 
 **Clovis, New Mexico.** I was born on December 28, 1930 in a small home in a residential section of Clovis. I was named "David Donald Evans," however my Family just called me Donnie (and later, Don) I guess since that convention was commonly used by folks with a Southern (Texas) background. At that time our family consisted of two children by my father from a previous marriage (his first wife had died from the flu during the 1918 epidemic), two sisters, Lenora and DeAun, and a brother, Carroll. Finding employment was difficult and the wages were also quite low. We were poor as were many families that lived around us I was told.
 
+![Family Home, Clovis, NM — I was born in the front room on Dec. 28, 1930](/races/grandave-supp-0.jpg)
+
 **Farmington, New Mexico:** In 1934 the family moved to Farmington, NM, a small farming community. For a while we lived in a small home near the downtown however I have no recollection of that. We later moved to what we called the Calloway place, located well over a mile out on E. Main St. There was a large house and there was a fairly large farm there as well, along with the mandatory outhouse. We were still quite poor, as were many neighbors as the result of the depression. Dad had arranged for us to live in the house and farm the land in exchange for allowing the former owner to live in a small cottage on the property. As was typical in those days the farm provided milk from cows, some meat from the hogs and chickens, and plenty of vegetables and fruits from the land. Thus we were able to live pretty much "off the land," needing to purchase only staples such as sugar, salt, etc., and of course clothing when hand-me-downs weren't available. Dad repaired our shoes with half-sole kits and Mom canned heavily during the growing season.
+
+![2 yrs old — Lenora and DeAun loved having a baby to care for!](/races/grandave-supp-0c.jpg)
 
 This property was over a mile from the schools however we were just under the distance that allowed use of school buses. Hence we had to walk to school daily, even when the snow was up to our waist! (An exaggeration of course.)
 
@@ -28,6 +32,8 @@ This property had about an acre of land with a portion of it across the street, 
 As a child I remember playing "cars" in the backyard with friends and often with my brother Carroll. In the evening we would play outdoors until dark and our games would often be "hide and seek" or other sorts of multiple player games. (Realize of course that we had no video games nor television nor cell phones so we pretty much had to entertain ourselves.) We would also listen to some of our favorite radio programs including Fibber Magee and Molly, Jack Benny, and others similar to these. From this East Main location we could easily walk to school and even walk back for lunch if we wished.
 
 **Premature Death of My Father.** Just days before my 10th birthday my father, Charles Hamilton Evans, died on Christmas Day, 1940. He suffered a fatal heart attack at the age of 54. My younger brother, Gary, was only 18 months old at that time. Thus my mother was faced with raising a baby, a 10-year-old, and a 15 year old (Carroll). She had never worked outside the home, which was common at that time. At the time I didn't realize how poor we were. Fortunately my older sister, DeAun, who was 19, was able to help support the family, as did an older half-brother, Charles Jr., who was an attorney in Denver. Mother got a job at the school cafeteria part-time and DeAun worked at the local telephone exchange. I did odd jobs, including delivering telegrams to the local residents, riding a bicycle to wherever I needed to go.
+
+![Family Trip to Denver (Abt 1931) — Charles Hamilton, Mother (Grace), Carroll, DeAun, Dad (Charles) holding me, and Lenora](/races/grandave-supp-0b.jpg)
 
 Mother had two sisters that lived in Albuquerque, both of which had families as well. I spent a portion of one summer with my cousins in Albuquerque and unfortunately came down with what was diagnosed as scarlet fever. The local doctor concluded that I suffered from some heart valve damage, a known condition as result of this disease. For this reason I was never able to participate in high school sports although I supported the teams by serving as team manager for both basketball and football and announced games and this sort of thing.
 
@@ -54,6 +60,8 @@ After my freshman year I switched my major to chemistry since this was my real l
 I was also active in student government serving on both the publications committee and the student standards committee. I was also the campaign manager for Al Utton, a friend from Aztec New Mexico, who was running for student body president. Al won that race and went on to be selected as a Rhodes Scholar for study at Oxford University in England.
 
 During my senior year I was selected to be the Cadet Wing Commander (as the Cadet Colonel) of the Air Force ROTC unit at the University. The Cadet Col. is the senior cadet officer of the unit and is the student commander of the 700 cadets. I felt especially proud to wear that uniform on campus with my many-striped shoulder boards.
+
+![Grandave front, center at the University of New Mexico with his cadet wing staff](/races/grandave-supp-3.jpg)
 
 Toward the end of my senior year the Air Force Colonel, the commander of the ROTC unit, recommended that I take a physical examination to see if I was qualified to undergo flight training. I informed him that I sincerely doubted that I would pass the physical due to my heart defect (which was result of the scarlet fever bout described earlier). Much to my surprise I passed this physical and I was delighted to be able enter pilot training subsequent to my graduation from the University.
 

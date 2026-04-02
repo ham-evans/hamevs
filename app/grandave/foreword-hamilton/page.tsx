@@ -6,7 +6,7 @@ export default async function ForewordHamilton() {
 
   return (
     <main className="flex flex-1 flex-col items-center px-6 py-24">
-      <article className="w-full max-w-2xl">
+      <article className="w-full max-w-3xl">
         <Link
           href="/grandave"
           className="text-sm text-fg/50 underline underline-offset-4 hover:text-fg"

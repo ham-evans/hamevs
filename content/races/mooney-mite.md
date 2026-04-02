@@ -5,10 +5,14 @@ distance: ""
 time: ""
 ---
 
-<p style="text-align:center;margin-bottom:0.25rem"><em>Dictated Version of Letter to Friends & Family</em></p>
+<p style="text-align:center;margin-bottom:0.25rem"><em>A Letter to Friends & Family</em></p>
 <p style="text-align:center;margin-top:0;margin-bottom:0.25rem"><em>10124B Parr Ave., Sunland, CA, 22 Sept, 1959</em></p>
 <p style="text-align:center;margin-top:0;margin-bottom:0.25rem">(This is the apartment that I shared with a Hi School Buddy, George Smith)</p>
 <p style="text-align:center;margin-top:0">This letter describes an extensive trip I took in my Mooney Mite airplane.</p>
+
+![Mooney Mite in flight](/races/mooney-4.jpg)
+
+---
 
 Hello again:
 
@@ -28,13 +32,24 @@ Enjoyed my vacation thoroughly and wish to thank all involved for their fine hos
 
 ---
 
-**Total flying time:** 23:30 hours
-**Total equivalent road miles:** 2,662
-**Total direct operating cost:** $40 for fuel
-*(Less than two cents per mile)*
+**Total flying time:** 23:30 hours<br>
+**Total equivalent road miles:** 2,662<br>
+**Total direct operating cost:** $40 for fuel *(Less than two cents per mile)*
 
 Again, thanks for everything. At least I have had enough flying for a week or so. By the way, how about another family reunion soon?
 
 ---
 
 Following is a sample of the flight plans that I used. I used a small clipboard on my knee so I could easily refer to these in flight. The Mooney had only a compass for navigation, and the only radio aid was a set that was used prior to landing at some of the airports. (ie, no direction finders nor GPS, nor autopilot.) To check the fuel you looked behind yourself at a glass sight gauge since the fuel tank was directly behind the pilot.
+
+![Handwritten flight plan — Las Vegas to Farmington](/races/mooney-1.jpg)
+
+![Pilot's Flight Plan and Flight Log — Boulder to Las Vegas](/races/mooney-2.jpg)
+
+---
+
+![Flight path on trip over the Grand Canyon](/races/mooney-3.jpg)
+
+---
+
+![Mooney Mite restored](/races/mooney-5.jpg)

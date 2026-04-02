@@ -1,12 +1,19 @@
 import { getRace } from "@/lib/races";
+import Link from "next/link";
 
 export default async function GrandAve() {
   const story = await getRace("grandave");
 
   return (
     <main className="flex flex-1 flex-col items-center px-6 py-24">
-      <article className="w-full max-w-2xl">
-        <div className="text-center mb-12">
+      <article className="w-full max-w-3xl">
+        <Link
+          href="/grandave"
+          className="text-sm text-fg/50 underline underline-offset-4 hover:text-fg"
+        >
+          &larr; grandave
+        </Link>
+        <div className="text-center mb-12 mt-6">
           <h1 className="text-3xl font-bold tracking-tight text-fg">
             {story.title}
           </h1>
