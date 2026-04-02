@@ -1,22 +1,24 @@
-import Image from "next/image";
-
 export default function Home() {
   return (
     <main className="flex flex-1 flex-col items-center justify-center px-6 py-24">
-      <div className="max-w-md text-center flex flex-col items-center">
-        <Image
-          src="/logo.png"
-          alt="Hamilton Evans"
-          width={400}
-          height={400}
-          priority
-        />
-        <a
-          href="mailto:hello@hamiltonevans.com"
-          className="mt-6 inline-block text-fg/50 underline underline-offset-4 transition-colors hover:text-fg"
-        >
-          say hello
-        </a>
+      <div className="max-w-md text-center">
+        <h1 className="text-4xl font-semibold tracking-tight text-fg">
+          Hamilton Evans
+        </h1>
+        <div className="mt-6 flex flex-col gap-2 text-fg/50">
+          <a
+            href="mailto:ham@atomgrants.com"
+            className="underline underline-offset-4 transition-colors hover:text-fg"
+          >
+            ham@atomgrants.com
+          </a>
+          <a
+            href="tel:+16262982786"
+            className="underline underline-offset-4 transition-colors hover:text-fg"
+          >
+            (626) 298-2786
+          </a>
+        </div>
       </div>
     </main>
   );

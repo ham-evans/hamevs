@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Space_Mono } from "next/font/google";
 import "./globals.css";
+import Nav from "./nav";
 
-const inter = Inter({
+const spaceMono = Space_Mono({
+  weight: ["400", "700"],
   subsets: ["latin"],
 });
 
@@ -21,8 +23,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${inter.className} h-full antialiased`}>
-      <body className="min-h-full flex flex-col">{children}</body>
+    <html lang="en" className={`${spaceMono.className} h-full antialiased`}>
+      <body className="min-h-full flex flex-col">
+        <Nav />
+        {children}
+      </body>
     </html>
   );
 }
