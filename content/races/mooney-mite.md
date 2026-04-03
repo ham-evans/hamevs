@@ -10,7 +10,7 @@ time: ""
 <p style="text-align:center;margin-top:0;margin-bottom:0.25rem">(This is the apartment that I shared with a Hi School Buddy, George Smith)</p>
 <p style="text-align:center;margin-top:0">This letter describes an extensive trip I took in my Mooney Mite airplane.</p>
 
-![Mooney Mite in flight](/races/mooney-4.jpg)
+![Grandave's Mooney Mite](/races/mooney-4.jpg)
 
 ---
 
@@ -52,4 +52,14 @@ Following is a sample of the flight plans that I used. I used a small clipboard 
 
 ---
 
-![Mooney Mite restored](/races/mooney-5.jpg)
+![Ad from LA Times, 15 May 1959 — '55 Mooney Mite 550 hours TT VHF-LF aux tank. New Lic. New ceconite on wings and tail. $2700. CH 9-9535. (Paid $2250)](/races/mooney-6.jpg)
+
+![Bill of Sale for Mooney Mite — 15 July 1959](/races/mooney-7.jpg)
+
+---
+
+## More on Mooney Mite
+
+[Mooney Mite Performance — Pilot Report](/grandave/mooney-mite/performance)
+
+[Mooney Mite Specifications](/grandave/mooney-mite/specifications)

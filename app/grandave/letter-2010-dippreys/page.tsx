@@ -1,17 +1,17 @@
 import { getRace } from "@/lib/races";
 import Link from "next/link";
 
-export default async function SupplementalMatl() {
-  const story = await getRace("grandave-supplemental");
+export default async function Letter2010Dippreys() {
+  const story = await getRace("letter-2010-dippreys");
 
   return (
     <main className="flex flex-1 flex-col items-center px-6 py-24">
       <article className="w-full max-w-3xl">
         <Link
-          href="/grandave"
+          href="/grandave/letters"
           className="text-sm text-fg/50 underline underline-offset-4 hover:text-fg"
         >
-          &larr; grandave
+          &larr; letters
         </Link>
         <h1 className="mt-6 text-2xl font-bold tracking-tight text-fg text-center">
           {story.title}

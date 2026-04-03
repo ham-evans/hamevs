@@ -8,10 +8,10 @@ export default async function ROTCColonel() {
     <main className="flex flex-1 flex-col items-center px-6 py-24">
       <article className="w-full max-w-3xl">
         <Link
-          href="/grandave"
+          href="/grandave/clippings"
           className="text-sm text-fg/50 underline underline-offset-4 hover:text-fg"
         >
-          &larr; grandave
+          &larr; clippings
         </Link>
         <h1 className="mt-6 text-2xl font-bold tracking-tight text-fg text-center">
           {story.title}

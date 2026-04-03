@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   title: "Hamilton Evans",
   description: "Personal website of Hamilton Evans",
   icons: {
-    icon: "/favicon.ico",
+    icon: "/favicon.png",
     apple: "/apple-icon.png",
   },
 };

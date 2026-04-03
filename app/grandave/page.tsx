@@ -41,17 +41,6 @@ export default function GrandAve() {
         </p>
         <div className="flex flex-col gap-4">
           <Link
-            href="/grandave/my-life-supplemental-matl"
-            className="group block border-b border-fg/10 pb-4"
-          >
-            <p className="text-lg font-bold text-fg group-hover:underline">
-              My Life Supplemental Matl
-            </p>
-            <p className="mt-1 text-sm text-fg/50">
-              Photos and supplemental materials
-            </p>
-          </Link>
-          <Link
             href="/grandave/p-38-farmington"
             className="group block border-b border-fg/10 pb-4"
           >
@@ -74,14 +63,36 @@ export default function GrandAve() {
             </p>
           </Link>
           <Link
-            href="/grandave/rotc-colonel"
+            href="/grandave/clippings"
             className="group block border-b border-fg/10 pb-4"
           >
             <p className="text-lg font-bold text-fg group-hover:underline">
-              Don Evans Is ROTC Colonel
+              Newspaper Clippings
             </p>
             <p className="mt-1 text-sm text-fg/50">
-              Farmington Daily Times, September 8, 1952
+              Articles about Grandave from the papers
+            </p>
+          </Link>
+          <Link
+            href="/grandave/mementos"
+            className="group block border-b border-fg/10 pb-4"
+          >
+            <p className="text-lg font-bold text-fg group-hover:underline">
+              Mementos
+            </p>
+            <p className="mt-1 text-sm text-fg/50">
+              Receipts, documents, awards, and keepsakes
+            </p>
+          </Link>
+          <Link
+            href="/grandave/air-force-career"
+            className="group block border-b border-fg/10 pb-4"
+          >
+            <p className="text-lg font-bold text-fg group-hover:underline">
+              Air Force Career
+            </p>
+            <p className="mt-1 text-sm text-fg/50">
+              Summary of official file excerpts, ROTC through honorable discharge
             </p>
           </Link>
           <Link
@@ -90,6 +101,72 @@ export default function GrandAve() {
           >
             <p className="text-lg font-bold text-fg group-hover:underline">
               Mars Observer
+            </p>
+          </Link>
+          <Link
+            href="/grandave/voyager"
+            className="group block border-b border-fg/10 pb-4"
+          >
+            <p className="text-lg font-bold text-fg group-hover:underline">
+              Voyager
+            </p>
+            <p className="mt-1 text-sm text-fg/50">
+              Emails and notes on the Voyager missions
+            </p>
+          </Link>
+          <Link
+            href="/grandave/letters"
+            className="group block border-b border-fg/10 pb-4"
+          >
+            <p className="text-lg font-bold text-fg group-hover:underline">
+              Letters
+            </p>
+            <p className="mt-1 text-sm text-fg/50">
+              Written by Grandave
+            </p>
+          </Link>
+          <Link
+            href="/grandave/bedtime-stories"
+            className="group block border-b border-fg/10 pb-4"
+          >
+            <p className="text-lg font-bold text-fg group-hover:underline">
+              A Parent&apos;s Guide to Bedtime Stories
+            </p>
+            <p className="mt-1 text-sm text-fg/50">
+              By Dave Evans — The story of Pupsie the Dog
+            </p>
+          </Link>
+          <Link
+            href="/grandave/stories"
+            className="group block border-b border-fg/10 pb-4"
+          >
+            <p className="text-lg font-bold text-fg group-hover:underline">
+              Stories That Grandave Likes
+            </p>
+            <p className="mt-1 text-sm text-fg/50">
+              Interesting stories collected by Grandave
+            </p>
+          </Link>
+          <Link
+            href="/grandave/scanned-slides"
+            className="group block border-b border-fg/10 pb-4"
+          >
+            <p className="text-lg font-bold text-fg group-hover:underline">
+              Scanned Slides
+            </p>
+            <p className="mt-1 text-sm text-fg/50">
+              Index to the David Evans family slide collection
+            </p>
+          </Link>
+          <Link
+            href="/grandave/nancy-lou-hayes"
+            className="group block border-b border-fg/10 pb-4"
+          >
+            <p className="text-lg font-bold text-fg group-hover:underline">
+              Nancy Lou Hayes
+            </p>
+            <p className="mt-1 text-sm text-fg/50">
+              Growing up in Pasadena, family history, and memories by Nancy Hayes Evans
             </p>
           </Link>
         </div>

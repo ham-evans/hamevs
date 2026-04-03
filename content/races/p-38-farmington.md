@@ -20,6 +20,8 @@ We found out that a fuel truck was being dispatched from Albuquerque so he could
 
 ---
 
+![Note to Grandave from Dick DeGrey — the responsible engineer for the development of the P-38, which was in service in WWII](/races/p38-neighbor.jpg)
+
 <figure>
 <img src="/races/p38.jpg" alt="Lockheed P-38 Lightning">
 <figcaption><a href="https://en.wikipedia.org/wiki/Lockheed_P-38_Lightning" target="_blank" rel="noopener noreferrer">Lockheed P-38 Lightning</a></figcaption>

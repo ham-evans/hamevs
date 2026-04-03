@@ -31,6 +31,23 @@ export default async function GrandAve() {
           className="prose mt-8 text-fg/80 prose-a:text-fg prose-a:underline prose-p:mb-6 prose-img:my-8 prose-img:max-h-[40rem] prose-img:w-auto prose-img:mx-auto prose-h2:text-xl prose-h2:font-bold prose-h2:text-fg prose-h2:mt-10 prose-h2:mb-4"
           dangerouslySetInnerHTML={{ __html: story.contentHtml }}
         />
+        <hr className="my-8 border-fg/10" />
+        <p className="text-xs text-fg/40 uppercase tracking-widest mb-4">
+          See Also
+        </p>
+        <Link
+          href="/grandave/my-life/supplemental-matl"
+          className="text-lg font-bold text-fg underline underline-offset-4 hover:text-fg/70"
+        >
+          Supplemental Materials
+        </Link>
+        <br />
+        <Link
+          href="/grandave/my-life/concise-view"
+          className="text-lg font-bold text-fg underline underline-offset-4 hover:text-fg/70 mt-2 inline-block"
+        >
+          A Concise View
+        </Link>
       </article>
     </main>
   );
