@@ -84,6 +84,14 @@ export default function GrandAve() {
               Farmington Daily Times, September 8, 1952
             </p>
           </Link>
+          <Link
+            href="/grandave/mars-observer"
+            className="group block border-b border-fg/10 pb-4"
+          >
+            <p className="text-lg font-bold text-fg group-hover:underline">
+              Mars Observer
+            </p>
+          </Link>
         </div>
       </div>
     </main>
