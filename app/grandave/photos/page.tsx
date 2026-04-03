@@ -13,6 +13,13 @@ export default function Photos() {
         <h1 className="mt-6 text-2xl font-bold tracking-tight text-fg text-center">
           Photos
         </h1>
+        <div className="mt-6 flex flex-col items-center">
+          <img
+            src="/races/photos-hero.jpg"
+            alt="Welcome — The Evans"
+            className="max-h-[20rem] w-auto rounded"
+          />
+        </div>
         <div className="mt-8 flex flex-col gap-4">
           <Link
             href="/grandave/photos/evans-myers"

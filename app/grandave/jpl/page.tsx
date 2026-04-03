@@ -18,6 +18,17 @@ export default function JPL() {
         </p>
         <div className="mt-8 flex flex-col gap-4">
           <Link
+            href="/grandave/jpl/mars-observer-appointed"
+            className="group block border-b border-fg/10 pb-4"
+          >
+            <p className="text-lg font-bold text-fg group-hover:underline">
+              Mars Observer Project Manager Appointed
+            </p>
+            <p className="mt-1 text-sm text-fg/50">
+              JPL news release, September 1986
+            </p>
+          </Link>
+          <Link
             href="/grandave/mars-observer"
             className="group block border-b border-fg/10 pb-4"
           >
@@ -34,6 +45,17 @@ export default function JPL() {
             </p>
             <p className="mt-1 text-sm text-fg/50">
               Emails and notes on the Voyager missions
+            </p>
+          </Link>
+          <Link
+            href="/grandave/jpl/photos"
+            className="group block border-b border-fg/10 pb-4"
+          >
+            <p className="text-lg font-bold text-fg group-hover:underline">
+              Photos
+            </p>
+            <p className="mt-1 text-sm text-fg/50">
+              NASA Leadership Medal, Flight Projects staff, retirement ceremony
             </p>
           </Link>
         </div>

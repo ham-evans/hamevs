@@ -5,6 +5,8 @@ distance: ""
 time: ""
 ---
 
+![Nancy Lou Hayes](/races/nancy-lou-hayes.jpg)
+
 *It seems as though sometime in 2010, while Grandave was on and off writing his memories, he encouraged Gram to do the same. I find the inclusion of Mt. St. Helens in both as an interesting look into how they got started. Although less thorough, there's some great stories and details on the Hayes family included.*
 
 ---
