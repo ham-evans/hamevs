@@ -63,6 +63,61 @@ export default function GrandAve() {
             </p>
           </Link>
           <Link
+            href="/grandave/nancy-lou-hayes"
+            className="group block border-b border-fg/10 pb-4"
+          >
+            <p className="text-lg font-bold text-fg group-hover:underline">
+              Nancy Lou Hayes
+            </p>
+            <p className="mt-1 text-sm text-fg/50">
+              Growing up in Pasadena, family history, and memories by Nancy Hayes Evans
+            </p>
+          </Link>
+          <Link
+            href="/grandave/air-force-career"
+            className="group block border-b border-fg/10 pb-4"
+          >
+            <p className="text-lg font-bold text-fg group-hover:underline">
+              Air Force
+            </p>
+            <p className="mt-1 text-sm text-fg/50">
+              Summary of official file excerpts, ROTC through honorable discharge
+            </p>
+          </Link>
+          <Link
+            href="/grandave/jpl"
+            className="group block border-b border-fg/10 pb-4"
+          >
+            <p className="text-lg font-bold text-fg group-hover:underline">
+              Jet Propulsion Laboratory (JPL)
+            </p>
+            <p className="mt-1 text-sm text-fg/50">
+              1958–1994 — Mars Observer, Voyager, and more
+            </p>
+          </Link>
+          <Link
+            href="/grandave/mementos"
+            className="group block border-b border-fg/10 pb-4"
+          >
+            <p className="text-lg font-bold text-fg group-hover:underline">
+              Momentos
+            </p>
+            <p className="mt-1 text-sm text-fg/50">
+              Receipts, documents, awards, and keepsakes
+            </p>
+          </Link>
+          <Link
+            href="/grandave/photos"
+            className="group block border-b border-fg/10 pb-4"
+          >
+            <p className="text-lg font-bold text-fg group-hover:underline">
+              Photos
+            </p>
+            <p className="mt-1 text-sm text-fg/50">
+              Evans-Myers family photos and scanned slides
+            </p>
+          </Link>
+          <Link
             href="/grandave/clippings"
             className="group block border-b border-fg/10 pb-4"
           >
@@ -71,47 +126,6 @@ export default function GrandAve() {
             </p>
             <p className="mt-1 text-sm text-fg/50">
               Articles about Grandave from the papers
-            </p>
-          </Link>
-          <Link
-            href="/grandave/mementos"
-            className="group block border-b border-fg/10 pb-4"
-          >
-            <p className="text-lg font-bold text-fg group-hover:underline">
-              Mementos
-            </p>
-            <p className="mt-1 text-sm text-fg/50">
-              Receipts, documents, awards, and keepsakes
-            </p>
-          </Link>
-          <Link
-            href="/grandave/air-force-career"
-            className="group block border-b border-fg/10 pb-4"
-          >
-            <p className="text-lg font-bold text-fg group-hover:underline">
-              Air Force Career
-            </p>
-            <p className="mt-1 text-sm text-fg/50">
-              Summary of official file excerpts, ROTC through honorable discharge
-            </p>
-          </Link>
-          <Link
-            href="/grandave/mars-observer"
-            className="group block border-b border-fg/10 pb-4"
-          >
-            <p className="text-lg font-bold text-fg group-hover:underline">
-              Mars Observer
-            </p>
-          </Link>
-          <Link
-            href="/grandave/voyager"
-            className="group block border-b border-fg/10 pb-4"
-          >
-            <p className="text-lg font-bold text-fg group-hover:underline">
-              Voyager
-            </p>
-            <p className="mt-1 text-sm text-fg/50">
-              Emails and notes on the Voyager missions
             </p>
           </Link>
           <Link
@@ -145,28 +159,6 @@ export default function GrandAve() {
             </p>
             <p className="mt-1 text-sm text-fg/50">
               Interesting stories collected by Grandave
-            </p>
-          </Link>
-          <Link
-            href="/grandave/scanned-slides"
-            className="group block border-b border-fg/10 pb-4"
-          >
-            <p className="text-lg font-bold text-fg group-hover:underline">
-              Scanned Slides
-            </p>
-            <p className="mt-1 text-sm text-fg/50">
-              Index to the David Evans family slide collection
-            </p>
-          </Link>
-          <Link
-            href="/grandave/nancy-lou-hayes"
-            className="group block border-b border-fg/10 pb-4"
-          >
-            <p className="text-lg font-bold text-fg group-hover:underline">
-              Nancy Lou Hayes
-            </p>
-            <p className="mt-1 text-sm text-fg/50">
-              Growing up in Pasadena, family history, and memories by Nancy Hayes Evans
             </p>
           </Link>
         </div>

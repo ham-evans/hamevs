@@ -11,7 +11,7 @@ export default async function SelectedMomentos() {
           href="/grandave/mementos"
           className="text-sm text-fg/50 underline underline-offset-4 hover:text-fg"
         >
-          &larr; mementos
+          &larr; momentos
         </Link>
         <h1 className="mt-6 text-2xl font-bold tracking-tight text-fg text-center">
           {story.title}

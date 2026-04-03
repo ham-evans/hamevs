@@ -249,6 +249,17 @@ export default function Letters() {
             </p>
           </Link>
           <Link
+            href="/grandave/letter-1998-karen"
+            className="group block border-b border-fg/10 pb-4"
+          >
+            <p className="text-lg font-bold text-fg group-hover:underline">
+              Email from Karen — April 1998
+            </p>
+            <p className="mt-1 text-sm text-fg/50">
+              Moving to Pasadena, Katie potty training, Hamilton&apos;s Target meltdown
+            </p>
+          </Link>
+          <Link
             href="/grandave/letter-1999"
             className="group block border-b border-fg/10 pb-4"
           >

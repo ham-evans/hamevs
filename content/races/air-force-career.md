@@ -1,22 +1,25 @@
 ---
-title: "Summary of the Official File Excerpts"
+title: "Air Force"
 date: ""
 distance: ""
 time: ""
 ---
 
-Below is a summary of my Air Force career, taken directly from the official file which was sent to me after I was discharged. Almost all of it consists of official orders to change the station or to be assigned a new specialty. I don't expect the reader to actually go through each of these or even one or two of them since the shorthand used is quite confusing to most folks. I've tried to do this pretty much in a chronological order.
+![1st Lt. David D. Evans, ready to mount a T-33 at Cannon AFB, Clovis, NM](/races/t33-ready-to-mount.jpg)
 
-First of all is information about my graduation from the Air Force ROTC, which I was enrolled in at the University of New Mexico. This includes the letter appointing me as a second lieutenant in the reserve. The 30 July 1953 orders are the ones that actually call me to active duty and ordered me report to Lackland Air Force Base in San Antonio, TX for 3 days of processing with subsequent assignment to Primary training at Spence Air Base in Moultrie, Georgia. We took our flight physical examination at this time.
+David D. Evans served in the United States Air Force from **September 1953** to **September 1956**, completing over three years of active duty as a commissioned officer and jet fighter pilot.
 
-May 11th — These orders indicate that our class graduated from primary flight training and we were all reassigned then to Laredo Air Force Base Texas for primary training in jets for a duration of five months. (Of course we lost several classmates that washed out of training.)
+After graduating with honors in Chemistry from the University of New Mexico in 1953 — where he served as Cadet Wing Commander of the Air Force ROTC — Evans was called to active duty as a Second Lieutenant.
 
-October 22, 1954. Upon completion of primary training we have the option of signing up for advanced training at Nellis Air Force Base (with a requirement that we sign up for an additional five years of duty), or being assigned to one of several classes of specialty training. Several of us chose to go to specialty school rather than commit for the additional duty in the Air Force. My buddy Jim Leeth and I were assigned to armament systems officer school at Lowry Air Force Base, Denver, Colorado. Emphasis was on electronic fire control systems and the like, hence I was able to get a good electronics background to complement my sciences background.
+**Training:**
+- **Oct 1953 – Oct 1954** — Primary and basic pilot training at Spence Air Base, Moultrie, Georgia (T-6 and Piper Super Cub), then jet training at Laredo AFB, Texas (T-34 and T-33). Received silver wings.
+- **Nov 1954 – May 1955** — Armament Systems Officer school at Lowry AFB, Denver, Colorado. Electronics, fire control systems, 50-cal and 20mm guns, conventional bombs.
 
-March 28, 1955. This set of orders promotes me to 1st Lieutenant, an automatic promotion after 18 months as a 2nd Lt.
+**Duty Station:**
+- **May 1955 – Sep 1956** — Cannon Air Force Base, Clovis, New Mexico. Appointed Group Armament Systems Officer for the **474th Fighter-Bomber Group** (three squadrons of F-86H aircraft). Primary mission: delivery of tactical nuclear weapons. Promoted to **1st Lieutenant** (March 1955). Maintained flight proficiency in the T-33.
 
-April 27, 1955. Upon graduation from the Armament Systems training this set of orders indicates that I am to report to Clovis AFB as a duty station. I was keenly disappointed since I know that Clovis, NM was "in the middle of nowhere" as it were. Incidentally I had been born in Clovis 24 years ago at that time! I was subsequently appointed as Group Armament Systems Office for the 474th Ftr-Bomber group. A group consisted of three squadrons and at that time this unit had just transitioned into F 86H aircraft. However my flying was conducted in a T33 aircraft since I had not elected to stay in the Air Force.
+**Decorations:** National Defense Service Medal
 
-September 12, 1956. This set of orders released me from active duty and assigned me to the Air Force reserve. This is when I went back to school at the University of Colorado, with veteran benefits (tuition and books).
+Honorably discharged from all appointments in the United States Air Force on July 3, 1962.
 
-Finally on July 3, 1962, I was honorably discharged from all appointments in the United States Air Force.
+![Air Force uniform insignia — pilot wings, officer's cap eagle, 2nd Lt bars, U.S. pin, name plate (D.D. Evans, 1st Lt., USAF), dog tag, and calling card (David Donald Evans, Lieutenant, United States Air Force Reserve)](/races/af-insignia.jpg)

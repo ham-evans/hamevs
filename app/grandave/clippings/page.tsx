@@ -59,6 +59,17 @@ export default function Clippings() {
             </p>
           </Link>
           <Link
+            href="/grandave/clippings/grace-selby-obituary-1979"
+            className="group block border-b border-fg/10 pb-4"
+          >
+            <p className="text-lg font-bold text-fg group-hover:underline">
+              Grace Evans Selby — Obituary
+            </p>
+            <p className="mt-1 text-sm text-fg/50">
+              Farmington Daily Sun, January 14, 1979 — Grandave&apos;s mother
+            </p>
+          </Link>
+          <Link
             href="/grandave/clippings/evans-retires-jpl-1994"
             className="group block border-b border-fg/10 pb-4"
           >
