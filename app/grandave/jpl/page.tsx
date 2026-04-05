@@ -16,6 +16,9 @@ export default function JPL() {
         <p className="mt-2 text-sm text-fg/50 text-center">
           1958–1994
         </p>
+        <p className="mt-4 text-sm text-fg/50 italic text-center">
+          This section is still being worked on
+        </p>
         <div className="mt-8 flex flex-col gap-4">
           <Link
             href="/grandave/jpl/mars-observer-appointed"

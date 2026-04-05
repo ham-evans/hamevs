@@ -18,6 +18,8 @@ After graduating with honors in Chemistry from the University of New Mexico in 1
 **Duty Station:**
 - **May 1955 – Sep 1956** — Cannon Air Force Base, Clovis, New Mexico. Appointed Group Armament Systems Officer for the **474th Fighter-Bomber Group** (three squadrons of F-86H aircraft). Primary mission: delivery of tactical nuclear weapons. Promoted to **1st Lieutenant** (March 1955). Maintained flight proficiency in the T-33.
 
+![In hearing his stories later in life, it was clear that the most fun Grandave ever had was while flying. This is one of the only photos I found where he is actually in flight.](/races/grandave-flying.jpg)
+
 **Decorations:** National Defense Service Medal
 
 Honorably discharged from all appointments in the United States Air Force on July 3, 1962.

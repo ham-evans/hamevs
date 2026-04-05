@@ -19,7 +19,7 @@ time: ""
 
 ---
 
-*This was the last email Grandave ever sent me, on November 9, 2020:*
+This was the last email Grandave ever sent me, on November 9, 2020:
 
 *Just realized that this could be of interest to you as well as Tyler.*
 

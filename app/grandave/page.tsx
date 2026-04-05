@@ -10,11 +10,11 @@ export default function GrandAve() {
         <div className="mt-6 flex flex-col items-center">
           <img
             src="/races/grandave-hero.jpg"
-            alt="Gram and Grandave, Scottsdale, AZ — August 2017"
+            alt="Gram and Grandave, Scottsdale, AZ, August 2017"
             className="max-h-[28rem] w-auto rounded"
           />
           <p className="mt-2 text-sm text-fg/40">
-            Gram and Grandave, Scottsdale, AZ — August 2017
+            Gram and Grandave, Scottsdale, AZ, August 2017
           </p>
         </div>
         <div className="mt-8 flex flex-col items-center gap-3 text-center">

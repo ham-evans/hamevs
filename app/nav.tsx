@@ -12,6 +12,12 @@ export default function Nav() {
       >
         running
       </Link>
+      <Link
+        href="/memories"
+        className="underline underline-offset-4 hover:text-fg"
+      >
+        memories
+      </Link>
     </nav>
   );
 }
