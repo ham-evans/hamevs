@@ -1,8 +1,8 @@
-import { getRace } from "@/lib/races";
+import { getGrandaveEntry } from "@/lib/grandave";
 import Link from "next/link";
 
 export default async function UNM50thAnniversary() {
-  const story = await getRace("unm-50th-anniversary");
+  const story = await getGrandaveEntry("unm-50th-anniversary");
 
   return (
     <main className="flex flex-1 flex-col items-center px-6 py-24">

@@ -1,8 +1,8 @@
-import { getRace } from "@/lib/races";
+import { getGrandaveEntry } from "@/lib/grandave";
 import Link from "next/link";
 
 export default async function ScannedSlides() {
-  const story = await getRace("scanned-slides");
+  const story = await getGrandaveEntry("scanned-slides");
 
   return (
     <main className="flex flex-1 flex-col items-center px-6 py-24">

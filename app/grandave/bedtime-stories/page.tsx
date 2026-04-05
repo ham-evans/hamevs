@@ -1,8 +1,8 @@
-import { getRace } from "@/lib/races";
+import { getGrandaveEntry } from "@/lib/grandave";
 import Link from "next/link";
 
 export default async function BedtimeStories() {
-  const story = await getRace("bedtime-stories");
+  const story = await getGrandaveEntry("bedtime-stories");
 
   return (
     <main className="flex flex-1 flex-col items-center px-6 py-24">

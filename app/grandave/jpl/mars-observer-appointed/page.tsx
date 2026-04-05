@@ -1,8 +1,8 @@
-import { getRace } from "@/lib/races";
+import { getGrandaveEntry } from "@/lib/grandave";
 import Link from "next/link";
 
 export default async function MarsObserverAppointed() {
-  const story = await getRace("jpl-mars-observer-appointed");
+  const story = await getGrandaveEntry("jpl-mars-observer-appointed");
 
   return (
     <main className="flex flex-1 flex-col items-center px-6 py-24">

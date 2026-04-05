@@ -7,40 +7,20 @@ import remarkGfm from "remark-gfm";
 import rehypeExternalLinks from "rehype-external-links";
 import { rehype } from "rehype";
 
-const racesDir = path.join(process.cwd(), "content/races");
+const grandaveDir = path.join(process.cwd(), "content/grandave");
 
-export type Race = {
+export type GrandaveEntry = {
   slug: string;
   title: string;
   date: string;
-  distance: string;
-  time: string;
-  strava?: string;
+  contentHtml: string;
 };
 
-export function getAllRaces(): Race[] {
-  const files = fs.readdirSync(racesDir).filter((f) => f.endsWith(".md"));
-  const races = files.map((file) => {
-    const slug = file.replace(/\.md$/, "");
-    const { data } = matter(fs.readFileSync(path.join(racesDir, file), "utf8"));
-    return {
-      slug,
-      title: data.title,
-      date: data.date,
-      distance: data.distance,
-      time: data.time,
-      strava: data.strava,
-    };
-  });
-  return races.sort((a, b) => (a.date > b.date ? -1 : 1));
-}
-
-export async function getRace(slug: string) {
-  const filePath = path.join(racesDir, `${slug}.md`);
+export async function getGrandaveEntry(slug: string): Promise<GrandaveEntry> {
+  const filePath = path.join(grandaveDir, `${slug}.md`);
   const file = fs.readFileSync(filePath, "utf8");
   const { data, content } = matter(file);
   const remarkResult = await remark().use(remarkGfm).use(html, { sanitize: false }).process(content);
-  // Wrap images in <figure> with <figcaption> from alt text
   const htmlWithFigures = remarkResult.toString().replace(
     /<p><img src="([^"]*)" alt="([^"]*)"[^>]*><\/p>/g,
     (_match, src, alt) =>
@@ -54,10 +34,7 @@ export async function getRace(slug: string) {
   return {
     slug,
     title: data.title,
-    date: data.date,
-    distance: data.distance,
-    time: data.time,
-    strava: data.strava,
+    date: data.date || "",
     contentHtml: result.toString(),
   };
 }

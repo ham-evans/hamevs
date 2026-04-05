@@ -1,8 +1,8 @@
-import { getRace } from "@/lib/races";
+import { getGrandaveEntry } from "@/lib/grandave";
 import Link from "next/link";
 
 export default async function UsaaAddresses() {
-  const story = await getRace("usaa-addresses-1956-1961");
+  const story = await getGrandaveEntry("usaa-addresses-1956-1961");
 
   return (
     <main className="flex flex-1 flex-col items-center px-6 py-24">

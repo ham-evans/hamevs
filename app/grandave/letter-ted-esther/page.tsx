@@ -1,8 +1,8 @@
-import { getRace } from "@/lib/races";
+import { getGrandaveEntry } from "@/lib/grandave";
 import Link from "next/link";
 
 export default async function LetterTedEsther() {
-  const story = await getRace("letter-ted-esther");
+  const story = await getGrandaveEntry("letter-ted-esther");
 
   return (
     <main className="flex flex-1 flex-col items-center px-6 py-24">

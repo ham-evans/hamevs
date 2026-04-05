@@ -1,8 +1,8 @@
-import { getRace } from "@/lib/races";
+import { getGrandaveEntry } from "@/lib/grandave";
 import Link from "next/link";
 
 export default async function MooneyMitePerformance() {
-  const story = await getRace("mooney-mite-performance");
+  const story = await getGrandaveEntry("mooney-mite-performance");
 
   return (
     <main className="flex flex-1 flex-col items-center px-6 py-24">

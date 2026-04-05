@@ -1,8 +1,8 @@
-import { getRace } from "@/lib/races";
+import { getGrandaveEntry } from "@/lib/grandave";
 import Link from "next/link";
 
 export default async function FhsHallOfFame1993() {
-  const story = await getRace("fhs-hall-of-fame-1993");
+  const story = await getGrandaveEntry("fhs-hall-of-fame-1993");
 
   return (
     <main className="flex flex-1 flex-col items-center px-6 py-24">

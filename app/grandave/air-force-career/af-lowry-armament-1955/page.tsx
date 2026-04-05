@@ -1,8 +1,8 @@
-import { getRace } from "@/lib/races";
+import { getGrandaveEntry } from "@/lib/grandave";
 import Link from "next/link";
 
 export default async function AfLowryArmament1955() {
-  const story = await getRace("af-lowry-armament-1955");
+  const story = await getGrandaveEntry("af-lowry-armament-1955");
 
   return (
     <main className="flex flex-1 flex-col items-center px-6 py-24">

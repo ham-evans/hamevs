@@ -1,8 +1,8 @@
-import { getRace } from "@/lib/races";
+import { getGrandaveEntry } from "@/lib/grandave";
 import Link from "next/link";
 
 export default async function AirCadetsKirtland1947() {
-  const story = await getRace("air-cadets-kirtland-1947");
+  const story = await getGrandaveEntry("air-cadets-kirtland-1947");
 
   return (
     <main className="flex flex-1 flex-col items-center px-6 py-24">

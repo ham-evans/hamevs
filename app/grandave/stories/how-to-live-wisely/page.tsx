@@ -1,8 +1,8 @@
-import { getRace } from "@/lib/races";
+import { getGrandaveEntry } from "@/lib/grandave";
 import Link from "next/link";
 
 export default async function HowToLiveWisely() {
-  const story = await getRace("how-to-live-wisely");
+  const story = await getGrandaveEntry("how-to-live-wisely");
 
   return (
     <main className="flex flex-1 flex-col items-center px-6 py-24">

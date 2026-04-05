@@ -1,8 +1,8 @@
-import { getRace } from "@/lib/races";
+import { getGrandaveEntry } from "@/lib/grandave";
 import Link from "next/link";
 
 export default async function CaveaBJohnClark() {
-  const story = await getRace("cavea-b-john-clark");
+  const story = await getGrandaveEntry("cavea-b-john-clark");
 
   return (
     <main className="flex flex-1 flex-col items-center px-6 py-24">

@@ -1,8 +1,8 @@
-import { getRace } from "@/lib/races";
+import { getGrandaveEntry } from "@/lib/grandave";
 import Link from "next/link";
 
 export default async function BoulderAirportExpands() {
-  const story = await getRace("boulder-airport-expands");
+  const story = await getGrandaveEntry("boulder-airport-expands");
 
   return (
     <main className="flex flex-1 flex-col items-center px-6 py-24">

@@ -1,8 +1,8 @@
-import { getRace } from "@/lib/races";
+import { getGrandaveEntry } from "@/lib/grandave";
 import Link from "next/link";
 
 export default async function GraceSelbyObituary() {
-  const story = await getRace("grace-selby-obituary-1979");
+  const story = await getGrandaveEntry("grace-selby-obituary-1979");
 
   return (
     <main className="flex flex-1 flex-col items-center px-6 py-24">
