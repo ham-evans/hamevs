@@ -31,9 +31,16 @@ export function getAllMemories(): Memory[] {
     };
   });
   return memories.sort((a, b) => {
-    const dateA = new Date(a.date.replace(/-.+?,/, ",")).getTime();
-    const dateB = new Date(b.date.replace(/-.+?,/, ",")).getTime();
-    return dateA - dateB;
+    const parseDate = (d: string) => {
+      if (!d) return 0;
+      // Strip everything after the first hyphen/dash followed by content before parsing
+      // "August 28-29, 2021" → "August 28, 2021"
+      // "July 31 - August 4, 2022" → "July 31, 2022"
+      // "December 2021 - January 2022" → "December 2021"
+      const cleaned = d.replace(/\s*-\s*.+?,/, ",").replace(/\s*-\s*.+$/, "");
+      return new Date(cleaned).getTime() || 0;
+    };
+    return parseDate(a.date) - parseDate(b.date);
   });
 }
 

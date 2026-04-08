@@ -32,7 +32,7 @@ export function getAllRaces(): Race[] {
       strava: data.strava,
     };
   });
-  return races.sort((a, b) => (a.date > b.date ? -1 : 1));
+  return races.sort((a, b) => (a.date > b.date ? 1 : -1));
 }
 
 export async function getRace(slug: string) {

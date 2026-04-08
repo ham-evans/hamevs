@@ -118,6 +118,17 @@ export default function GrandAve() {
             </p>
           </Link>
           <Link
+            href="/grandave/videos"
+            className="group block border-b border-fg/10 pb-4"
+          >
+            <p className="text-lg font-bold text-fg group-hover:underline">
+              Recorded Conversations
+            </p>
+            <p className="mt-1 text-sm text-fg/50">
+              Some conversations I filmed with Grandave
+            </p>
+          </Link>
+          <Link
             href="/grandave/clippings"
             className="group block border-b border-fg/10 pb-4"
           >
