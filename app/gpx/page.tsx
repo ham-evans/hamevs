@@ -248,7 +248,7 @@ export default function GpxPage() {
     [handleFile]
   );
 
-  const elevationHeight = 200;
+  const elevationHeight = 210;
 
   return (
     <main className="flex flex-1 flex-col items-center">
@@ -933,7 +933,7 @@ function ElevationProfile({
     const ctx = canvas.getContext("2d")!;
     ctx.scale(dpr, dpr);
 
-    const padding = { top: 16, right: 20, bottom: 28, left: 50 };
+    const padding = { top: 16, right: 20, bottom: 38, left: 50 };
     const plotW = w - padding.left - padding.right;
     const plotH = h - padding.top - padding.bottom;
 
@@ -984,18 +984,6 @@ function ElevationProfile({
     ctx.beginPath();
     ctx.rect(padding.left, 0, plotW, h);
     ctx.clip();
-
-    // Distance labels (zoomed)
-    const visDistRange = visEnd - visStart;
-    const numDistLabels = Math.min(6, Math.floor(plotW / 80));
-    for (let i = 0; i <= numDistLabels; i++) {
-      const d = visStart + (visDistRange * i) / numDistLabels;
-      const x = xScale(d);
-      ctx.fillStyle = "rgba(0,0,0,0.2)";
-      ctx.font = "9px monospace";
-      ctx.textAlign = "center";
-      ctx.fillText(`${metersToMiles(d).toFixed(1)} mi`, x, h - 6);
-    }
 
     // Gradient fill
     const gradient = ctx.createLinearGradient(0, padding.top, 0, padding.top + plotH);
@@ -1112,14 +1100,17 @@ function ElevationProfile({
         const delta = Math.round(curr.elevation - prev.elevation);
         if (Math.abs(delta) < climbMinProm * 0.5) continue;
 
+        const midX = (prev.x + curr.x) / 2;
+        // Skip if the label midpoint is outside the visible plot area
+        if (midX < padding.left || midX > w - padding.right) continue;
+
         const isClimb = delta > 0;
         const label = isClimb ? `+${delta}` : `${delta}`;
-        const midX = (prev.x + curr.x) / 2;
         const midY = (prev.y + curr.y) / 2;
 
         ctx.font = "bold 9px monospace";
         const tm = ctx.measureText(label);
-        const lx = Math.min(Math.max(midX - tm.width / 2, padding.left), w - padding.right - tm.width);
+        const lx = midX - tm.width / 2;
         const ly = isClimb ? midY - 4 : midY + 12;
 
         ctx.fillStyle = isClimb ? "rgba(30,120,60,0.12)" : "rgba(180,40,40,0.10)";
@@ -1132,42 +1123,40 @@ function ElevationProfile({
       }
     }
 
-    // Hover crosshair
-    if (hoverInfo) {
-      const idx = hoverInfo.index;
-      const hx = xScale(dists[idx]);
-      const hy = yScale(elevations[idx]);
+    ctx.restore(); // release clip
 
-      ctx.setLineDash([3, 3]);
-      ctx.strokeStyle = "rgba(0,0,0,0.3)";
+    // Mile markers along x-axis (drawn outside clip so labels aren't cut)
+    const visStartMi = metersToMiles(visStart);
+    const visEndMi = metersToMiles(visEnd);
+    const visRangeMi = visEndMi - visStartMi;
+    const maxLabels = Math.floor(plotW / 55);
+    const rawInterval = visRangeMi / maxLabels;
+    const niceIntervals = [0.5, 1, 2, 5, 10, 20, 50];
+    const mileInterval = niceIntervals.find((n) => n >= rawInterval) || 50;
+    const firstMile = Math.ceil(visStartMi / mileInterval) * mileInterval;
+    for (let mi = firstMile; mi <= visEndMi; mi += mileInterval) {
+      const d = mi / 0.000621371;
+      const x = xScale(d);
+      if (x < padding.left || x > w - padding.right) continue;
+      // Tick mark
+      ctx.strokeStyle = "rgba(0,0,0,0.1)";
       ctx.lineWidth = 1;
       ctx.beginPath();
-      ctx.moveTo(hx, padding.top);
-      ctx.lineTo(hx, padding.top + plotH);
+      ctx.moveTo(x, padding.top + plotH);
+      ctx.lineTo(x, padding.top + plotH + 5);
       ctx.stroke();
-      ctx.setLineDash([]);
-
-      ctx.beginPath();
-      ctx.arc(hx, hy, 4, 0, Math.PI * 2);
-      ctx.fillStyle = "#000";
-      ctx.fill();
-
-      const tooltipText = `${elevations[idx].toFixed(0)} ft  ${metersToMiles(dists[idx]).toFixed(2)} mi`;
-      ctx.font = "bold 10px monospace";
-      const tm = ctx.measureText(tooltipText);
-      const tx = Math.min(Math.max(hx - tm.width / 2 - 6, padding.left), w - padding.right - tm.width - 12);
-      const ty = Math.max(hy - 22, padding.top);
-
-      ctx.fillStyle = "rgba(0,0,0,0.85)";
-      ctx.beginPath();
-      ctx.roundRect(tx, ty, tm.width + 12, 18, 3);
-      ctx.fill();
-
-      ctx.fillStyle = "#f6f4f0";
-      ctx.fillText(tooltipText, tx + 6, ty + 13);
+      // Label
+      ctx.fillStyle = "rgba(0,0,0,0.3)";
+      ctx.font = "9px monospace";
+      ctx.textAlign = "center";
+      const label = mileInterval >= 1 ? `${mi}` : `${mi.toFixed(1)}`;
+      ctx.fillText(label, x, padding.top + plotH + 16);
     }
-
-    ctx.restore(); // release clip
+    // "mi" unit label
+    ctx.fillStyle = "rgba(0,0,0,0.18)";
+    ctx.font = "8px monospace";
+    ctx.textAlign = "right";
+    ctx.fillText("mi", w - padding.right, padding.top + plotH + 16);
 
     // Zoom indicator bar (if zoomed in)
     if (xZoom > 1) {
@@ -1181,6 +1170,49 @@ function ElevationProfile({
       ctx.beginPath();
       ctx.roundRect(thumbX, barY, thumbW, barH, 1);
       ctx.fill();
+    }
+
+    // Hover crosshair + tooltip (drawn last, fully unclipped)
+    if (hoverInfo) {
+      const idx = hoverInfo.index;
+      const hx = xScale(dists[idx]);
+      const hy = yScale(elevations[idx]);
+
+      if (hx >= padding.left && hx <= w - padding.right) {
+        // Reset any lingering state
+        ctx.globalAlpha = 1;
+        ctx.setLineDash([3, 3]);
+        ctx.strokeStyle = "rgba(0,0,0,0.3)";
+        ctx.lineWidth = 1;
+        ctx.beginPath();
+        ctx.moveTo(hx, padding.top);
+        ctx.lineTo(hx, padding.top + plotH);
+        ctx.stroke();
+        ctx.setLineDash([]);
+
+        ctx.beginPath();
+        ctx.arc(hx, hy, 4, 0, Math.PI * 2);
+        ctx.fillStyle = "#000";
+        ctx.fill();
+
+        const tooltipText = `${elevations[idx].toFixed(0)} ft  ${metersToMiles(dists[idx]).toFixed(2)} mi`;
+        ctx.font = "bold 10px monospace";
+        const tm = ctx.measureText(tooltipText);
+        const tooltipW = tm.width + 12;
+        const tooltipH = 18;
+        // Keep tooltip fully within canvas
+        const tx = Math.min(Math.max(hx - tooltipW / 2, 2), w - tooltipW - 2);
+        const ty = Math.max(hy - 26, 2);
+
+        ctx.fillStyle = "rgba(0,0,0,0.85)";
+        ctx.beginPath();
+        ctx.roundRect(tx, ty, tooltipW, tooltipH, 3);
+        ctx.fill();
+
+        ctx.fillStyle = "#f6f4f0";
+        ctx.textAlign = "left";
+        ctx.fillText(tooltipText, tx + 6, ty + 13);
+      }
     }
   }, [points, waypoints, containerWidth, height, hoverInfo, showClimbLabels, xZoom, xOffset]);
 
@@ -1279,7 +1311,7 @@ function ElevationProfile({
       const plotW = rect.width - padding.left - padding.right;
       const mouseRatio = (e.clientX - rect.left - padding.left) / plotW;
 
-      const zoomDelta = e.deltaY < 0 ? 1.3 : 1 / 1.3;
+      const zoomDelta = e.deltaY < 0 ? 1.12 : 1 / 1.12;
 
       setXZoom((prev) => {
         const newZoom = Math.max(1, Math.min(30, prev * zoomDelta));
