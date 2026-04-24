@@ -383,6 +383,7 @@ export default function GpxPage() {
                   totalDistance={gpxData.totalDistance}
                   onHover={setHoveredIndex}
                   onWaypointClick={setSelectedWaypoint}
+                  selectedWaypoint={selectedWaypoint}
                   showClimbLabels={showClimbLabels}
                   onToggleClimbLabels={() => setShowClimbLabels((v) => !v)}
                   height={elevationHeight}
@@ -869,6 +870,7 @@ function ElevationProfile({
   totalDistance,
   onHover,
   onWaypointClick,
+  selectedWaypoint,
   showClimbLabels,
   onToggleClimbLabels,
   height,
@@ -878,6 +880,7 @@ function ElevationProfile({
   totalDistance: number;
   onHover: (index: number | null) => void;
   onWaypointClick: (index: number) => void;
+  selectedWaypoint: number | null;
   showClimbLabels: boolean;
   onToggleClimbLabels: () => void;
   height: number;
@@ -1000,6 +1003,43 @@ function ElevationProfile({
     ctx.closePath();
     ctx.fillStyle = gradient;
     ctx.fill();
+
+    // Highlight selected segment
+    if (selectedWaypoint !== null && selectedWaypoint < waypoints.length) {
+      const selWp = waypoints[selectedWaypoint];
+      const fromIdx = selectedWaypoint > 0 ? waypoints[selectedWaypoint - 1].nearestTrackIndex : 0;
+      const toIdx = selWp.nearestTrackIndex;
+      const segStart = Math.min(fromIdx, toIdx);
+      const segEnd = Math.max(fromIdx, toIdx);
+
+      if (segEnd > segStart) {
+        // Highlighted fill
+        const hlGradient = ctx.createLinearGradient(0, padding.top, 0, padding.top + plotH);
+        hlGradient.addColorStop(0, "rgba(0, 0, 0, 0.18)");
+        hlGradient.addColorStop(1, "rgba(0, 0, 0, 0.03)");
+
+        ctx.beginPath();
+        ctx.moveTo(xScale(dists[segStart]), yScale(elevations[segStart]));
+        for (let i = segStart + 1; i <= segEnd; i++) {
+          ctx.lineTo(xScale(dists[i]), yScale(elevations[i]));
+        }
+        ctx.lineTo(xScale(dists[segEnd]), padding.top + plotH);
+        ctx.lineTo(xScale(dists[segStart]), padding.top + plotH);
+        ctx.closePath();
+        ctx.fillStyle = hlGradient;
+        ctx.fill();
+
+        // Thicker line for highlighted section
+        ctx.beginPath();
+        ctx.moveTo(xScale(dists[segStart]), yScale(elevations[segStart]));
+        for (let i = segStart + 1; i <= segEnd; i++) {
+          ctx.lineTo(xScale(dists[i]), yScale(elevations[i]));
+        }
+        ctx.strokeStyle = "rgba(0,0,0,0.9)";
+        ctx.lineWidth = 2.5;
+        ctx.stroke();
+      }
+    }
 
     // Elevation line
     ctx.beginPath();
@@ -1214,7 +1254,7 @@ function ElevationProfile({
         ctx.fillText(tooltipText, tx + 6, ty + 13);
       }
     }
-  }, [points, waypoints, containerWidth, height, hoverInfo, showClimbLabels, xZoom, xOffset]);
+  }, [points, waypoints, containerWidth, height, hoverInfo, showClimbLabels, selectedWaypoint, xZoom, xOffset]);
 
   // Convert pixel x to distance along route, accounting for zoom/pan
   const pixelToDist = useCallback(

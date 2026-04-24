@@ -24,6 +24,7 @@ export default function MapView({
   const mapRef = useRef<L.Map | null>(null);
   const markerRef = useRef<L.CircleMarker | null>(null);
   const wpMarkersRef = useRef<L.CircleMarker[]>([]);
+  const highlightLineRef = useRef<L.Polyline | null>(null);
 
   useEffect(() => {
     if (!containerRef.current || points.length === 0) return;
@@ -54,8 +55,16 @@ export default function MapView({
     L.polyline(latLngs, {
       color: "#000",
       weight: 3,
-      opacity: 0.8,
+      opacity: 0.35,
     }).addTo(map);
+
+    // Highlight line (initially empty)
+    const hlLine = L.polyline([], {
+      color: "#000",
+      weight: 4,
+      opacity: 0.9,
+    }).addTo(map);
+    highlightLineRef.current = hlLine;
 
     // Start marker
     L.circleMarker(latLngs[0], {
@@ -142,7 +151,7 @@ export default function MapView({
     }
   }, [hoveredIndex, points]);
 
-  // Highlight selected waypoint
+  // Highlight selected waypoint + segment
   useEffect(() => {
     wpMarkersRef.current.forEach((m, i) => {
       if (i === selectedWaypoint) {
@@ -151,7 +160,22 @@ export default function MapView({
         m.setStyle({ fillColor: "#f6f4f0", fillOpacity: 1, weight: 1.5, radius: 5 } as L.PathOptions);
       }
     });
-  }, [selectedWaypoint]);
+
+    const hlLine = highlightLineRef.current;
+    if (!hlLine) return;
+
+    if (selectedWaypoint !== null && selectedWaypoint < waypoints.length) {
+      const selWp = waypoints[selectedWaypoint];
+      const fromIdx = selectedWaypoint > 0 ? waypoints[selectedWaypoint - 1].nearestTrackIndex : 0;
+      const toIdx = selWp.nearestTrackIndex;
+      const segStart = Math.min(fromIdx, toIdx);
+      const segEnd = Math.max(fromIdx, toIdx);
+      const segLatLngs = points.slice(segStart, segEnd + 1).map((p) => [p.lat, p.lon] as [number, number]);
+      hlLine.setLatLngs(segLatLngs);
+    } else {
+      hlLine.setLatLngs([]);
+    }
+  }, [selectedWaypoint, waypoints, points]);
 
   return (
     <div
