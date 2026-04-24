@@ -18,6 +18,12 @@ export default function Nav() {
       >
         memories
       </Link>
+      <Link
+        href="/gpx"
+        className="underline underline-offset-4 hover:text-fg"
+      >
+        gpx
+      </Link>
     </nav>
   );
 }
