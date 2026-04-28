@@ -16,6 +16,9 @@ export type Race = {
   distance: string;
   time: string;
   strava?: string;
+  recap?: boolean;
+  gpx?: string;
+  elevation?: string;
 };
 
 export function getAllRaces(): Race[] {
@@ -30,9 +33,12 @@ export function getAllRaces(): Race[] {
       distance: data.distance,
       time: data.time,
       strava: data.strava,
+      recap: Boolean(data.recap),
+      gpx: data.gpx,
+      elevation: data.elevation,
     };
   });
-  return races.sort((a, b) => (a.date > b.date ? 1 : -1));
+  return races.sort((a, b) => (a.date > b.date ? -1 : 1));
 }
 
 export async function getRace(slug: string) {
@@ -58,6 +64,9 @@ export async function getRace(slug: string) {
     distance: data.distance,
     time: data.time,
     strava: data.strava,
+    recap: Boolean(data.recap),
+    gpx: data.gpx,
+    elevation: data.elevation,
     contentHtml: result.toString(),
   };
 }

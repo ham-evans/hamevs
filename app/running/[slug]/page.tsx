@@ -27,6 +27,9 @@ export default async function RacePage({
         </h1>
         <p className="mt-2 text-sm text-fg/50">
           {race.date} &middot; {race.distance} &middot; {race.time}
+          {race.elevation && (
+            <> &middot; {race.elevation} gain</>
+          )}
           {race.strava && (
             <>
               {" "}&middot;{" "}
@@ -40,11 +43,26 @@ export default async function RacePage({
               </a>
             </>
           )}
+          {race.gpx && (
+            <>
+              {" "}&middot;{" "}
+              <Link
+                href={`/running/${slug}/gpx`}
+                className="underline underline-offset-4 hover:text-fg"
+              >
+                route
+              </Link>
+            </>
+          )}
         </p>
-        <div
-          className="prose mt-8 text-fg/80 prose-a:text-fg prose-a:underline prose-p:mb-6 prose-img:my-8 prose-img:max-h-[40rem] prose-img:w-auto prose-img:mx-auto prose-h2:text-xl prose-h2:font-bold prose-h2:text-fg prose-h2:mt-10 prose-h2:mb-4"
-          dangerouslySetInnerHTML={{ __html: race.contentHtml }}
-        />
+        {race.recap ? (
+          <div
+            className="prose mt-8 text-fg/80 prose-a:text-fg prose-a:underline prose-p:mb-6 prose-img:my-8 prose-img:max-h-[40rem] prose-img:w-auto prose-img:mx-auto prose-h2:text-xl prose-h2:font-bold prose-h2:text-fg prose-h2:mt-10 prose-h2:mb-4"
+            dangerouslySetInnerHTML={{ __html: race.contentHtml }}
+          />
+        ) : (
+          <p className="mt-8 text-fg/50 italic">recap coming soon</p>
+        )}
       </article>
     </main>
   );

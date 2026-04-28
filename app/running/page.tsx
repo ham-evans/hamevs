@@ -15,11 +15,18 @@ export default function Running() {
                 href={`/running/${race.slug}`}
                 className="group block"
               >
-                <p className="text-lg font-bold text-fg group-hover:underline">
+                <p
+                  className={`text-lg font-bold group-hover:underline ${
+                    race.recap ? "text-fg" : "text-fg/40"
+                  }`}
+                >
                   {race.title}
                 </p>
                 <p className="mt-1 text-sm text-fg/50">
                   {race.date} &middot; {race.distance} &middot; {race.time}
+                  {race.elevation && (
+                    <> &middot; {race.elevation} gain</>
+                  )}
                 </p>
               </Link>
               {race.strava && (
