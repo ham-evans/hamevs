@@ -25,7 +25,7 @@ Many of my race weekends thus far have been alone, but I was lucky enough to hav
 
 Auburn is known as the endurance capital of the world — although we heard rumors that it should also be called the poison oak capital of the world (but more on that later). Bib pickup was smooth, right into a quick shakeout. I knew Western States has its iconic finish on the track, so I made Connor come with me to hunt down the track just to see it. **Some day I'll finish there.** Then back to packing at the Airbnb.
 
-![Western States finish line track](/races/canyons-100k-2.jpg)
+![My bib for the race](/races/canyons-100k-2.jpg)
 
 I was planning on around 14 hours out and ~75g/hr of carbs (about 1050g of carbs total, or 1.05kg of carbs). We were allowed a drop bag at mile ~30, so I planned to carry about 65% of my fuel to start and grab the other 35% at the halfway mark — giving myself a bit of leeway if I needed more carbs early.
 
@@ -55,7 +55,7 @@ I was doing my best not to thrash my quads on the descent, but there was kinda n
 
 My first thought was: woah, so cool! I get to share some miles with Nick Thompson. My second thought was: "oh shit — he's way faster than me lol, did I go out too hard??" **Hint: yes.**
 
-We dropped the other guy who was with Nick, and I quickly introduced myself: "Hey Nick — my name is Hamilton and I actually also live in New York." We had a nice chat through this stretch about living and training in New York, our upcoming races, his kid's college application process, and the like. I kinda had a feeling I was pushing a bit hard on the climb, but I also felt decently within myself even though my HR was pretty high. Having a chat in this stretch made the steep climb a lot more bearable, and pretty quickly we were at Deadwood #2.
+We dropped the other guy who was with Nick, and I quickly introduced myself: "Hey Nick — my name is Hamilton and I actually also live in New York too." We had a nice chat through this stretch about living and training in New York, our upcoming races, his kid's college application process, and the like. I kinda had a feeling I was pushing a bit hard on the climb, but I also felt decently within myself even though my HR was pretty high. Having a chat in this stretch made the steep climb a lot more bearable, and pretty quickly we were at Deadwood #2.
 
 ![Running with [Nick Thompson](https://www.strava.com/athletes/3985218) on the way down after Deadwood #2](/races/canyons-100k-5.jpg)
 
@@ -108,7 +108,7 @@ Driver's Flat was a nice break. I got to see Eliza and Connor finally, and had m
 
 Either Eliza or Connor at this point said something like "16 miles to go from here, you got this." This bit actually caught me off guard a little somehow — I'm not sure I had really done the math of how far we had come and just how much there was to go (about 25% of the race...). **I think one of my superpowers is to break things up into bite-sized tasks.** When running an ultramarathon, I almost never think of the total distance or the total amount of climbing (trying to digest 62 or 100 miles is impossible). Instead, it's always aid station to aid station. Similarly with building a startup, I think building a company from scratch to hundreds of thousands or millions in revenue feels impossible — but building one thing this week, onboarding a customer the next week, and just doing what needs to be done each day, and all the sudden it just works out. With this, I was only thinking in terms of aid stations, and knew I had one more big gap (8 miles or so) then 2 ~4-ish mile sections and I was done. 8 and then 4 and 4 somehow sounds way better than 16, even after the race!
 
-From Driver's Flat I was feeling physically so much better. My diaphragm was still killing me, but it was at least manageable now and the electrolytes were finally hitting. The next stretch was kinda gradually up for a few miles (with a few punchy bits in there), then rolling for a few miles, and then into a steep descent. It finally leveled off after that for the last two miles or so before Mammoth Bar aid station. I was running ok in this bit and passed a few people into the aid. I had a quick stop at Mammoth Bar — maybe 90 seconds to refill water — and was out, straight into the next climb. This one was pretty punchy, especially 55 miles into the race. That being said, I caught 2 people on this climb too, so I felt like I was moving ok all things considered. The climb was only about a mile or a little more, so not that bad — but just steep and never really let up.
+From Driver's Flat I was feeling physically so much better. My diaphragm was still killing me, but it was at least manageable now and the electrolytes were finally hitting so I was significantly less dehydrated. The next stretch was kinda gradually up for a few miles (with a few punchy bits in there), then rolling for a few miles, and then into a steep descent. It finally leveled off after that for the last two miles or so before Mammoth Bar aid station. I was running ok in this bit and passed a few people into the aid. I had a quick stop at Mammoth Bar — maybe 90 seconds to refill water — and was out, straight into the next climb. This one was pretty punchy, especially 55 miles into the race. That being said, I caught 2 people on this climb too, so I felt like I was moving ok all things considered. The climb was only about a mile or a little more, so not that bad — but just steep and never really let up.
 
 ![Coming down from Driver's Flat](/races/canyons-100k-11.jpg)
 
@@ -118,7 +118,7 @@ Less than 4 to go.
 
 I was on the road, then next to the river for a little. 3 to go. Dropped off onto a path next to a bridge. Gradual incline and I was actually running pretty well here. I knew there was one last climb but didn't know where, so was waiting for it the whole time. I was moving though, so just kept my head down and kept jogging. I passed some of the final 100 mile finishers during this stretch.
 
-I remember the Run Rabbit Run 50 miler in 2023. The last 10 miles or so you overlap with the 100 mile finishers. That was my first time ever seeing someone at mile 90+ of 100, and I just couldn't believe how grim these people looked. I had the same experience during Canyons. "Wow. Glad I'm doing better than they are."
+I remember the Run Rabbit Run 50 miler in 2023. The last 10 miles or so you overlap with the 100 mile finishers. That was my first time ever seeing someone at mile 90+ of 100, and **I just couldn't believe how grim these people looked.** I had the same experience during Canyons. "Wow. Glad I'm doing better than they are."
 
 Finally I hit the climb. Connor said this one wasn't as bad as the 2nd to last one, and he was right. 1 to go. I was making good progress even up the climb, then quickly turned onto the road! I had watched the livestreams of Western States for the last few years and watched people run it in on the roads of Auburn. Pretty surreal to be doing that too. Sneaky uphill though still for a bit! Finally we crested the hill and I started running it in. About 3/4 of a mile to go. I actually felt really good and was happy with how my legs were feeling. I passed a good number of 100k and 100 mile finishers on the streets and was running it in pretty fast (9:30 pace). Finally we took the left, another left, a right, and the final right onto Main Street. I saw Eliza and Connor on the side and ran it in for the finish!
 
@@ -128,10 +128,10 @@ Finally I hit the climb. Connor said this one wasn't as bad as the 2nd to last o
 
 I was pretty happy with how my legs felt all things considered. I was running in the last couple of miles and my legs were turning over ok. I was however discouraged with how the race went in general. My fitness leading in was really good. My taper was great. I did more climbing in a block than ever before — and still was pretty cooked by mile 32 or so. I'm happy I finished well, but there's a lot to figure out before Leadville this summer. I think I just felt pretty bad for a lot of this race and wasn't having as much fun as I want to have during these things. The pain cave is expected, but somehow this one was a bit different.
 
-There were some positives though. One: my feet had ~almost~ no issues even with multiple river crossings and sweating a ton. I also had no issue getting carbs down — I should just commit more to gels and liquid carbs over trying to eat bars and things too. The climbing was actually good. I was going too hard for parts, but my legs were fine for the climbs. I didn't chafe at all either. Finally, despite a decently miserable second half, I for sure felt better running the last mile than I did anywhere from mile 32-47. That bounce back is huge, especially if stretching the race over 100 miles.
+On the positives, my feet had ~almost~ no issues even with multiple river crossings and sweating a ton. I also had no issue getting carbs down — I should just commit more to gels and liquid carbs over trying to eat bars and things too. The climbing was actually good. I was going too hard for parts, but my legs were fine for the climbs. I didn't chafe at all either. Finally, despite a decently miserable second half, I for sure felt better running the last mile than I did anywhere from mile 32-47. That bounce back is huge, especially if stretching the race over 100 miles.
 
 That's the thing about ultra running though: there's only one way to figure out how tough you are and how good of shape you are in, and it's not from sitting on the sidelines.
 
-![My bib for the race](/races/canyons-100k-13.jpg)
+![The best feeling in the world](/races/canyons-100k-13.jpg)
 
 **Other thought: In-N-Out is so damn good. The best post-race meal.**
