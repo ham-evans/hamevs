@@ -1,8 +1,31 @@
 import { getAllRaces, getRace } from "@/lib/races";
 import Link from "next/link";
+import type { Metadata } from "next";
 
 export async function generateStaticParams() {
   return getAllRaces().map((race) => ({ slug: race.slug }));
+}
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}): Promise<Metadata> {
+  const { slug } = await params;
+  const race = await getRace(slug);
+  const bits = [race.distance, race.time, race.elevation && `${race.elevation} gain`]
+    .filter(Boolean)
+    .join(" · ");
+  const description = `${race.date} · ${bits}`;
+  return {
+    title: race.title,
+    description,
+    openGraph: {
+      title: race.title,
+      description,
+      type: "article",
+    },
+  };
 }
 
 export default async function RacePage({
