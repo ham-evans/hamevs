@@ -49,7 +49,7 @@ Pretty quickly we hit the river at the bottom and were into the first climb. Dur
 
 Right as I was coming into Deadwood #1, I got to see the leaders coming through from their out and back, which was awesome. I recognized and said hello to Zach Miller and Hayden Hawks as they were ripping through. I had a very quick stop at Deadwood #1 — refilled my front flasks, added some carb powder to them, and took off heading down to Swinging Bridge. The first mile or so out of aid was chill, but it got quite steep right after that.
 
-If you were curious where my legs got beat up, it was in the mile and a half down to Swinging Bridge and then the mile and a half climbing back up. This stretch is about 1700 feet of descent, a U-turn, and about 1700 feet of climbing. Woof.
+**If you were curious where my legs got beat up, it was in the mile and a half down to Swinging Bridge and then the mile and a half climbing back up.** This stretch is about 1700 feet of descent, a U-turn, and about 1700 feet of climbing. Woof.
 
 I was doing my best not to thrash my quads on the descent, but there was kinda no other option — if I slowed down it almost would've been worse, and walking felt silly on the down, so it is what it is. About a half mile from the bridge I caught up to a group of 2 older guys and latched onto them, listening to their conversation a bit. I had a fleeting thought I recognized one of them to be [Nick Thompson](https://www.strava.com/athletes/3985218) (CEO of the Atlantic, WR holder in the 50k for 45+, 2:29 marathoner). I wasn't sure though, so held my tongue for a bit. We hit the bridge, and on the U-turn I saw his name on his bib as Nicholas!
 
