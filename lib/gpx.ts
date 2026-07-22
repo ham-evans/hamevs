@@ -110,20 +110,37 @@ export function parseGpx(xml: string): GpxData {
 
   const wptEls = doc.querySelectorAll("wpt");
   const waypoints: Waypoint[] = [];
+  // Waypoints must be listed in course order. We snap each one to the nearest
+  // track point *after* the previous waypoint, so an out-and-back course can
+  // visit the same aid station twice without both passes collapsing onto the
+  // same track index.
+  let searchFrom = 0;
   wptEls.forEach((wpt) => {
     const lat = parseFloat(wpt.getAttribute("lat") || "0");
     const lon = parseFloat(wpt.getAttribute("lon") || "0");
     const wptName = wpt.querySelector("name")?.textContent || "Waypoint";
 
+    // Take the first *confident* pass rather than the closest point overall: on
+    // an out-and-back the two passes are only metres apart, so a plain minimum
+    // can skip the outbound visit and land on the return one. We commit to a
+    // pass only once the track comes within LOCK_ON, then stop as soon as it
+    // leaves the vicinity — a distant graze doesn't count, and we still take the
+    // true closest point of the pass we commit to.
+    const LOCK_ON = 25; // metres — close enough to be this waypoint
+    const VICINITY = 75; // metres — beyond this we've moved on
     let minDist = Infinity;
-    let nearestIdx = 0;
-    for (let i = 0; i < points.length; i++) {
+    let nearestIdx = searchFrom;
+    for (let i = searchFrom; i < points.length; i++) {
       const d = haversine(lat, lon, points[i].lat, points[i].lon);
       if (d < minDist) {
         minDist = d;
         nearestIdx = i;
       }
+      if (minDist <= LOCK_ON && d > VICINITY) break;
     }
+    // If we never locked on, nearestIdx is still the best match ahead of the
+    // previous waypoint, which keeps the waypoints in course order.
+    searchFrom = nearestIdx;
 
     waypoints.push({
       lat,
@@ -133,8 +150,6 @@ export function parseGpx(xml: string): GpxData {
       nearestTrackIndex: nearestIdx,
     });
   });
-
-  waypoints.sort((a, b) => a.distanceAlongRoute - b.distanceAlongRoute);
 
   let totalDistance = 0;
   let elevationGain = 0;

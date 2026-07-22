@@ -35,10 +35,14 @@ export default function Running() {
                   {race.title}
                 </p>
                 <p className="mt-1 text-sm text-fg/50">
-                  {race.date} &middot; {race.distance} &middot; {race.time}
-                  {race.elevation && (
-                    <> &middot; {race.elevation} gain</>
-                  )}
+                  {[
+                    race.date,
+                    race.distance,
+                    race.time,
+                    race.elevation && `${race.elevation} gain`,
+                  ]
+                    .filter(Boolean)
+                    .join(" · ")}
                 </p>
               </Link>
               {race.strava && (

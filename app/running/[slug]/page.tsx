@@ -1,5 +1,6 @@
 import { getAllRaces, getRace } from "@/lib/races";
 import Link from "next/link";
+import { Fragment, type ReactNode } from "react";
 import type { Metadata } from "next";
 
 export async function generateStaticParams() {
@@ -36,6 +37,45 @@ export default async function RacePage({
   const { slug } = await params;
   const race = await getRace(slug);
 
+  const meta: ReactNode[] = [
+    race.date,
+    race.distance,
+    race.time,
+    race.elevation && `${race.elevation} gain`,
+  ].filter(Boolean);
+  if (race.strava) {
+    meta.push(
+      <a
+        href={race.strava}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="underline underline-offset-4 hover:text-fg"
+      >
+        strava
+      </a>
+    );
+  }
+  if (race.gpx) {
+    meta.push(
+      <Link
+        href={`/running/${slug}/gpx`}
+        className="underline underline-offset-4 hover:text-fg"
+      >
+        route
+      </Link>
+    );
+  }
+  if (slug === "leadville-100-2026") {
+    meta.push(
+      <Link
+        href={`/running/${slug}/crew`}
+        className="underline underline-offset-4 hover:text-fg"
+      >
+        crew guide
+      </Link>
+    );
+  }
+
   return (
     <main className="flex flex-1 flex-col items-center px-6 py-24">
       <article className="w-full max-w-2xl">
@@ -49,34 +89,12 @@ export default async function RacePage({
           {race.title}
         </h1>
         <p className="mt-2 text-sm text-fg/50">
-          {race.date} &middot; {race.distance} &middot; {race.time}
-          {race.elevation && (
-            <> &middot; {race.elevation} gain</>
-          )}
-          {race.strava && (
-            <>
-              {" "}&middot;{" "}
-              <a
-                href={race.strava}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="underline underline-offset-4 hover:text-fg"
-              >
-                strava
-              </a>
-            </>
-          )}
-          {race.gpx && (
-            <>
-              {" "}&middot;{" "}
-              <Link
-                href={`/running/${slug}/gpx`}
-                className="underline underline-offset-4 hover:text-fg"
-              >
-                route
-              </Link>
-            </>
-          )}
+          {meta.map((part, i) => (
+            <Fragment key={i}>
+              {i > 0 && " · "}
+              {part}
+            </Fragment>
+          ))}
         </p>
         {race.recap ? (
           <div
