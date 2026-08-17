@@ -1,8 +1,8 @@
 ---
 title: "Leadville Trail 100"
 date: "2026-08-22"
-distance: "99.54 mi"
+distance: "99.86 mi"
 time: ""
-elevation: "16,762 ft"
+elevation: "16,689 ft"
 gpx: "leadville-100-2026.gpx"
 ---

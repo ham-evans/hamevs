@@ -65,8 +65,18 @@ figcaption {
   font-weight: bold !important;
   box-shadow: none !important;
   white-space: nowrap !important;
+  cursor: pointer;
+  transition: background 0.12s ease;
+}
+
+.gpx-waypoint-label:hover {
+  background: rgba(0, 0, 0, 1) !important;
 }
 
 .gpx-waypoint-label::before {
   border-top-color: rgba(0, 0, 0, 0.8) !important;
+}
+
+.gpx-waypoint-label:hover::before {
+  border-top-color: rgba(0, 0, 0, 1) !important;
 }

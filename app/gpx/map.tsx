@@ -5,6 +5,13 @@ import L from "leaflet";
 import "leaflet/dist/leaflet.css";
 import type { Waypoint } from "@/lib/gpx";
 
+const LABEL_GAP_PX = -8; // label sits this far above its dot (negative = up)
+const LABEL_GUTTER_PX = 3; // breathing room between stacked / neighbouring labels
+// Two rows is enough for an out-and-back pair sharing a dot. Anything that still doesn't
+// fit is hidden rather than pushed higher — a label floating rows above its dot is worse
+// than no label, and zooming in brings it straight back.
+const MAX_LABEL_ROWS = 2;
+
 interface MapProps {
   points: { lat: number; lon: number; ele: number }[];
   waypoints: Waypoint[];
@@ -86,6 +93,7 @@ export default function MapView({
 
     // Waypoint markers
     const wpMarkers: L.CircleMarker[] = [];
+    const wpTooltips: L.Tooltip[] = [];
     for (let i = 0; i < waypoints.length; i++) {
       const wp = waypoints[i];
       const wpMarker = L.circleMarker([wp.lat, wp.lon], {
@@ -99,8 +107,9 @@ export default function MapView({
 
       const tooltip = L.tooltip({
         permanent: true,
+        interactive: true, // clicking the label selects the stop, same as the dot
         direction: "top",
-        offset: [0, -8],
+        offset: [0, LABEL_GAP_PX],
         className: "gpx-waypoint-label",
       }).setContent(wp.name);
       wpMarker.bindTooltip(tooltip);
@@ -111,8 +120,56 @@ export default function MapView({
       });
 
       wpMarkers.push(wpMarker);
+      wpTooltips.push(tooltip);
     }
     wpMarkersRef.current = wpMarkers;
+
+    // Labels are permanent, so at low zoom they pile up — worst at the out-and-back stops,
+    // where outbound and inbound share a coordinate. Lay them out in pixel space at the
+    // current zoom: each label takes the lowest row that clears every label already placed,
+    // so a crowded pair stacks and then drops back to a single row once zoom separates the
+    // dots. Earlier stops win the bottom row, which keeps the pile in course order.
+    const layoutLabels = () => {
+      const placed: { x0: number; x1: number; y0: number; y1: number }[] = [];
+      for (let i = 0; i < wpTooltips.length; i++) {
+        const el = wpTooltips[i].getElement();
+        if (!el) continue;
+
+        const p = map.latLngToLayerPoint([waypoints[i].lat, waypoints[i].lon]);
+        const halfW = el.offsetWidth / 2 + LABEL_GUTTER_PX;
+        const h = el.offsetHeight;
+        const step = h + LABEL_GUTTER_PX;
+
+        const boxAt = (r: number) => {
+          const bottom = p.y + LABEL_GAP_PX - r * step;
+          return { x0: p.x - halfW, x1: p.x + halfW, y0: bottom - h, y1: bottom };
+        };
+        const clashes = (r: number) =>
+          placed.some((q) => {
+            const box = boxAt(r);
+            return box.x0 < q.x1 && box.x1 > q.x0 && box.y0 < q.y1 && box.y1 > q.y0;
+          });
+
+        let row = 0;
+        while (row < MAX_LABEL_ROWS && clashes(row)) row++;
+
+        if (row === MAX_LABEL_ROWS) {
+          // Nowhere to put it at this zoom. visibility (not display) keeps the element
+          // measurable, so the next pass can place it again once zoom opens up room.
+          el.style.visibility = "hidden";
+          continue;
+        }
+
+        el.style.visibility = "";
+        placed.push(boxAt(row));
+        wpTooltips[i].options.offset = L.point(0, LABEL_GAP_PX - row * step);
+        wpTooltips[i].update();
+      }
+    };
+
+    // Tooltips need a frame in the DOM before offsetWidth is real.
+    requestAnimationFrame(layoutLabels);
+    map.on("zoomend", layoutLabels);
 
     // Hover marker
     const marker = L.circleMarker([0, 0], {
