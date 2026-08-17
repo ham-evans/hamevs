@@ -23,6 +23,7 @@ type Stop = {
   target?: string; // 24:45 projection — arrival clock time
   safe?: string; // 27 hr projection — arrival clock time
   note?: string;
+  gear?: { label: string; items: string[] }[]; // what crew brings to this stop
 };
 
 // 2026 COURSE. The Willow Fire closed Hagerman Pass Road, Sugarloaf and Powerline, so the
@@ -43,15 +44,15 @@ type Stop = {
 // time from the 4:00 AM Sat start; "stop" is planned aid dwell (62 min total, already
 // included downstream). ±20–30 min.
 const stops: Stop[] = [
-  { mile: "0.0", name: "Start — 6th & Harrison", crew: "yes", pacer: "solo", leg: { d: 10.6, up: 1509, dn: 963 }, cutoff: "4:00 AM Sat", target: "4:00a", safe: "4:00a", note: "Athletes must park at the Rodeo Grounds, Intermediate School or High School and shuttle/walk to the line. Start-line shuttles run 3:00–4:30 AM." },
+  { mile: "0.0", name: "Start — 6th & Harrison", crew: "yes", pacer: "solo", leg: { d: 10.6, up: 1509, dn: 963 }, cutoff: "4:00 AM Sat", target: "4:00a", safe: "4:00a", note: "Athletes must park at the Rodeo Grounds, Intermediate School or High School and shuttle/walk to the line. Start-line shuttles run 3:00–4:30 AM.", gear: [{ label: "Must bring to the start", items: ["Headlamp", "Rain jacket", "Beanie", "Tailwind packet", "Long-sleeve shirt?"] }] },
   { mile: "10.6", name: "Carter Summit — mini aid", gps: [39.28466, -106.40559], crew: "no", pacer: "solo", leg: { d: 9.9, up: 946, dn: 1738 }, stop: "1m", target: "5:51a", safe: "6:02a", note: "New for 2026, on the north side of Turquoise Lake. Mini aid, outbound only — the course does not come back through here. No crew. Then the longest unsupported stretch of the first half: 9.9 mi to the Dam." },
   { mile: "20.5", dropBag: true, name: "Turquoise Lake Dam (out)", gps: [39.252, -106.36636], crew: "no", pacer: "solo", leg: { d: 5.4, up: 158, dn: 517 }, cutoff: "10:15 AM", stop: "2m", target: "7:40a", safe: "8:01a", note: "New for 2026. Stocked aid station. NO CREW OUTBOUND." },
   { mile: "26.0", dropBag: true, name: "Outward Bound (out)", gps: [39.222625, -106.369214], crew: "yes", pacer: "solo", leg: { d: 3.6, up: 188, dn: 84 }, cutoff: "11:15 AM", stop: "5m", target: "8:34a", safe: "9:00a", note: "Crew Location 1, and the hub of the day. No crewing or parking restrictions — bring everything. Setup from 5:00 AM." },
   { mile: "29.6", name: "Pipeline (out)", gps: [39.189052, -106.374687], crew: "crew-only", pacer: "solo", leg: { d: 2.3, up: 212, dn: 65 }, cutoff: "12:15 PM ⚠", stop: "2m", target: "9:15a", safe: "9:44a", note: "Crew Location 2 (“Pipeline Alternate”), where the trail crosses the road. Crewing point only — NO aid station in 2026. No parking restrictions, setup from 5:00 AM." },
   { mile: "31.8", dropBag: true, name: "Half Pipe (out)", gps: [39.1609972, -106.3683254], crew: "no", pacer: "solo", leg: { d: 8.7, up: 1657, dn: 2209 }, cutoff: "12:15 PM ⚠", stop: "3m", target: "9:42a", safe: "10:13a", note: "Stocked aid station, but not a crew location." },
-  { mile: "40.5", dropBag: true, name: "Twin Lakes Village (out)", gps: [39.0828842, -106.3833776], crew: "shuttle", pacer: "solo", leg: { d: 5.1, up: 2746, dn: 124 }, cutoff: "2:15 PM", stop: "10m", target: "11:47a", safe: "12:30p", note: "Crew Location 3, and the most important stop of the day — both Hope Pass crossings bracket it, so gear up here. Shuttle only, no driving access: crew park at Outward Bound and ride in, shuttles looping continuously 6:00 AM–11:00 PM. Crew wristbands required. Bring only what fits in your lap on the shuttle." },
-  { mile: "45.6", name: "Hope Pass (out)", gps: [39.0264753, -106.4023486], crew: "no", pacer: "solo", leg: { d: 6.7, up: 1386, dn: 3015 }, cutoff: "4:45 PM", stop: "3m", target: "1:54p", safe: "2:48p", note: "Llama-supplied, ~12,000 ft. No crew. Do not start the round trip to Hope Pass without warm and protective clothing regardless of the weather in town." },
-  { mile: "52.3", dropBag: true, name: "Winfield — turnaround", gps: [38.9833322, -106.4402536], crew: "no", pacer: "solo", leg: { d: 6.7, up: 3016, dn: 1386 }, cutoff: "6:50 PM", stop: "10m", target: "4:02p", safe: "5:08p", note: "No crew, no pacers. Athletes cut off here are shuttled back to Twin Lakes; there's cell service at Granite to coordinate pickup." },
+  { mile: "40.5", dropBag: true, name: "Twin Lakes Village (out)", gps: [39.0828842, -106.3833776], crew: "shuttle", pacer: "solo", leg: { d: 5.1, up: 2746, dn: 124 }, cutoff: "2:15 PM", stop: "10m", target: "11:47a", safe: "12:30p", note: "Shuttle only, no driving access: crew park at Outward Bound and ride in. Crew wristbands required. Bring only what fits in your lap on the shuttle.", gear: [{ label: "Must bring to Twin Lakes out", items: ["POLES — do not forget the poles here", "Rain jacket", "Long-sleeve shirt as an option, in a ziploc with socks", "Small headlamp too, just in case"] }, { label: "Must bring for Twin Lakes in (mile 64.2) — same shuttle trip", items: ["Patagonia jacket", "Arc'teryx beanie", "Gloves", "Long-sleeve shirt", "Short-sleeve shirt", "Bandit half tights", "Patagonia running tights", "Socks", "Backup shoes", "Running belt + bottle", "Headlamps ×2 — bring all 3"] }, { label: "Twin Lakes in — pacer carries", items: ["Charging pack", "iPhone + watch charger"] }] },
+  { mile: "45.6", name: "Hope Pass (out)", gps: [39.0264753, -106.4023486], crew: "no", pacer: "solo", leg: { d: 6.7, up: 1386, dn: 3015 }, cutoff: "4:45 PM", stop: "3m", target: "1:54p", safe: "2:48p", note: "No crew. Do not start the round trip to Hope Pass without warm and protective clothing regardless of the weather in town." },
+  { mile: "52.3", dropBag: true, name: "Winfield — turnaround", gps: [38.9833322, -106.4402536], crew: "no", pacer: "solo", leg: { d: 6.7, up: 3016, dn: 1386 }, cutoff: "6:50 PM", stop: "10m", target: "4:02p", safe: "5:08p", note: "No crew, no pacers." },
   { mile: "59.1", name: "Hope Pass (in)", gps: [39.0264753, -106.4023486], crew: "no", pacer: "solo", leg: { d: 5.1, up: 123, dn: 2744 }, stop: "3m", target: "6:48p", safe: "8:09p", note: "The crux. Second crossing at 12,500+ ft, then a 2,700 ft descent to Twin Lakes. Likely the last leg in daylight — carry the headlamp before you need it." },
   { mile: "64.2", dropBag: true, name: "Twin Lakes Village (in)", gps: [39.0828842, -106.3833776], crew: "shuttle", pacer: "Brooks", pacerStart: true, leg: { d: 8.7, up: 2211, dn: 1659 }, cutoff: "11:00 PM", stop: "10m", target: "8:11p", safe: "9:40p", note: "Pacers may join here and NOT before — this is mile 64.2 on the 2026 course, not the 61.8 the stale section of the race site still quotes. Two pacer bibs come in the packet; extra bibs and waivers are available here, at Outward Bound and at Turquoise Lake Dam, but NOT at Pipeline. One pacer at a time until mile 99, then a second may join for the final mile. Pacers can carry gear but cannot push, pull, carry or tow. Brooks picks up here for the 20.0 mi to Turquoise Lake Dam — the whole night section. Night gear goes on here. Crew shuttles stop running at 11:00 PM, so a slow split strands the crew." },
   { mile: "72.8", dropBag: true, name: "Half Pipe (in)", gps: [39.1609972, -106.3683254], crew: "no", pacer: "Brooks", leg: { d: 2.3, up: 65, dn: 212 }, cutoff: "2:00 AM Sun", stop: "3m", target: "10:44p", safe: "12:25a Su" },
@@ -87,9 +88,21 @@ function Badge({ text, cls }: { text: string; cls: string }) {
   );
 }
 
+// Anchor for the stop-by-stop section, so a tap on the mobile summary jumps to the detail.
+const stopId = (s: Stop) => `stop-${s.mile.replace(".", "-")}`;
+
+function Gain({ up, dn }: { up: number; dn: number }) {
+  return (
+    <>
+      <span className="text-emerald-700">&uarr;{up.toLocaleString("en-US")}</span>{" "}
+      <span className="text-red-700">&darr;{dn.toLocaleString("en-US")}</span>
+    </>
+  );
+}
+
 export default function CrewGuide() {
   return (
-    <main className="flex flex-1 flex-col items-center px-6 py-24">
+    <main className="flex flex-1 flex-col items-center px-5 py-16 sm:px-6 sm:py-24">
       <div className="w-full max-w-3xl">
         <Link
           href="/running/leadville-100-2026"
@@ -111,8 +124,58 @@ export default function CrewGuide() {
         </p>
       </div>
 
+      {/* Phone — ten columns will not fit, so the same rows stack. Tap jumps to the detail. */}
+      <div className="mt-10 w-full max-w-3xl divide-y divide-fg/10 border-y border-fg/15 md:hidden">
+        {stops.map((s, i) => {
+          const legIn = i > 0 ? stops[i - 1].leg : undefined; // segment into this stop
+          return (
+            <a
+              key={s.mile + s.name}
+              href={`#${stopId(s)}`}
+              className="flex flex-col gap-2 py-3.5"
+            >
+              <div className="flex items-baseline justify-between gap-3">
+                <span className="font-bold leading-snug text-fg">{s.name}</span>
+                <span className="shrink-0 tabular-nums text-xs text-fg/40">
+                  mi {s.mile}
+                </span>
+              </div>
+              <div className="flex flex-wrap items-center gap-x-3 gap-y-1 text-xs text-fg/50">
+                {s.target && (
+                  <span className="tabular-nums">
+                    target <span className="font-bold text-fg">{s.target}</span>
+                  </span>
+                )}
+                {s.safe && (
+                  <span className="tabular-nums">
+                    safe <span className="text-fg/70">{s.safe}</span>
+                  </span>
+                )}
+                {s.cutoff && (
+                  <span className="tabular-nums">
+                    cutoff <span className="text-fg/70">{s.cutoff}</span>
+                  </span>
+                )}
+                {legIn && (
+                  <span className="whitespace-nowrap tabular-nums">
+                    {legIn.d.toFixed(1)} mi <Gain up={legIn.up} dn={legIn.dn} />
+                  </span>
+                )}
+              </div>
+              <div className="flex flex-wrap items-center gap-1.5">
+                {s.crew !== "n/a" && <Badge {...crewLabel[s.crew]} />}
+                {s.dropBag && (
+                  <Badge text="Drop bag" cls="bg-violet-600/15 text-violet-800" />
+                )}
+                <Badge {...pacerBadge(s.pacer, s.pacerStart)} />
+              </div>
+            </a>
+          );
+        })}
+      </div>
+
       {/* Table — breaks out wider than the prose */}
-      <div className="mt-14 w-full max-w-6xl overflow-x-auto">
+      <div className="mt-14 hidden w-full max-w-6xl overflow-x-auto md:block">
         <table className="w-full border-collapse text-center text-sm">
           <thead>
             <tr className="border-b border-fg/20 text-center text-fg/50">
@@ -145,14 +208,7 @@ export default function CrewGuide() {
                 </td>
                 <td className="py-3 px-3 whitespace-nowrap tabular-nums">
                   {legIn ? (
-                    <>
-                      <span className="text-emerald-700">
-                        &uarr;{legIn.up.toLocaleString("en-US")}
-                      </span>{" "}
-                      <span className="text-red-700">
-                        &darr;{legIn.dn.toLocaleString("en-US")}
-                      </span>
-                    </>
+                    <Gain up={legIn.up} dn={legIn.dn} />
                   ) : (
                     <span className="text-fg/30">—</span>
                   )}
@@ -199,16 +255,22 @@ export default function CrewGuide() {
 
       <div className="w-full max-w-3xl">
         {/* Every stop, in course order — the whole guide lives here */}
-        <h2 className="mt-24 text-xs font-bold uppercase tracking-widest text-fg/40">
+        <h2 className="mt-16 text-xs font-bold uppercase tracking-widest text-fg/40 sm:mt-24">
           Stop by stop
         </h2>
         <div className="mt-6 divide-y divide-fg/15">
           {stops.map((s, i) => {
             const legIn = i > 0 ? stops[i - 1].leg : undefined;
             return (
-              <section key={s.mile + s.name} className="py-12">
+              <section
+                key={s.mile + s.name}
+                id={stopId(s)}
+                className="scroll-mt-6 py-9 sm:py-12"
+              >
                 <div className="flex items-baseline justify-between gap-4">
-                  <h3 className="text-xl font-bold tracking-tight text-fg">{s.name}</h3>
+                  <h3 className="text-lg font-bold tracking-tight text-fg sm:text-xl">
+                    {s.name}
+                  </h3>
                   <span className="shrink-0 tabular-nums text-sm text-fg/40">
                     mile {s.mile}
                   </span>
@@ -237,14 +299,8 @@ export default function CrewGuide() {
                   )}
                   {s.stop && <span>stop ~{s.stop.replace("m", " min")}</span>}
                   {legIn && (
-                    <span className="tabular-nums">
-                      {legIn.d.toFixed(1)} mi in{" "}
-                      <span className="text-emerald-700">
-                        &uarr;{legIn.up.toLocaleString("en-US")}
-                      </span>{" "}
-                      <span className="text-red-700">
-                        &darr;{legIn.dn.toLocaleString("en-US")}
-                      </span>
+                    <span className="whitespace-nowrap tabular-nums">
+                      {legIn.d.toFixed(1)} mi in <Gain up={legIn.up} dn={legIn.dn} />
                     </span>
                   )}
                   {s.gps && (
@@ -260,50 +316,24 @@ export default function CrewGuide() {
                 </div>
 
                 {s.note && <p className="mt-5 text-fg/80">{s.note}</p>}
+
+                {s.gear?.map((list) => (
+                  <div key={list.label} className="mt-5">
+                    <p className="text-xs font-bold uppercase tracking-widest text-fg/40">
+                      {list.label}
+                    </p>
+                    <ul className="mt-3 list-disc space-y-1 pl-5 text-fg/80">
+                      {list.items.map((g) => (
+                        <li key={g}>{g}</li>
+                      ))}
+                    </ul>
+                  </div>
+                ))}
               </section>
             );
           })}
         </div>
 
-        <h2 className="mt-24 text-xs font-bold uppercase tracking-widest text-fg/40">
-          Still to confirm
-        </h2>
-        <ul className="mt-6 list-disc space-y-4 pl-5 text-sm text-fg/80">
-          <li>
-            <span className="font-bold text-fg">The 12:15 PM cutoff.</span> The race site
-            puts it at Half Pipe in one section and at Pipeline in another. Treat Pipeline
-            (29.6) as the deadline.
-          </li>
-          <li>
-            <span className="font-bold text-fg">The downloadable crew map</span> was
-            promised for Aug 14 and isn&apos;t linked on the race page yet. It should pin
-            exact crew parking, which matters most for the two new stops.
-          </li>
-          <li>
-            <span className="font-bold text-fg">
-              How a pacer actually reaches Turquoise Lake Dam.
-            </span>{" "}
-            The race directs pacers there by shuttle from Outward Bound, but only documents
-            an Outward Bound &harr; Twin Lakes shuttle running to 11:00 PM — hours before
-            the runner is due. Crew are separately barred from the stop entirely, since it
-            is not one of the three crew locations. This is the single thing most worth
-            settling before race day.
-          </li>
-          <li>
-            <span className="font-bold text-fg">Elevation gain.</span> The race publishes
-            13,552 ft; the official GPX track sums to ~16,700 ft. The per-leg climb figures
-            above come from the GPX, so treat them as relative rather than absolute.
-          </li>
-        </ul>
-
-        <p className="mt-24 text-xs italic text-fg/40">
-          Miles, cutoffs, crew and pacer rules are the race&apos;s published 2026 figures;
-          leg distance and climb are measured from the official 2026 RideWithGPS track. Note
-          that leadvilleraceseries.com still carries last year&apos;s aid-station list
-          further down the same page — that block is where &ldquo;May Queen&rdquo; and
-          &ldquo;pacers from mile 61.8&rdquo; come from, and neither is true this year.
-          Cutoffs are marked subject to change; reconfirm at the Friday athlete meeting.
-        </p>
       </div>
     </main>
   );
