@@ -22,7 +22,7 @@ type Stop = {
   dropBag?: boolean; // one of the five drop-bag stops
   target?: string; // 24:45 projection — arrival clock time
   safe?: string; // 27 hr projection — arrival clock time
-  note?: string;
+  note?: string | string[]; // array renders as separate paragraphs
   gear?: { label: string; items: string[] }[]; // what crew brings to this stop
 };
 
@@ -41,7 +41,7 @@ type Stop = {
 // fatigue ramp that grows to 1.35× by mile 100, then normalised to 24 hr 45 min (target)
 // and 27 hr (safe) finishes. The target line is deliberately 15 min inside the sub-25
 // big-buckle mark, so a bad patch late doesn't cost the buckle. Times are ARRIVAL clock
-// time from the 4:00 AM Sat start; "stop" is planned aid dwell (62 min total, already
+// time from the 4:00 AM Sat start; "stop" is planned aid dwell (64 min total, already
 // included downstream). ±20–30 min.
 const stops: Stop[] = [
   { mile: "0.0", name: "Start — 6th & Harrison", crew: "yes", pacer: "solo", leg: { d: 10.6, up: 1509, dn: 963 }, cutoff: "4:00 AM Sat", target: "4:00a", safe: "4:00a", note: "Athletes must park at the Rodeo Grounds, Intermediate School or High School and shuttle/walk to the line. Start-line shuttles run 3:00–4:30 AM.", gear: [{ label: "Must bring to the start", items: ["Headlamp", "Rain jacket", "Beanie", "Tailwind packet", "Long-sleeve shirt?"] }] },
@@ -50,11 +50,11 @@ const stops: Stop[] = [
   { mile: "26.0", dropBag: true, name: "Outward Bound (out)", gps: [39.222625, -106.369214], crew: "yes", pacer: "solo", leg: { d: 3.6, up: 188, dn: 84 }, cutoff: "11:15 AM", stop: "5m", target: "8:34a", safe: "9:00a", note: "Crew Location 1, and the hub of the day. No crewing or parking restrictions — bring everything. Setup from 5:00 AM." },
   { mile: "29.6", name: "Pipeline (out)", gps: [39.189052, -106.374687], crew: "crew-only", pacer: "solo", leg: { d: 2.3, up: 212, dn: 65 }, cutoff: "12:15 PM ⚠", stop: "2m", target: "9:15a", safe: "9:44a", note: "Crew Location 2 (“Pipeline Alternate”), where the trail crosses the road. Crewing point only — NO aid station in 2026. No parking restrictions, setup from 5:00 AM." },
   { mile: "31.8", dropBag: true, name: "Half Pipe (out)", gps: [39.1609972, -106.3683254], crew: "no", pacer: "solo", leg: { d: 8.7, up: 1657, dn: 2209 }, cutoff: "12:15 PM ⚠", stop: "3m", target: "9:42a", safe: "10:13a", note: "Stocked aid station, but not a crew location." },
-  { mile: "40.5", dropBag: true, name: "Twin Lakes Village (out)", gps: [39.0828842, -106.3833776], crew: "shuttle", pacer: "solo", leg: { d: 5.1, up: 2746, dn: 124 }, cutoff: "2:15 PM", stop: "10m", target: "11:47a", safe: "12:30p", note: "Shuttle only, no driving access: crew park at Outward Bound and ride in. Crew wristbands required. Bring only what fits in your lap on the shuttle.", gear: [{ label: "Must bring to Twin Lakes out", items: ["POLES — do not forget the poles here", "Rain jacket", "Long-sleeve shirt as an option, in a ziploc with socks", "Small headlamp too, just in case"] }, { label: "Must bring for Twin Lakes in (mile 64.2) — same shuttle trip", items: ["Patagonia jacket", "Arc'teryx beanie", "Gloves", "Long-sleeve shirt", "Short-sleeve shirt", "Bandit half tights", "Patagonia running tights", "Socks", "Backup shoes", "Running belt + bottle", "Headlamps ×2 — bring all 3"] }, { label: "Twin Lakes in — pacer carries", items: ["Charging pack", "iPhone + watch charger"] }] },
+  { mile: "40.5", dropBag: true, name: "Twin Lakes (out)", gps: [39.0828842, -106.3833776], crew: "shuttle", pacer: "solo", leg: { d: 5.1, up: 2746, dn: 124 }, cutoff: "2:15 PM", stop: "10m", target: "11:47a", safe: "12:30p", note: ["Shuttle only, no driving access: crew park at Outward Bound and ride in. Crew wristbands required. Bring only what fits in your lap on the shuttle.", "Definitely a sock change here, probably a shirt change. MAYBE a shoe change too.", "First real-food stop: sandwich, quesadilla, wrap — whatever the aid station has that isn't dry. From here on it's gels plus real calories at every stop."], gear: [{ label: "Must bring to Twin Lakes out", items: ["POLES — do not forget the poles here", "HEADLAMP (the purple one) — a must here, same as the poles", "Rain jacket", "Long-sleeve shirt as an option, in a ziploc with socks"] }, { label: "Must bring for Twin Lakes in (mile 64.2) — same shuttle trip", items: ["Patagonia jacket", "Arc'teryx beanie", "Gloves", "Long-sleeve shirt", "Short-sleeve shirt", "Bandit half tights", "Patagonia running tights", "Socks", "Backup shoes", "Running belt + bottle", "Headlamps ×2 — bring all 3"] }, { label: "Twin Lakes in — pacer carries", items: ["Charging pack", "iPhone + watch charger"] }] },
   { mile: "45.6", name: "Hope Pass (out)", gps: [39.0264753, -106.4023486], crew: "no", pacer: "solo", leg: { d: 6.7, up: 1386, dn: 3015 }, cutoff: "4:45 PM", stop: "3m", target: "1:54p", safe: "2:48p", note: "No crew. Do not start the round trip to Hope Pass without warm and protective clothing regardless of the weather in town." },
   { mile: "52.3", dropBag: true, name: "Winfield — turnaround", gps: [38.9833322, -106.4402536], crew: "no", pacer: "solo", leg: { d: 6.7, up: 3016, dn: 1386 }, cutoff: "6:50 PM", stop: "10m", target: "4:02p", safe: "5:08p", note: "No crew, no pacers." },
   { mile: "59.1", name: "Hope Pass (in)", gps: [39.0264753, -106.4023486], crew: "no", pacer: "solo", leg: { d: 5.1, up: 123, dn: 2744 }, stop: "3m", target: "6:48p", safe: "8:09p", note: "The crux. Second crossing at 12,500+ ft, then a 2,700 ft descent to Twin Lakes. Likely the last leg in daylight — carry the headlamp before you need it." },
-  { mile: "64.2", dropBag: true, name: "Twin Lakes Village (in)", gps: [39.0828842, -106.3833776], crew: "shuttle", pacer: "Brooks", pacerStart: true, leg: { d: 8.7, up: 2211, dn: 1659 }, cutoff: "11:00 PM", stop: "10m", target: "8:11p", safe: "9:40p", note: "Pacers may join here and NOT before — this is mile 64.2 on the 2026 course, not the 61.8 the stale section of the race site still quotes. Two pacer bibs come in the packet; extra bibs and waivers are available here, at Outward Bound and at Turquoise Lake Dam, but NOT at Pipeline. One pacer at a time until mile 99, then a second may join for the final mile. Pacers can carry gear but cannot push, pull, carry or tow. Brooks picks up here for the 20.0 mi to Turquoise Lake Dam — the whole night section. Night gear goes on here. Crew shuttles stop running at 11:00 PM, so a slow split strands the crew." },
+  { mile: "64.2", dropBag: true, name: "Twin Lakes (in)", gps: [39.0828842, -106.3833776], crew: "shuttle", pacer: "Brooks", pacerStart: true, leg: { d: 8.7, up: 2211, dn: 1659 }, cutoff: "11:00 PM", stop: "12m", target: "8:11p", safe: "9:40p", note: ["Tough love everywhere else — here I need compassion and a hug or two. I was up on this part of the trail on a Sunday and it is brutal, so coming off the second Hope crossing I’ll be beat up in the legs and in the head, and it’ll probably be dark.", "Calories, calories, calories. This is the stop that gets me back into life, so get as much in me as I’ll take. Caffeine here too.", "Full clothing change, first thing into the aid — start it before anything else. Probably a long sleeve to start the leg, and at least the winter layers go into Brooks’s pack for later.", "The crew bag goes into Brooks’s pack before he leaves. I switch into the belt here.", "This is the longest stop of the race, but try to keep it to about 12 minutes. Watch the clock and get me out."] },
   { mile: "72.8", dropBag: true, name: "Half Pipe (in)", gps: [39.1609972, -106.3683254], crew: "no", pacer: "Brooks", leg: { d: 2.3, up: 65, dn: 212 }, cutoff: "2:00 AM Sun", stop: "3m", target: "10:44p", safe: "12:25a Su" },
   { mile: "75.1", name: "Pipeline (in)", gps: [39.189052, -106.374687], crew: "crew-only", pacer: "Brooks", leg: { d: 3.6, up: 83, dn: 192 }, stop: "2m", target: "11:12p", safe: "12:57a Su", note: "Crew handoffs only, no aid. No pacer-bib pickup here — a pacer swapping in must already have the bib." },
   { mile: "78.7", dropBag: true, name: "Outward Bound (in)", gps: [39.222625, -106.369214], crew: "yes", pacer: "Brooks", leg: { d: 5.5, up: 540, dn: 164 }, cutoff: "3:45 AM Sun", stop: "5m", target: "11:54p", safe: "1:43a Su", note: "Last crew location on the course, and the last stop with parking. Everything after this is 21.2 mi with one aid station and no driving access, so this is the crew's final chance to hand over anything heavy." },
@@ -315,7 +315,13 @@ export default function CrewGuide() {
                   )}
                 </div>
 
-                {s.note && <p className="mt-5 text-fg/80">{s.note}</p>}
+                {s.note && (
+                  <div className="mt-5 space-y-4 text-fg/80">
+                    {(Array.isArray(s.note) ? s.note : [s.note]).map((p) => (
+                      <p key={p}>{p}</p>
+                    ))}
+                  </div>
+                )}
 
                 {s.gear?.map((list) => (
                   <div key={list.label} className="mt-5">
@@ -334,6 +340,73 @@ export default function CrewGuide() {
           })}
         </div>
 
+        {/* Anything that isn't tied to a single stop */}
+        <h2 className="mt-16 border-t border-fg/15 pt-16 text-xs font-bold uppercase tracking-widest text-fg/40 sm:mt-20 sm:pt-20">
+          Other information
+        </h2>
+        <div className="mt-6 rounded-lg border border-fg/15 bg-fg/[0.02] p-5 sm:p-6">
+          <p className="text-xs font-bold uppercase tracking-widest text-fg/40">
+            Fueling
+          </p>
+          <p className="mt-3 text-fg/80">
+            Goal is <span className="font-bold text-fg">75&ndash;90 g of carbs</span>{" "}
+            and <span className="font-bold text-fg">~500 mg of sodium</span> every
+            hour.
+          </p>
+          <p className="mt-2 text-fg/80">
+            Ideally that&rsquo;s 1 gel + 500 ml of fluid with high carb and sodium
+            &mdash; or half a Tailwind packet.
+          </p>
+
+          <p className="mt-6 text-xs font-bold uppercase tracking-widest text-fg/40">
+            Real food
+          </p>
+          <p className="mt-3 text-fg/80">
+            Gels alone won&rsquo;t hold up all day. Start adding real food around{" "}
+            <a href="#stop-40-5" className="underline underline-offset-4 hover:text-fg">
+              Twin Lakes out (mile 40.5)
+            </a>{" "}
+            and keep it going inbound. Aid-station food is fine for this &mdash;
+            sandwiches, quesadillas, wraps, anything soft. Nothing super dry; it
+            just needs to be calories that go down.
+          </p>
+
+          <p className="mt-6 text-xs font-bold uppercase tracking-widest text-fg/40">
+            Sock and shoe changes
+          </p>
+          <p className="mt-3 text-fg/80">
+            Ideally I&rsquo;m not the one untying my shoes &mdash; get them untied
+            and off me while I&rsquo;m sitting down. I&rsquo;ll retie them myself.
+          </p>
+        </div>
+
+        <div className="mt-6 rounded-lg border border-fg/15 bg-fg/[0.02] p-5 sm:p-6">
+          <p className="text-xs font-bold uppercase tracking-widest text-fg/40">
+            How to talk to me
+          </p>
+          <p className="mt-3 text-fg/80">
+            <span className="font-bold text-fg">
+              Probably skip &ldquo;how are you feeling?&rdquo;
+            </span>{" "}
+            Odds are the answer is &ldquo;not great,&rdquo; and if it&rsquo;s going
+            well I&rsquo;ll say so.
+          </p>
+          <p className="mt-4 text-fg/80">
+            <span className="font-bold text-fg">
+              Handing me things beats asking what I need
+            </span>{" "}
+            &mdash; especially late. Gels, how many, fluid: if you can just run it
+            without checking in, that&rsquo;s ideal. My brain will be pretty fried
+            by then and every decision costs something. I&rsquo;ll speak up about
+            clothes and anything else I want.
+          </p>
+          <p className="mt-4 text-fg/80">
+            <span className="font-bold text-fg">A little tough love helps.</span>{" "}
+            Being told to stop being a bitch and get moving works better on me
+            than coddling. Encouragement is always welcome too &mdash; just keep it
+            honest, no need to tell me I look great when I don&rsquo;t.
+          </p>
+        </div>
       </div>
     </main>
   );
