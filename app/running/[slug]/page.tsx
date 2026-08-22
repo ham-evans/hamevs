@@ -71,7 +71,7 @@ export default async function RacePage({
         href={`/running/${slug}/crew`}
         className="underline underline-offset-4 hover:text-fg"
       >
-        crew guide
+        crew &amp; fueling guide
       </Link>
     );
   }

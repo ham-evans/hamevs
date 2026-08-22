@@ -30,6 +30,7 @@ export default function GpxViewer({
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
   const [selectedWaypoint, setSelectedWaypoint] = useState<number | null>(null);
   const [showClimbLabels, setShowClimbLabels] = useState(true);
+  const [showWaypointLabels, setShowWaypointLabels] = useState(true);
 
   const segments = useMemo(() => {
     if (gpxData.waypoints.length === 0) return [];
@@ -107,6 +108,7 @@ export default function GpxViewer({
               hoveredIndex={hoveredIndex}
               onWaypointClick={setSelectedWaypoint}
               selectedWaypoint={selectedWaypoint}
+              showWaypointLabels={showWaypointLabels}
             />
           </div>
           <div className="shrink-0">
@@ -118,6 +120,8 @@ export default function GpxViewer({
               selectedWaypoint={selectedWaypoint}
               showClimbLabels={showClimbLabels}
               onToggleClimbLabels={() => setShowClimbLabels((v) => !v)}
+              showWaypointLabels={showWaypointLabels}
+              onToggleWaypointLabels={() => setShowWaypointLabels((v) => !v)}
               height={elevationHeight}
             />
           </div>
@@ -602,6 +606,8 @@ function ElevationProfile({
   selectedWaypoint,
   showClimbLabels,
   onToggleClimbLabels,
+  showWaypointLabels,
+  onToggleWaypointLabels,
   height,
 }: {
   points: GpxPoint[];
@@ -611,6 +617,8 @@ function ElevationProfile({
   selectedWaypoint: number | null;
   showClimbLabels: boolean;
   onToggleClimbLabels: () => void;
+  showWaypointLabels: boolean;
+  onToggleWaypointLabels: () => void;
   height: number;
 }) {
   const canvasRef = useRef<HTMLCanvasElement>(null);
@@ -1135,10 +1143,19 @@ function ElevationProfile({
         />
         climbs
       </label>
+      <label className="absolute top-2 right-[4.5rem] flex items-center gap-1.5 text-[10px] text-fg/35 hover:text-fg/55 cursor-pointer select-none z-10">
+        <input
+          type="checkbox"
+          checked={showWaypointLabels}
+          onChange={onToggleWaypointLabels}
+          className="accent-fg w-3 h-3"
+        />
+        stops
+      </label>
       {xZoom > 1 && (
         <button
           onClick={() => { setXZoom(1); setXOffset(0); }}
-          className="absolute top-2 right-20 text-[10px] text-fg/35 hover:text-fg/55 underline underline-offset-2 select-none z-10"
+          className="absolute top-2 right-[8rem] text-[10px] text-fg/35 hover:text-fg/55 underline underline-offset-2 select-none z-10"
         >
           reset zoom
         </button>

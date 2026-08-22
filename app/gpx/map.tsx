@@ -18,6 +18,8 @@ interface MapProps {
   hoveredIndex: number | null;
   onWaypointClick: (index: number) => void;
   selectedWaypoint: number | null;
+  /** Permanent stop-name labels. Off leaves the dots clickable but unlabelled. */
+  showWaypointLabels?: boolean;
 }
 
 export default function MapView({
@@ -26,6 +28,7 @@ export default function MapView({
   hoveredIndex,
   onWaypointClick,
   selectedWaypoint,
+  showWaypointLabels = true,
 }: MapProps) {
   const containerRef = useRef<HTMLDivElement>(null);
   const mapRef = useRef<L.Map | null>(null);
@@ -105,6 +108,7 @@ export default function MapView({
         className: "cursor-pointer",
       }).addTo(map);
 
+      if (showWaypointLabels) {
       const tooltip = L.tooltip({
         permanent: true,
         interactive: true, // clicking the label selects the stop, same as the dot
@@ -113,6 +117,8 @@ export default function MapView({
         className: "gpx-waypoint-label",
       }).setContent(wp.name);
       wpMarker.bindTooltip(tooltip);
+      wpTooltips.push(tooltip);
+      }
 
       const idx = i;
       wpMarker.on("click", () => {
@@ -120,7 +126,6 @@ export default function MapView({
       });
 
       wpMarkers.push(wpMarker);
-      wpTooltips.push(tooltip);
     }
     wpMarkersRef.current = wpMarkers;
 
@@ -192,7 +197,7 @@ export default function MapView({
       mapRef.current = null;
     };
     // onWaypointClick is stable from useState setter, safe to include
-  }, [points, waypoints, onWaypointClick]);
+  }, [points, waypoints, onWaypointClick, showWaypointLabels]);
 
   // Update hover marker
   useEffect(() => {
