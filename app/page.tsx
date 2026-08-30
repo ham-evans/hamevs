@@ -46,14 +46,21 @@ export default function Home() {
               </a>
             </li>
             <li>
-              9 Ultramarathons &mdash; Including{" "}
+              10 Ultramarathons &mdash; Including{" "}
+              <a
+                href="/running/leadville-100-2026"
+                className="underline underline-offset-4 hover:text-fg/70"
+              >
+                Leadville 100
+              </a>
+              ,{" "}
               <a
                 href="/running/run-rabbit-run-100-2024"
                 className="underline underline-offset-4 hover:text-fg/70"
               >
                 Run Rabbit Run 100
-              </a>{" "}
-              and{" "}
+              </a>
+              , and{" "}
               <a
                 href="/running/canyons-100k-2026"
                 className="underline underline-offset-4 hover:text-fg/70"

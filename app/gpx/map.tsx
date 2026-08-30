@@ -1,16 +1,64 @@
 "use client";
 
-import { useEffect, useRef } from "react";
+import { useEffect, useMemo, useRef } from "react";
 import L from "leaflet";
 import "leaflet/dist/leaflet.css";
-import type { Waypoint } from "@/lib/gpx";
+import { haversine, type Waypoint } from "@/lib/gpx";
 
 const LABEL_GAP_PX = -8; // label sits this far above its dot (negative = up)
 const LABEL_GUTTER_PX = 3; // breathing room between stacked / neighbouring labels
-// Two rows is enough for an out-and-back pair sharing a dot. Anything that still doesn't
-// fit is hidden rather than pushed higher — a label floating rows above its dot is worse
-// than no label, and zooming in brings it straight back.
+// Two rows for the odd pair of stops that sit close enough to collide at low zoom.
+// Anything that still doesn't fit is hidden rather than pushed higher — a label floating
+// rows above its dot is worse than no label, and zooming in brings it straight back.
 const MAX_LABEL_ROWS = 2;
+// Two passes at the same aid station are metres apart at most; distinct stops are miles.
+const SAME_STOP_M = 150;
+
+/** One place on the map, however many times the course visits it. */
+interface Stop {
+  lat: number;
+  lon: number;
+  label: string;
+  /** Indices into `waypoints`, in course order — one per visit. */
+  visits: number[];
+}
+
+/** "Twin Lakes: aid (out, CREW)" -> "Twin Lakes". Names without a colon are kept whole. */
+function stopName(name: string): string {
+  const colon = name.indexOf(":");
+  return (colon === -1 ? name : name.slice(0, colon)).trim();
+}
+
+// An out-and-back visits every aid station twice, and the GPX names the two passes
+// separately ("… (out, CREW)" / "… (in, CREW + PACERS START)"). Drawn as-is that's two
+// dots a few metres apart wearing two long labels. Collapse each place to a single dot
+// labelled with the place's name; the per-pass detail lives in the panel and profile.
+function groupWaypoints(waypoints: Waypoint[]): Stop[] {
+  const stops: Stop[] = [];
+  waypoints.forEach((wp, i) => {
+    const existing = stops.find(
+      (s) => haversine(s.lat, s.lon, wp.lat, wp.lon) <= SAME_STOP_M
+    );
+    if (existing) {
+      existing.visits.push(i);
+      // Start and Finish share a coordinate but not a name — keep both.
+      const name = stopName(wp.name);
+      if (!existing.label.split(" / ").includes(name)) {
+        existing.label += ` / ${name}`;
+      }
+    } else {
+      // Anchor on the first pass rather than the group's centre: that point is known
+      // to sit on the track, a midpoint between two parallel passes need not.
+      stops.push({ lat: wp.lat, lon: wp.lon, label: stopName(wp.name), visits: [i] });
+    }
+  });
+  return stops;
+}
+
+/** A stop you pass twice gets a slightly fatter dot — the only hint that it holds two splits. */
+function stopRadius(stop: Stop): number {
+  return stop.visits.length > 1 ? 6 : 5;
+}
 
 interface MapProps {
   points: { lat: number; lon: number; ele: number }[];
@@ -35,6 +83,11 @@ export default function MapView({
   const markerRef = useRef<L.CircleMarker | null>(null);
   const wpMarkersRef = useRef<L.CircleMarker[]>([]);
   const highlightLineRef = useRef<L.Polyline | null>(null);
+  // The map is built once per route; the click handler reads the live selection from here
+  // rather than closing over a prop that would force a rebuild on every click.
+  const selectedRef = useRef<number | null>(selectedWaypoint);
+
+  const stops = useMemo(() => groupWaypoints(waypoints), [waypoints]);
 
   useEffect(() => {
     if (!containerRef.current || points.length === 0) return;
@@ -94,13 +147,12 @@ export default function MapView({
       weight: 2,
     }).addTo(map);
 
-    // Waypoint markers
+    // Stop markers — one per place, not one per pass
     const wpMarkers: L.CircleMarker[] = [];
     const wpTooltips: L.Tooltip[] = [];
-    for (let i = 0; i < waypoints.length; i++) {
-      const wp = waypoints[i];
-      const wpMarker = L.circleMarker([wp.lat, wp.lon], {
-        radius: 5,
+    for (const stop of stops) {
+      const wpMarker = L.circleMarker([stop.lat, stop.lon], {
+        radius: stopRadius(stop),
         fillColor: "#f6f4f0",
         fillOpacity: 1,
         color: "#000",
@@ -115,32 +167,35 @@ export default function MapView({
         direction: "top",
         offset: [0, LABEL_GAP_PX],
         className: "gpx-waypoint-label",
-      }).setContent(wp.name);
+      }).setContent(stop.label);
       wpMarker.bindTooltip(tooltip);
       wpTooltips.push(tooltip);
       }
 
-      const idx = i;
+      const { visits } = stop;
       wpMarker.on("click", () => {
-        onWaypointClick(idx);
+        // Clicking a twice-visited stop steps to its next pass, so both the outbound and
+        // inbound splits stay reachable from the one dot.
+        const at = visits.indexOf(selectedRef.current ?? -1);
+        onWaypointClick(visits[at === -1 ? 0 : (at + 1) % visits.length]);
       });
 
       wpMarkers.push(wpMarker);
     }
     wpMarkersRef.current = wpMarkers;
 
-    // Labels are permanent, so at low zoom they pile up — worst at the out-and-back stops,
-    // where outbound and inbound share a coordinate. Lay them out in pixel space at the
-    // current zoom: each label takes the lowest row that clears every label already placed,
-    // so a crowded pair stacks and then drops back to a single row once zoom separates the
-    // dots. Earlier stops win the bottom row, which keeps the pile in course order.
+    // Labels are permanent, so at low zoom neighbouring stops can still pile up. Lay them
+    // out in pixel space at the current zoom: each label takes the lowest row that clears
+    // every label already placed, so a crowded pair stacks and then drops back to a single
+    // row once zoom separates the dots. Earlier stops win the bottom row, which keeps the
+    // pile in course order.
     const layoutLabels = () => {
       const placed: { x0: number; x1: number; y0: number; y1: number }[] = [];
       for (let i = 0; i < wpTooltips.length; i++) {
         const el = wpTooltips[i].getElement();
         if (!el) continue;
 
-        const p = map.latLngToLayerPoint([waypoints[i].lat, waypoints[i].lon]);
+        const p = map.latLngToLayerPoint([stops[i].lat, stops[i].lon]);
         const halfW = el.offsetWidth / 2 + LABEL_GUTTER_PX;
         const h = el.offsetHeight;
         const step = h + LABEL_GUTTER_PX;
@@ -197,7 +252,7 @@ export default function MapView({
       mapRef.current = null;
     };
     // onWaypointClick is stable from useState setter, safe to include
-  }, [points, waypoints, onWaypointClick, showWaypointLabels]);
+  }, [points, stops, onWaypointClick, showWaypointLabels]);
 
   // Update hover marker
   useEffect(() => {
@@ -213,13 +268,26 @@ export default function MapView({
     }
   }, [hoveredIndex, points]);
 
-  // Highlight selected waypoint + segment
+  // Highlight the selected stop + segment
   useEffect(() => {
+    selectedRef.current = selectedWaypoint;
+
     wpMarkersRef.current.forEach((m, i) => {
-      if (i === selectedWaypoint) {
-        m.setStyle({ fillColor: "#000", fillOpacity: 1, weight: 2, radius: 7 } as L.PathOptions);
+      const stop = stops[i];
+      if (selectedWaypoint !== null && stop.visits.includes(selectedWaypoint)) {
+        m.setStyle({
+          fillColor: "#000",
+          fillOpacity: 1,
+          weight: 2,
+          radius: stopRadius(stop) + 2,
+        } as L.PathOptions);
       } else {
-        m.setStyle({ fillColor: "#f6f4f0", fillOpacity: 1, weight: 1.5, radius: 5 } as L.PathOptions);
+        m.setStyle({
+          fillColor: "#f6f4f0",
+          fillOpacity: 1,
+          weight: 1.5,
+          radius: stopRadius(stop),
+        } as L.PathOptions);
       }
     });
 
@@ -237,7 +305,7 @@ export default function MapView({
     } else {
       hlLine.setLatLngs([]);
     }
-  }, [selectedWaypoint, waypoints, points]);
+  }, [selectedWaypoint, waypoints, stops, points]);
 
   return (
     <div

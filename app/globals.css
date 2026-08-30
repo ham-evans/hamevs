@@ -19,12 +19,23 @@ figure {
   margin: 2rem 0;
 }
 
-figure img,
-figure video {
+figure img {
   max-height: 40rem;
   max-width: 40rem;
   width: 100%;
   object-fit: contain;
+  margin: 0 auto;
+  display: block;
+}
+
+/* Video sizes to its own aspect ratio rather than being stretched to the column.
+   Forced to full width, a portrait clip letterboxes into a wide black band with
+   the controls floating out past the footage. */
+figure video {
+  max-height: 40rem;
+  max-width: 100%;
+  width: auto;
+  height: auto;
   margin: 0 auto;
   display: block;
 }
@@ -34,6 +45,19 @@ figcaption {
   font-size: 0.8rem;
   color: color-mix(in srgb, var(--color-fg) 40%, transparent);
   margin-top: 0.5rem;
+}
+
+/* Race-progress strips. Unlike a photo these are diagrams, so they run the full
+   width of the text column rather than the 40rem cap above, and they sit tighter
+   to the prose they mark. */
+figure img[src^="/races/profile/"] {
+  max-width: none;
+  max-height: none;
+  width: 100%;
+}
+
+figure:has(img[src^="/races/profile/"]) {
+  margin: 2.5rem 0 1.5rem;
 }
 
 .figure-row {
