@@ -5,6 +5,6 @@
 <path d="M 243.6 178.0 L 243.6 156.5 L 243.9 156.5 L 245.1 157.6 L 246.0 159.6 L 247.2 161.0 L 249.2 161.7 L 251.2 162.1 L 253.0 162.3 L 255.1 162.5 L 256.7 162.9 L 258.5 163.2 L 260.5 163.6 L 262.4 164.1 L 264.3 164.5 L 266.4 164.9 L 268.4 165.1 L 270.0 165.1 L 272.0 165.3 L 274.0 165.5 L 276.1 165.8 L 278.0 165.9 L 280.3 166.0 L 282.3 166.2 L 283.8 165.9 L 284.9 165.2 L 285.9 164.2 L 287.3 163.6 L 289.1 163.5 L 290.9 163.7 L 292.6 163.5 L 294.4 164.1 L 296.3 165.2 L 298.2 165.8 L 300.0 166.5 L 302.1 167.2 L 303.9 167.3 L 305.7 167.2 L 307.6 167.1 L 307.6 178.0 Z" fill="#000000"/>
 <line x1="0" y1="178.0" x2="1200" y2="178.0" stroke="rgba(0,0,0,0.25)" stroke-width="1.5"/>
 <line x1="307.6" y1="60.0" x2="307.6" y2="178.0" stroke="#000" stroke-width="2"/>
-<circle cx="307.6" cy="167.1" r="7" fill="#000" stroke="#f6f4f0" stroke-width="3"/>
-<text x="323.6" y="48.0" text-anchor="start" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="36" font-weight="700" fill="#000">Outward Bound · mile 26.0</text>
+<circle cx="307.6" cy="167.1" r="7" fill="#000" stroke="#fafaf9" stroke-width="3"/>
+<text x="323.6" y="48.0" text-anchor="start" font-family="system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" letter-spacing="-0.5" font-size="36" font-weight="700" fill="#000">Outward Bound · mile 26.0</text>
 </svg>

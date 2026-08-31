@@ -90,8 +90,8 @@ export default async function Image({
   const { slug } = await params;
   const race = await getRace(slug);
 
-  const bg = "#f6f4f0";
-  const fg = "#000000";
+  const bg = "#fafaf9";
+  const fg = "#1a1a1a";
 
   const points = race.gpx ? readGpxPoints(race.gpx) : [];
   const routePath = buildRoutePath(points, size.width, size.height, 80);

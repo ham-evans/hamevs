@@ -5,6 +5,6 @@
 <path d="M 948.7 178.0 L 948.7 168.3 L 949.2 168.4 L 950.2 168.7 L 951.8 168.7 L 953.4 168.4 L 954.9 167.8 L 956.0 167.3 L 957.2 166.9 L 958.5 166.5 L 960.0 166.0 L 961.1 165.1 L 962.7 164.1 L 963.9 163.9 L 965.5 164.1 L 966.7 163.8 L 967.9 163.5 L 969.9 164.0 L 971.2 165.3 L 972.5 166.3 L 973.9 166.5 L 975.1 166.4 L 976.2 166.5 L 977.8 166.5 L 979.0 166.4 L 980.3 166.2 L 981.7 165.9 L 982.9 165.7 L 984.4 165.4 L 985.6 165.3 L 987.3 165.3 L 988.9 165.1 L 990.5 164.7 L 991.7 164.5 L 993.1 164.3 L 994.3 164.1 L 995.5 164.0 L 996.9 163.8 L 998.0 163.6 L 999.2 163.5 L 1000.4 163.3 L 1001.9 163.0 L 1003.4 162.9 L 1004.8 162.8 L 1006.2 162.6 L 1007.5 162.3 L 1008.7 162.0 L 1009.5 161.6 L 1010.1 160.5 L 1010.7 159.4 L 1011.0 158.3 L 1011.4 157.3 L 1012.1 157.0 L 1012.6 156.9 L 1012.7 156.7 L 1013.0 156.4 L 1013.7 155.9 L 1013.7 178.0 Z" fill="#000000"/>
 <line x1="0" y1="178.0" x2="1200" y2="178.0" stroke="rgba(0,0,0,0.25)" stroke-width="1.5"/>
 <line x1="1013.7" y1="60.0" x2="1013.7" y2="178.0" stroke="#000" stroke-width="2"/>
-<circle cx="1013.7" cy="155.9" r="7" fill="#000" stroke="#f6f4f0" stroke-width="3"/>
-<text x="997.7" y="48.0" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="36" font-weight="700" fill="#000">Turquoise Lake Dam (in) · mile 84.2</text>
+<circle cx="1013.7" cy="155.9" r="7" fill="#000" stroke="#fafaf9" stroke-width="3"/>
+<text x="997.7" y="48.0" text-anchor="end" font-family="system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" letter-spacing="-0.5" font-size="36" font-weight="700" fill="#000">Turquoise Lake Dam (in) · mile 84.2</text>
 </svg>

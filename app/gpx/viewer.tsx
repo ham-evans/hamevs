@@ -386,7 +386,7 @@ function SegmentElevationChart({ points }: { points: GpxPoint[] }) {
     const plotW = w - padding.left - padding.right;
     const plotH = h - padding.top - padding.bottom;
 
-    ctx.fillStyle = "#f6f4f0";
+    ctx.fillStyle = "#fafaf9";
     ctx.fillRect(0, 0, w, h);
 
     // Compute cumulative distances for this segment
@@ -676,7 +676,7 @@ function ElevationProfile({
     const plotW = w - padding.left - padding.right;
     const plotH = h - padding.top - padding.bottom;
 
-    ctx.fillStyle = "#f6f4f0";
+    ctx.fillStyle = "#fafaf9";
     ctx.fillRect(0, 0, w, h);
 
     if (points.length < 2) return;
@@ -985,7 +985,7 @@ function ElevationProfile({
         ctx.roundRect(tx, ty, tooltipW, tooltipH, 3);
         ctx.fill();
 
-        ctx.fillStyle = "#f6f4f0";
+        ctx.fillStyle = "#fafaf9";
         ctx.textAlign = "left";
         ctx.fillText(tooltipText, tx + 6, ty + 13);
       }

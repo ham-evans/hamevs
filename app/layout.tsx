@@ -1,11 +1,16 @@
 import type { Metadata } from "next";
-import { Space_Mono } from "next/font/google";
+import { Inter, Source_Serif_4 } from "next/font/google";
 import "./globals.css";
 import Nav from "./nav";
 
-const spaceMono = Space_Mono({
-  weight: ["400", "700"],
+const inter = Inter({
   subsets: ["latin"],
+  variable: "--font-sans",
+});
+
+const sourceSerif = Source_Serif_4({
+  subsets: ["latin"],
+  variable: "--font-serif",
 });
 
 export const metadata: Metadata = {
@@ -23,7 +28,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${spaceMono.className} h-full antialiased`}>
+    <html lang="en" className={`${inter.variable} ${sourceSerif.variable} ${inter.className} h-full antialiased`}>
       <body className="min-h-full flex flex-col">
         <Nav />
         {children}

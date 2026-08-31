@@ -5,6 +5,6 @@
 <path d="M 905.7 178.0 L 905.7 164.1 L 907.1 164.1 L 908.4 164.5 L 909.6 164.9 L 911.1 165.3 L 912.6 165.8 L 914.0 166.3 L 915.6 166.8 L 916.9 167.3 L 918.1 167.7 L 919.5 168.1 L 920.7 168.1 L 921.8 168.2 L 923.0 168.6 L 924.4 168.9 L 925.8 169.3 L 927.5 169.6 L 928.9 169.7 L 930.5 169.8 L 931.9 169.8 L 932.9 169.7 L 934.3 169.5 L 935.8 169.3 L 937.3 169.1 L 938.6 169.0 L 940.6 168.9 L 942.3 168.9 L 943.5 169.1 L 944.9 169.0 L 946.7 168.9 L 947.2 168.7 L 948.0 168.4 L 948.7 168.3 L 948.7 178.0 Z" fill="#000000"/>
 <line x1="0" y1="178.0" x2="1200" y2="178.0" stroke="rgba(0,0,0,0.25)" stroke-width="1.5"/>
 <line x1="948.7" y1="60.0" x2="948.7" y2="178.0" stroke="#000" stroke-width="2"/>
-<circle cx="948.7" cy="168.3" r="7" fill="#000" stroke="#f6f4f0" stroke-width="3"/>
-<text x="932.7" y="48.0" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="36" font-weight="700" fill="#000">Outward Bound (in) · mile 78.7</text>
+<circle cx="948.7" cy="168.3" r="7" fill="#000" stroke="#fafaf9" stroke-width="3"/>
+<text x="932.7" y="48.0" text-anchor="end" font-family="system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" letter-spacing="-0.5" font-size="36" font-weight="700" fill="#000">Outward Bound (in) · mile 78.7</text>
 </svg>

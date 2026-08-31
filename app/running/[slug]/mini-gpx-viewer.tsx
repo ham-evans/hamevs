@@ -151,7 +151,7 @@ function MiniElevationChart({
     const plotW = width - padding.left - padding.right;
     const plotH = height - padding.top - padding.bottom;
 
-    ctx.fillStyle = "#f6f4f0";
+    ctx.fillStyle = "#fafaf9";
     ctx.fillRect(0, 0, width, height);
 
     const elevs = points.map((p) => metersToFeet(p.ele));
@@ -254,7 +254,7 @@ function MiniElevationChart({
       ctx.beginPath();
       ctx.roundRect(tx, ty, tw, 18, 3);
       ctx.fill();
-      ctx.fillStyle = "#f6f4f0";
+      ctx.fillStyle = "#fafaf9";
       ctx.textAlign = "left";
       ctx.fillText(tip, tx + 6, ty + 13);
     }

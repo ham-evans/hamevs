@@ -5,6 +5,6 @@
 <path d="M 307.6 178.0 L 307.6 167.1 L 307.7 167.1 L 309.1 167.4 L 309.1 167.6 L 310.5 167.6 L 312.5 167.9 L 314.0 168.2 L 315.8 168.4 L 317.7 168.5 L 319.7 168.8 L 320.9 169.1 L 322.9 169.4 L 324.7 169.6 L 326.5 169.6 L 328.3 169.5 L 330.0 169.4 L 331.5 169.1 L 333.3 168.6 L 335.3 168.3 L 337.0 167.9 L 338.3 167.4 L 339.9 167.0 L 341.7 166.3 L 343.1 165.8 L 344.8 165.5 L 346.2 165.2 L 347.6 164.9 L 349.0 164.7 L 349.8 164.7 L 350.3 164.7 L 351.6 164.8 L 353.1 164.7 L 354.4 164.6 L 355.7 164.5 L 357.3 164.4 L 358.6 164.4 L 360.5 164.4 L 362.5 164.7 L 364.2 165.0 L 365.5 164.7 L 366.8 164.1 L 368.1 163.6 L 369.5 163.1 L 370.3 162.7 L 371.2 161.9 L 372.0 160.9 L 373.3 160.2 L 374.7 159.9 L 376.3 159.8 L 377.3 159.8 L 377.5 159.7 L 377.6 159.6 L 377.9 159.6 L 377.9 178.0 Z" fill="#000000"/>
 <line x1="0" y1="178.0" x2="1200" y2="178.0" stroke="rgba(0,0,0,0.25)" stroke-width="1.5"/>
 <line x1="377.9" y1="60.0" x2="377.9" y2="178.0" stroke="#000" stroke-width="2"/>
-<circle cx="377.9" cy="159.6" r="7" fill="#000" stroke="#f6f4f0" stroke-width="3"/>
-<text x="393.9" y="48.0" text-anchor="start" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="36" font-weight="700" fill="#000">Pipeline &amp; Half Pipe · mile 31.8</text>
+<circle cx="377.9" cy="159.6" r="7" fill="#000" stroke="#fafaf9" stroke-width="3"/>
+<text x="393.9" y="48.0" text-anchor="start" font-family="system-ui, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" letter-spacing="-0.5" font-size="36" font-weight="700" fill="#000">Pipeline &amp; Half Pipe · mile 31.8</text>
 </svg>

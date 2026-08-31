@@ -53,13 +53,13 @@ export default function MiniMap({
       radius: 5,
       fillColor: "#000",
       fillOpacity: 1,
-      color: "#f6f4f0",
+      color: "#fafaf9",
       weight: 2,
     }).addTo(map);
 
     L.circleMarker(latLngs[latLngs.length - 1], {
       radius: 5,
-      fillColor: "#f6f4f0",
+      fillColor: "#fafaf9",
       fillOpacity: 1,
       color: "#000",
       weight: 2,

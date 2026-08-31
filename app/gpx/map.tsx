@@ -134,14 +134,14 @@ export default function MapView({
       radius: 6,
       fillColor: "#000",
       fillOpacity: 1,
-      color: "#f6f4f0",
+      color: "#fafaf9",
       weight: 2,
     }).addTo(map);
 
     // End marker
     L.circleMarker(latLngs[latLngs.length - 1], {
       radius: 6,
-      fillColor: "#f6f4f0",
+      fillColor: "#fafaf9",
       fillOpacity: 1,
       color: "#000",
       weight: 2,
@@ -153,7 +153,7 @@ export default function MapView({
     for (const stop of stops) {
       const wpMarker = L.circleMarker([stop.lat, stop.lon], {
         radius: stopRadius(stop),
-        fillColor: "#f6f4f0",
+        fillColor: "#fafaf9",
         fillOpacity: 1,
         color: "#000",
         weight: 1.5,
@@ -283,7 +283,7 @@ export default function MapView({
         } as L.PathOptions);
       } else {
         m.setStyle({
-          fillColor: "#f6f4f0",
+          fillColor: "#fafaf9",
           fillOpacity: 1,
           weight: 1.5,
           radius: stopRadius(stop),
