@@ -59,7 +59,7 @@ The usual routine in the morning for me. Coffee, some toast with jam and a banan
 
 ![Crew pic at the start](/races/leadville-100-4.jpg)
 
-Next thing I knew it was time for the national anthem, another inspirational speech from Ken Chlouber, and boom. The gun went off. *wow this is it. I'm running the Leadville 100.*
+Next thing I knew it was time for the national anthem, another inspirational speech from Ken Chlouber, and boom. The gun went off. *Wow this is it. I'm running the Leadville 100.*
 
 <figure><video src="/races/leadville-100-start-wide.mp4" width="720" height="1072" controls playsinline preload="metadata"></video><figcaption>4am on 6th &amp; Harrison</figcaption></figure>
 
@@ -155,7 +155,95 @@ Hope Pass looms over Leadville. The whole race you can see it in the distance, k
 
 The weekend before I made my dad drive out to Twin Lakes and ran the first ~3.5 miles from the town up the climb and back down, so I \~roughly\~ knew what to expect heading in at least the front side, but I had heard the back side was much steeper and harder than the front. Yikes.
 
+One step at a time.
+
+I ran out of Twin Lakes feeling pretty good. It's about ~1.8 miles to the start of the climb and I cruised along, through the river crossing, and over to the base of it.
+
+I've found recently that I do better with time than with miles. I knew this climb was going to take me about 105 minutes. An hour 45. I can lock in for an hour 45. Just another incline treadmill session.
+
+The climb came around mile 42. Lots of race to go. I wanted to push, but also not kill myself. We did have to do this twice after all.
+
+I settled into a steady groove and got climbing, poles out for the first time on the course. I probably passed 2.5 people for every one that passed me on the climb. Not bad for a lowlander. Before I knew it I was above the point I got to the weekend before, about 1.7 miles into the climb.
+
+Then we were above the treeline.
+
+*This is what everyone was making a fuss about?*
+
+Somewhere in this stretch I saw the first person coming the opposite way, absolutely ROLLING down the trail. Adrian Macdonald — the race leader.
+
+*Wow. He's way ahead of me.*
+
+I kept on moving up. For a long time. Finally second, third, and fourth came through, maybe 20 minutes behind the leader. Sheesh. What a beast. Sheesh. All those guys are beasts.
+
+Pretty quickly I heard some cowbells and we were at the Hopeless aid station, about 0.75 miles below the summit. This aid station is supplied by burros and some legendary volunteers.
+
+![Hopeless aid station](/races/leadville-100-8.jpg)
+
+A 3 minute stop here to refill my bottles with high carb and grab a bite, and we were off.
+
+This stretch was pretty close to the top, and had very few spectators — maybe 5-6 in total from the aid station up to the summit. I was super locked in through this section. Head down, headphones in, just grinding away at the climb. I subconsciously noticed a spectator coming down the trail, but assumed they would get out of my way as I was climbing. They did.
+
+As I'm passing them, I hear "Hamilton Evans???"
+
+What?? Talk about things I didn't expect. I look up and I see someone I've never seen before.
+
+*Is this a prank?*
+
+Nope. It's Grady Morrissey, one of my brother's cross country teammates from high school. Grady was out supporting some of his friends, saw my name on the start list, and texted Seb that morning. Then not only was he up high on Hope Pass, but he happened to recognize me!
+
+He hopped in for a few minutes of climbing as we chatted briefly. So fun.
+
+![With Grady high on Hope Pass](/races/leadville-100-10.jpg)
+
+Switchback, switchback, switchback. Woah — finally a straight shot to nothing.
+
+Summit #1.
+
 ![](/races/profile/winfield.svg)
+
+The descent off the back was a nice break. I was still feeling super good and rolled a lot of it, passing a good number of people on the way down.
+
+It was MUCH steeper than the front side. I didn't want to beat my quads up too badly with as much race as I had left, but on a descent like that there's not really another option — even walking it would thrash your legs. So I sent it.
+
+The back of Hope Pass is stunning. One of the prettiest places I've ever seen. Massive mountains line the valley on both sides, and a few thousand feet below the trail sits this backcountry basin. Somewhere down there, *Winfield...*
+
+Trying not to think about the fact that I'd be climbing back up all of this in a couple hours, I just enjoyed rolling it down. Another 6-8 people came past me heading up during this stretch.
+
+*I wonder if I'll see Isaac soon.*
+
+About 3 minutes later, there he was. A quick stop for a hug and a go get 'em, and Isaac was back on his way up. Some quick mental math told me he was about 9 miles ahead of me on the trail — 4.5 down to Winfield and 4.5 back. Damn, he's flying.
+
+A mile or two later I found myself close to the valley floor, taking a right turn to traverse over to Winfield.
+
+High up on the pass it had been very cool. Down in the valley it was probably 20 degrees warmer, muggy, with rain hanging out in the distance. I was sweating a lot, trying to regroup myself for the second climb, and traversing for much longer than I'd anticipated.
+
+Like the stretch down into Twin Lakes, this was another part of the course that was harder than I'd thought it would be. My expectations for Hope Pass had been so high that I felt adequately mentally prepared for it. The rolling miles over to Winfield (and back) I was not — I hadn't given them anywhere near the credit they deserved. Maybe I need to work on these mindless rolling sections that go on for miles.
+
+Somewhere in here my watch buzzed, and I looked down to see 50.
+
+*Woah. Halfway there.*
+
+*11:13:16.*
+
+*Damn. That's not bad at all. Could I actually run sub 25? There's a long way to go, but a 13:45 second 50 seems... reasonable? No. Let's stay here. Just get to Winfield. Then focus on the second climb. Lots of race to go.*
+
+Finally the flow of inbound runners seemed to increase, and I figured I was getting close to Winfield. It definitely felt like we were closer to "civilization" at least. Some kids were handing out pink lemonade.
+
+*Wow, that was so good.*
+
+A quarter mile further, then a right, a left, and Winfield.
+
+I REALLY wanted Winfield to be a quick stop. I was prepared to just fill my bottles with high carb, grab some more water, and bounce out.
+
+But my feet had been getting worse, not better. I could feel at least 3 blisters, and on the downs especially they were causing me some discomfort. With at least 4 hours before I'd be at another legit aid station, and the second Hope Pass ascent and descent looming, I figured now was the time to deal with this. I went to the med tent to get my feet looked at.
+
+I was hoping they'd pop my blisters, throw some bandaids on, tape over them and send me on my way. The medics didn't think they were big enough to be popped though, and opted for just taping them directly with KT tape. Sure. Just get me in and out ASAP.
+
+This was a nice reset. I sat for a few minutes, wiped my feet off with wet wipes, and got into clean socks. I got my 3 blisters taped nicely and it did actually make a decent difference. Maybe 8 more minutes than I wanted to be sitting there, but alas.
+
+Feet done. Bottles filled. Some ice in my bandana. Quick bathroom stop. Let's get out of here.
+
+A quick stop for more pink lemonade right outside the aid station, and back on the trail.
 
 ![](/races/profile/hope-pass-in.svg)
 
