@@ -71,7 +71,7 @@ export default function Home() {
           </ul>
         </section>
 
-        <section className="mt-auto flex flex-wrap gap-x-5 gap-y-2 pt-16 text-sm text-fg/50">
+        <section className="mt-auto flex flex-wrap justify-center gap-x-5 gap-y-2 pt-16 text-sm text-fg/50">
           <a
             href="https://www.strava.com/athletes/44547906"
             target="_blank"
