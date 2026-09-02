@@ -316,3 +316,7 @@ I almost don't remember much from this section other than I was feeling pretty g
 ![](/races/profile/dam-in.svg)
 
 ![](/races/profile/finish.svg)
+
+---
+
+Some thoughts from after the race: [Afterthoughts](/running/leadville-100-2026/afterthoughts).

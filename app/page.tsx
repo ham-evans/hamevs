@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Home() {
   return (
     <main className="flex flex-1 flex-col items-center px-6 py-24">
@@ -72,6 +74,12 @@ export default function Home() {
         </section>
 
         <section className="mt-auto flex flex-wrap justify-center gap-x-5 gap-y-2 pt-16 text-sm text-fg/50">
+          <Link
+            href="/running/leadville-100-2026/afterthoughts"
+            className="underline underline-offset-4 hover:text-fg"
+          >
+            afterthoughts
+          </Link>
           <a
             href="https://www.strava.com/athletes/44547906"
             target="_blank"
