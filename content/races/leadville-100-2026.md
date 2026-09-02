@@ -197,23 +197,15 @@ He hopped in for a few minutes of climbing as we chatted briefly. So fun.
 
 Switchback, switchback, switchback. Woah — finally a straight shot to nothing.
 
-Summit #1.
+Summit #1. *Woah, that wasn't as bad as I thought it would be.*
 
 ![](/races/profile/winfield.svg)
 
-The descent off the back was a nice break. I was still feeling super good and rolled a lot of it, passing a good number of people on the way down.
-
-It was MUCH steeper than the front side. I didn't want to beat my quads up too badly with as much race as I had left, but on a descent like that there's not really another option — even walking it would thrash your legs. So I sent it.
+The descent off the back was a nice break. I was still feeling super good and rolled a lot of it, passing a good number of people on the way down. It was MUCH steeper than the front side. I didn't want to beat my quads up too badly with as much race as I had left, but on a descent like that there's not really another option — even walking it would thrash your legs. So I sent it.
 
 The back of Hope Pass is stunning. One of the prettiest places I've ever seen. Massive mountains line the valley on both sides, and a few thousand feet below the trail sits this backcountry basin. Somewhere down there, *Winfield...*
 
-Trying not to think about the fact that I'd be climbing back up all of this in a couple hours, I just enjoyed rolling it down. Another 6-8 people came past me heading up during this stretch.
-
-*I wonder if I'll see Isaac soon.*
-
-About 3 minutes later, there he was. A quick stop for a hug and a go get 'em, and Isaac was back on his way up. Some quick mental math told me he was about 9 miles ahead of me on the trail — 4.5 down to Winfield and 4.5 back. Damn, he's flying.
-
-A mile or two later I found myself close to the valley floor, taking a right turn to traverse over to Winfield.
+Trying not to think about the fact that I'd be climbing back up all of this in a couple hours, I just enjoyed rolling it down. Another 6-8 people came past me heading up during this stretch. *I wonder if I'll see Isaac soon.* About 3 minutes later, there he was. A quick stop for a hug and a go get 'em, and Isaac was back on his way up. Some quick mental math told me he was about 9 miles ahead of me on the trail — 4.5 down to Winfield and 4.5 back. Damn, he's flying. A mile or two later I found myself close to the valley floor, taking a right turn to traverse over to Winfield.
 
 High up on the pass it had been very cool. Down in the valley it was probably 20 degrees warmer, muggy, with rain hanging out in the distance. I was sweating a lot, trying to regroup myself for the second climb, and traversing for much longer than I'd anticipated.
 
@@ -221,37 +213,103 @@ Like the stretch down into Twin Lakes, this was another part of the course that 
 
 Somewhere in here my watch buzzed, and I looked down to see 50.
 
-*Woah. Halfway there.*
-
-*11:13:16.*
+*Woah. Halfway there. 11:13:16.*
 
 *Damn. That's not bad at all. Could I actually run sub 25? There's a long way to go, but a 13:45 second 50 seems... reasonable? No. Let's stay here. Just get to Winfield. Then focus on the second climb. Lots of race to go.*
 
-Finally the flow of inbound runners seemed to increase, and I figured I was getting close to Winfield. It definitely felt like we were closer to "civilization" at least. Some kids were handing out pink lemonade.
+Finally the flow of inbound runners seemed to increase, and I figured I was getting close to Winfield. It definitely felt like we were closer to "civilization" at least. Some kids were handing out pink lemonade. *Wow, that was so good.* A quarter mile further, then a right, a left, and Winfield.
 
-*Wow, that was so good.*
-
-A quarter mile further, then a right, a left, and Winfield.
-
-I REALLY wanted Winfield to be a quick stop. I was prepared to just fill my bottles with high carb, grab some more water, and bounce out.
-
-But my feet had been getting worse, not better. I could feel at least 3 blisters, and on the downs especially they were causing me some discomfort. With at least 4 hours before I'd be at another legit aid station, and the second Hope Pass ascent and descent looming, I figured now was the time to deal with this. I went to the med tent to get my feet looked at.
+I REALLY wanted Winfield to be a quick stop. I was prepared to just fill my bottles with high carb, grab some more water, and bounce out. But my feet had been getting worse, not better. I could feel at least 3 blisters, and on the downs especially they were causing me some discomfort. With at least 4 hours before I'd be at another legit aid station, and the second Hope Pass ascent and descent looming, I figured now was the time to deal with this. I went to the med tent to get my feet looked at.
 
 I was hoping they'd pop my blisters, throw some bandaids on, tape over them and send me on my way. The medics didn't think they were big enough to be popped though, and opted for just taping them directly with KT tape. Sure. Just get me in and out ASAP.
 
+While I was sitting in the med tent getting my feet taped, another runner came in to talk to the medics. "Uh, just a heads up — a few miles back, bib number 253 is projectile vomiting all over the trail." Yikes. Glad I'm not him. A few medics headed up to go find him.
+
 This was a nice reset. I sat for a few minutes, wiped my feet off with wet wipes, and got into clean socks. I got my 3 blisters taped nicely and it did actually make a decent difference. Maybe 8 more minutes than I wanted to be sitting there, but alas.
 
-Feet done. Bottles filled. Some ice in my bandana. Quick bathroom stop. Let's get out of here.
-
-A quick stop for more pink lemonade right outside the aid station, and back on the trail.
+Feet done. Bottles filled. Some ice in my bandana. Quick bathroom stop. Let's get out of here. A quick stop for more pink lemonade right outside the aid station, and back on the trail.
 
 ![](/races/profile/hope-pass-in.svg)
 
+Pretty quickly out of Winfield I came up on the two medics walking with the runner who had been throwing up, and caught a bit of their conversation.
+
+"How do I get back from here?"
+
+"Oh, there's a shuttle you'll be on that takes you to Twin Lakes."
+
+"What happens if I throw up in the shuttle?"
+
+Quote of the day.
+
+The traverse from Winfield back to the start of the climb was about as much fun as it had been on the way out. But at least things were inbound now. I was finally inbound.
+
+After traversing over for — again — longer than I had wanted to, we finally took the left turn and started climbing.
+
+The start of this climb is like nothing I've ever done before. So steep. Just straight up with no breaks. I felt like I was barely moving. I was barely moving. This stretch is anywhere between 20-28%, with one 0.1 mile chunk in there at 28.7%. Crazy.
+
+I joined up with Nobuki, a New Jersey native currently living in Leadville. He was following me up and we chatted for a bit, but I realized pretty quickly that he was a lot more chatty than I was. My HR was going up and I still wasn't climbing any faster. Sheesh. Pretty quickly he went off into the distance in front of me. I guess living at 10,000 feet makes a big difference.
+
+I kept climbing through the trees, just waiting for the treeline to open up in front of me. Watch buzzes. Yikes. This has to be a very slow mile. *33:37.* Woah. That's actually not as bad as I thought. Let's keep powering.
+
+Slowly, over the next mile, we kick out right on the slope. The climb gets slightly less steep and switches back left. Finally above the trees. There's the pass. Ways to go. Buzz. *30:38.*
+
+I'm still just chugging along slowly, but this wasn't quite as bad as I thought. We can see the summit. Just powering on. This whole climb there's been some rain clouds looming close behind us. Damn, I hope that doesn't come our way. At least I have my rain jacket if it does.
+
+![View off the back of Hope Pass, rain in the distance](/races/leadville-100-11.jpg)
+
+We gotta be getting close now. The people up near the top are getting bigger, and there are fewer of them. Switchback. I've been with this guy for the last mile or more, and we start chatting. Shoutout to Eric (finished in 27:26)! He's got a wife and 3 kids waiting for him at Twin Lakes. He's gotta be more motivated than me. But he just keeps sitting on my back as we're climbing. "Just let me know if you want to pass, I've got one speed here." "Nope, all good, this is perfect."
+
+Switchback, switchback. Oo, I remember this from the way down. We're surely close now. Switchback. There's the saddle, it's literally right there. Switchback. There's the flags. Switchback. Finally, clear air in front.
+
+We get to the top, I give Eric a hug and we take a few pictures.
+
+Summit #2. Time to get back to Leadville.
+
+![Summit #2 on Hope Pass](/races/leadville-100-12.jpg)
+
 ![](/races/profile/twin-lakes-in.svg)
+
+The way down starts pretty smoothly. It's nice to be running again after ~90 minutes of hiking during the climb. Before I knew it we hit the aid station. Grabbed a quick bite, refilled my front flasks. Let's get out of here.
+
+I'm passing people on this descent without really trying to. I felt... pretty good? Basically no complaints. Dropping down off of 12,500 feet makes a huge difference. We're in the trees, still just powering down. Passing more people walking.
+
+I'm doing some mental math here. My "fast" splits on the spreadsheet had me taking ~8 hours for the Twin Lakes - Winfield - Twin Lakes section. I spent just about 4 on the way out, and about 2.5 from Winfield to the summit. That gives me 1.5 hours to go 5.7 (call it 6) miles. That's 15 minute miles to be on my fast splits. Woah. That's easy. Buzz. *12:59.* Just keep jogging where we can. Walk swiftly through the technical spots. No rolled ankles or injuries.
+
+I kept moving through a few people, some of whom had passed me on the uphill and some I hadn't seen all race. Buzz. *12:30.* Oh damn. I'm gonna be ahead of schedule. How is that possible? I felt like I was crawling up the back.
+
+Before I knew it I was at the section I had done the week before. 1.75 to the bottom, then 1.8 more on flat to the crew. Easy.
+
+1 mile to the bottom now, I'm rolling with Oliver (we had met much earlier in the day for a few miles). He's moving about as well as I am. We're spaced out a bit but moving down nicely. 0.5 miles to the bottom. We come up on a woman who's walking and he slides by, takes about 2 steps and WHAM. The dude goes flying. Full speed wipeout, rolling off the trail onto the downslope only to get stopped by a tree 10 feet down. Thank god the dirt was super soft here.
+
+I run down and help him up. I've had a few of these falls on trails and they're no fun. They throw off your rhythm, spike your adrenaline, and usually come with some aches, scratches, and a lot of dirt. If nothing else, the dude was covered in dirt.
+
+He seems ok, so we keep rolling. All of a sudden we're at the bottom. *That was it?* I was expecting to be wrecked by the Hope Pass double. I hadn't spent THAT much time on trails in this block living in NYC and thought I'd pay for it. I had prepared Brooks and Sadie for how bad of shape I'd be in at this point. They'd have to put me back together before heading out with Brooks.
+
+But nope. I felt great. Ready to keep rolling. Let's see if I can make it in before I need a headlamp. 1.8 miles to go. Rolling trail. River crossing. 1.25 miles to go. Woah, there's a lot of drones and camera people starting now.
+
+0.5 miles to go. I can hear the aid station. Let's go.
+
+Rolling into Twin Lakes was just as good inbound as it was out. So many crews waiting for their runners. I find Brooks pretty fast and we jog back over to the Life Time tent. Brooks and Sadie knew I was on one, coming in ahead of my fastest projected time by over 15 minutes. They immediately jumped into action. What do you need. Let's get you changed. Here's some food. Don't forget your jacket. "Woah. Let's slow down. I need a second here to regroup."
+
+I grab some food. Nothing sounds that good. I want a breakfast burrito. Or a burger. Not options unfortunately. I'm up on carbs but down on calories. Maybe some potato chips to start. Let's get something in. Ideally not something sweet.
+
+Shirt change. Half tights change. Move my bib to the new half tights. New socks and shoe change. Some extra tape on my toes that were beat up. Calf sleeve on my left calf. Ouch, that's been hurting on the climbs. Long sleeve shirt. Jacket in the bag. Full tights in the bag. Beanie in the bag. Gloves in the bag. It's not as cold as I thought. Swap gel trash for new gels. Wiped down my face, legs, body a bit with a wet wipe. More food. Running belt on, Brooks has the pack now. Headlamp on. Let's get out of here. Sorry I've left you such a mess Sadie, but you've got more time than me.
+
+I planned for about 15 minutes stopped here and hit it pretty close. After a quick bathroom stop and an aid station run in for a little more food it was about 16 or 17 minutes. I'll take it. Right on pace.
 
 ![](/races/profile/half-pipe-in.svg)
 
-![](/races/profile/pipeline-in.svg)
+I was pretty excited to be with a pacer. It's such a big morale boost after miles and miles of solo time. It helped too that I was feeling pretty good. Some good food, liquids, a little sit, the lowest elevation of the race, a change of clothes, and no pack. Wow. This is great.
+
+Not far out of the aid station I was explaining to Brooks that we need to follow the pink flags for the trail. This is my responsibility, but having him as a backup to make sure I don't miss any would be nice. See, right there is a good example — there's 2 pink flags that have reflectors on them so headlamps really light them up. Wait a minute... the people in front of us are going a different way than the flags show lol. "Hey guys — I think you missed the turn."
+
+I was dreading the climb out of Twin Lakes. The descent down it was so brutal I was scared about the way up. But somehow it felt like we were barely climbing. We were running flats and even some of the uphill here. And not jogging either, like full on running at a pretty good clip. And running a lot of the time. Mixing in some walking when the terrain got too steep but that was about it.
+
+![Night ops](/races/leadville-100-13.jpg)
+
+Brooks and I were chatting. Having a good time. Gels in. Easy. I remember this now. All of a sudden we were at the top of the climb. *That was it?* Wow, that was way harder down than it was up. That doesn't happen much. Now we get a long rolling descent. We were still moving well in here. Passing tons of headlamps on the trail. Clipping along nicely.
+
+I almost don't remember much from this section other than I was feeling pretty good, and before I knew it we were pulling into Half Pipe. I sent Brooks to refill bottles, I grabbed a few gels from my drop bag, and after a relatively quick stop we were out.
 
 ![](/races/profile/outward-bound-in.svg)
 
