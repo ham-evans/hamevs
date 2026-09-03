@@ -70,7 +70,8 @@ figure img {
 figure img[src="/races/leadville-100-11.jpg"],
 figure img[src="/races/leadville-100-17.jpg"],
 figure img[src="/races/leadville-100-25.jpg"],
-figure img[src="/races/leadville-100-26.jpg"] {
+figure img[src="/races/leadville-100-26.jpg"],
+figure img[src="/races/leadville-100-28.jpg"] {
   max-width: none;
   max-height: none;
 }
