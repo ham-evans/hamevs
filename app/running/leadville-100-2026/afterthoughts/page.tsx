@@ -53,7 +53,7 @@ export default function Afterthoughts() {
         <h1 className="mt-6 text-2xl font-bold tracking-tight text-fg">
           Leadville Afterthoughts
         </h1>
-        <p className="mt-2 text-sm text-fg/50">2026-09-02 &middot; eleven days out</p>
+        <p className="mt-2 text-sm text-fg/50">2026-09-02 &middot; eleven days post</p>
 
         <img
           src="/races/leadville-100-27.jpg"
@@ -151,24 +151,26 @@ export default function Afterthoughts() {
             &mdash; full GPX files and all, and had it learn how I run on
             flats, downhills, and climbs, and how I fade over the course of
             a race, especially on climbs versus flats. Then I pointed it at
-            the Leadville course, had it account for the altitude and the
-            extra distance, and told it to target a 25-hour finish. What
+            the Leadville course, had it account for the altitude, the
+            extra distance, and the fact that I was in better shape, and
+            told it to target a 25-hour finish, then
+            iterated a bit after it gave some results. What
             came back wasn&apos;t just an average &mdash; it was grounded in
             actual data on how fast I move on different terrain, projected
             out to what a perfect day at Leadville could look like for me
             specifically.
           </p>
           <p>
-            The splits above are that perfect-day, A-goal set. And it turns
-            out I had exactly that kind of day &mdash; it did a genuinely
+            The splits above are that perfect-day set, the A-goal. And it turns
+            out I had exactly that kind of day, and it did a genuinely
             good job predicting when I&apos;d hit each spot, which is kind
             of awesome and kind of crazy.
           </p>
           <p>
-            Looking back, there are two things I&apos;d feed into the model
-            differently next time. First, the climbs. I thought climbing and
-            descending were one of my weaker parts of the course &mdash; I
-            felt like I was crawling, making no progress at all. But
+            Looking back, there are two things I&apos;d change with the model
+            for next time. First, the climbs. I thought the steep climbs
+            were one of my weaker parts of the course.{" "}
+            <em>I felt like I was crawling, making no progress at all.</em> But
             that&apos;s actually where I was gaining time relative to the
             model, which feels backwards from how it felt in the moment.
           </p>
@@ -263,7 +265,7 @@ export default function Afterthoughts() {
           </p>
           <p>
             The aid stations otherwise I kind of crushed. The three long stops
-            &mdash; Twin Lakes out, Twin Lakes in, Winfield &mdash; ran about
+            &mdash; Twin Lakes out, Winfield, Twin Lakes in &mdash; ran about
             fifteen minutes each. Across the other ten I spent twenty minutes
             total, so around two minutes apiece, which for me is about all you
             can ask for. Winfield I wish I&apos;d spent less time at. Twin Lakes I think I
@@ -329,7 +331,9 @@ export default function Afterthoughts() {
             treadmill session and one trail session in the weeks I got a good
             chunk in. But fifteen to twenty thousand instead makes the climbs
             easier and leaves the legs less beat up, especially on the
-            downhills.
+            downhills. Ben Dhiman before UTMB was doing 15k METERS a week.
+            I&apos;m not gonna win UTMB any time soon, but still. I can do
+            more.
           </p>
           <p>
             <strong>More trails.</strong> I just don&apos;t have my trail legs.
@@ -340,15 +344,19 @@ export default function Afterthoughts() {
           </p>
           <p>
             <strong>More speed.</strong> I did no speed work for this race. I
-            needed miles and I needed more vert than I was doing &mdash; those
-            were the things I was missing. But if I had to guess, somewhere between 65 and 75% of
+            needed miles and I needed vert much more than I needed speed. I
+            was fast enough. I ran sub 3 in the marathon, and my ultra times
+            were much slower than my marathon time. I just needed miles and
+            vert for this block. But I&apos;m looking forward now. If I had
+            to guess, somewhere between 65 and 75% of
             the people who beat me at Leadville could also beat me in a 5k. They
             could probably beat me in a marathon too &mdash; distances in a
             completely different scope to what we&apos;re talking about here.
             That&apos;s just me being too slow. You&apos;re not going to outrun
             your speed. You can fail to reach it, which is super common, but you
             almost never beat it. I ran to my speed at Leadville. To make the
-            next jump, my speed has to move. If I&apos;m in 2:45 marathon shape,
+            next jump, my speed has to move. If I&apos;m in 2:45 marathon shape (much
+            less 2:35...),
             threshold pace drops, everything gets easier, I move better on the
             trail, and I split that opening marathon in 3:45 instead of 4:45.
             There&apos;s an hour right there, and 3:45 would feel pretty
@@ -357,7 +365,7 @@ export default function Afterthoughts() {
           <p>
             <strong>More weights.</strong> Literally zero sessions for this
             race. I don&apos;t need to be in the gym six days a week &mdash;
-            two, even thirty or forty-five minutes and short scoped, would
+            two, even thirty or forty-five minute sessions would
             make a huge difference for these trail races. Going from zero to
             not-zero is the step change.
           </p>
@@ -412,23 +420,21 @@ export default function Afterthoughts() {
           </p>
           <p>
             I think what I want is the jump from amateur to whatever&apos;s
-            next &mdash; sub-amateur, semi-pro, something like that. For a
-            marathon that&apos;s guys running 2:30, 2:25, 2:20 &mdash;
+            next. In the marathon, there are guys running 2:30, 2:25, 2:20 &mdash;
             borderline semi-pro, maybe a little faster. What does that look
             like in ultras? Isaac finished twelfth at Leadville in just under
-            20 hours, 19:48 or so. That&apos;s the equivalent. Pretty legit.
+            20 hours, 19:48 or so. Is that the equivalent? Pretty legit.
             Not pro &mdash; you&apos;re not competing for wins, Nike
-            isn&apos;t calling &mdash; but you&apos;re sniffing it. Isaac&apos;s
-            sponsored, more for his HYROX than this, but sponsors are in
-            range at that level.
+            isn&apos;t calling &mdash; but you&apos;re sniffing it. I
+            don&apos;t think I could run 2:20 in a marathon, but could I do
+            the equivalent in an ultra? Who knows.
           </p>
           <p>
             I&apos;m not sure that level is unachievable for me. I think I
-            could get there. It would take a few years, a lot more miles,
-            probably moving to Colorado. But maybe that&apos;s where I need
+            could get there. It&apos;s gonna take a lot more years and a lot
+            more miles, probably moving to Colorado. But maybe that&apos;s where I need
             to be. Maybe that&apos;s what&apos;s next &mdash; actually going
-            for it, instead of treating this like an amateur sport, which is
-            what I&apos;ve been doing.
+            for it, treating it like a sport instead of a hobby.
           </p>
           <p>
             <strong>I don&apos;t think top 10 at Leadville is impossible.</strong>
