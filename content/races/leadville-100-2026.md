@@ -492,8 +492,8 @@ Last 100 we didn't get any pictures of the whole crew at the finish line. Wasn't
 We get some hot chocolate. A blanket. Damn. This was awesome. I don't even feel that bad. That was hard work, but I can walk, and stand, and I'm not entirely destroyed. Only mostly.
 
 <div class="figure-row">
-  <figure><img src="/races/leadville-100-18.jpg" alt=""></figure>
   <figure><img src="/races/leadville-100-19.jpg" alt=""></figure>
+  <figure><img src="/races/leadville-100-18.jpg" alt=""></figure>
 </div>
 
 We hang out at the finish line for a few minutes, but there's not much going on. It's early enough that not too many people are out, and there was no one in front of me for 15 minutes — or, as it turned out, behind me for 15 minutes either. A nice little window to myself.
