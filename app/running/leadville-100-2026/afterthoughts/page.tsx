@@ -81,11 +81,11 @@ export default function Afterthoughts() {
             <thead>
               <tr className="border-b border-fg/20 text-fg/50">
                 <th className="py-2 px-3 font-bold">Mile</th>
+                <th className="py-2 px-3 font-bold">Place (of 657)</th>
                 <th className="py-2 px-3 font-bold">Aid Station</th>
                 <th className="py-2 px-3 font-bold">Predicted</th>
                 <th className="py-2 px-3 font-bold">Actual</th>
                 <th className="py-2 px-3 font-bold">Diff</th>
-                <th className="py-2 px-3 font-bold">Place (of 657)</th>
               </tr>
             </thead>
             <tbody>
@@ -97,6 +97,19 @@ export default function Afterthoughts() {
                   <tr key={s.mile} className="border-b border-fg/10">
                     <td className="py-2 px-3 tabular-nums text-fg/60">
                       {s.mile}
+                    </td>
+                    <td
+                      className={`py-2 px-3 tabular-nums font-bold ${
+                        placeUp
+                          ? "text-emerald-700"
+                          : placeDown
+                            ? "text-red-700"
+                            : "text-fg"
+                      }`}
+                    >
+                      {s.place}
+                      {placeUp && " ↑"}
+                      {placeDown && " ↓"}
                     </td>
                     <td className="py-2 px-3 font-bold text-fg">{s.name}</td>
                     <td className="py-2 px-3 tabular-nums text-fg/70">
@@ -116,19 +129,6 @@ export default function Afterthoughts() {
                     >
                       {s.diffMin > 0 ? "+" : ""}
                       {s.diffMin}m
-                    </td>
-                    <td
-                      className={`py-2 px-3 tabular-nums font-bold ${
-                        placeUp
-                          ? "text-emerald-700"
-                          : placeDown
-                            ? "text-red-700"
-                            : "text-fg"
-                      }`}
-                    >
-                      {s.place}
-                      {placeUp && " ↑"}
-                      {placeDown && " ↓"}
                     </td>
                   </tr>
                 );
@@ -430,7 +430,9 @@ export default function Afterthoughts() {
             for it, instead of treating this like an amateur sport, which is
             what I&apos;ve been doing.
           </p>
-          <p>I don&apos;t think top 10 at Leadville is impossible.</p>
+          <p>
+            <strong>I don&apos;t think top 10 at Leadville is impossible.</strong>
+          </p>
         </div>
       </article>
     </main>
