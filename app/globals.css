@@ -31,6 +31,27 @@ body {
   font-variant-numeric: tabular-nums;
 }
 
+/* Headings run on the mono. The serif carries the prose and the sans carries
+   the UI, so headings need a third voice to read as headings. */
+h1,
+h2,
+h3 {
+  font-family: var(--font-title), ui-monospace, monospace;
+}
+
+/* Elevation profiles are inlined rather than linked so their labels can use
+   the same webfont as the headings above them; an <img> SVG is an isolated
+   document and never sees this page's fonts. */
+figure svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+figure svg text {
+  font-family: var(--font-title), ui-monospace, monospace;
+}
+
 figure {
   margin: 2rem 0;
 }

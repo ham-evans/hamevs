@@ -8,6 +8,17 @@ import rehypeExternalLinks from "rehype-external-links";
 import { rehype } from "rehype";
 
 const racesDir = path.join(process.cwd(), "content/races");
+const publicDir = path.join(process.cwd(), "public");
+
+// An SVG loaded through <img> is an isolated document: it cannot see the page's
+// webfonts, so its labels fall back to a system font. Inlining the markup lets
+// the elevation-profile labels use the same heading font as the prose.
+function inlineSvg(src: string): string | null {
+  if (!src.startsWith("/") || !src.endsWith(".svg")) return null;
+  const filePath = path.join(publicDir, src.slice(1));
+  if (!filePath.startsWith(publicDir) || !fs.existsSync(filePath)) return null;
+  return fs.readFileSync(filePath, "utf8").replace(/<\?xml[^>]*\?>/, "").trim();
+}
 
 export type Race = {
   slug: string;
@@ -49,10 +60,13 @@ export async function getRace(slug: string) {
   // Wrap images in <figure> with <figcaption> from alt text
   const htmlWithFigures = remarkResult.toString().replace(
     /<p><img src="([^"]*)" alt="([^"]*)"[^>]*><\/p>/g,
-    (_match, src, alt) =>
-      alt
-        ? `<figure><img src="${src}" alt="${alt}"><figcaption>${alt}</figcaption></figure>`
-        : `<figure><img src="${src}" alt="${alt}"></figure>`
+    (_match, src, alt) => {
+      const svg = inlineSvg(src);
+      const media = svg ?? `<img src="${src}" alt="${alt}">`;
+      return alt
+        ? `<figure>${media}<figcaption>${alt}</figcaption></figure>`
+        : `<figure>${media}</figure>`;
+    }
   );
   const result = await rehype()
     .use(rehypeExternalLinks, { target: "_blank", rel: ["noopener", "noreferrer"] })

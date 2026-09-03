@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter, Source_Serif_4 } from "next/font/google";
+import { Inter, Roboto_Mono, Source_Serif_4 } from "next/font/google";
 import "./globals.css";
 import Nav from "./nav";
 import { Analytics } from "@vercel/analytics/next";
@@ -7,6 +7,11 @@ import { Analytics } from "@vercel/analytics/next";
 const inter = Inter({
   subsets: ["latin"],
   variable: "--font-sans",
+});
+
+const robotoMono = Roboto_Mono({
+  subsets: ["latin"],
+  variable: "--font-title",
 });
 
 const sourceSerif = Source_Serif_4({
@@ -29,7 +34,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${inter.variable} ${sourceSerif.variable} ${inter.className} h-full antialiased`}>
+    <html lang="en" className={`${inter.variable} ${robotoMono.variable} ${sourceSerif.variable} ${inter.className} h-full antialiased`}>
       <body className="min-h-full flex flex-col">
         <Nav />
         {children}
