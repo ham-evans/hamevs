@@ -33,6 +33,8 @@ Leadville 2026 though had a slightly different taste. Due to the [Willow fire](h
 
 Getting into Leadville is notoriously hard. After applying for the lottery 3 years in a row and missing all 3, this year I decided to run with a charity and got a bib through the Life Time Foundation.
 
+## Pre Race
+
 After running the 50 last year, my biggest takeaway was that I needed to come out for the race earlier this year, and I did just that coming a week before and staying in Breckenridge with my dad, before moving out to Leadville on the Thursday before the race.
 
 The week before was brutal elevation-wise. Living in New York City, going to 10,000 feet is no joke. The air is thinner, sleeping is more difficult, headaches, out of breath running 9:30 pace — I just kept catching myself thinking... I'm supposed to run 100 miles in this? But I guess that's what the week was for. Though my sleep never got better (it actually got worse over the week), I showed up to the start line feeling 85-90% acclimatized. Definitely not fully there, but so much better.
@@ -46,6 +48,30 @@ In addition to my crew, other changes I made for this race were in preparation. 
 The last big change going in was nutrition. From my ultras over the past few years, I learned that gels go down a lot easier than food, and carb mix in my bottles was a big winner too. I didn't have an exact plan, but was roughly targeting 75-90g of carbs per hour and 500mg of electrolytes per hour, mostly in the form of 1 40-50g gel + 30-45g in a 500ml soft flask / hour. I stayed remarkably on track for these goals, though was probably a little low on electrolytes especially in the morning (which I paid for a bit).
 
 I spent a lot more time prepping my crew for splits, what I needed at each location in terms of gear + calories, drop bags, etc. Sadie took my plan and ran with it too. According to her (newly acquired) Garmin, her heart rate was over 115 for some of the crew spots when I was coming in, so to say she was stressed about things going right was probably an understatement.
+
+She nailed it though. Crew stops were swift. Everything was organized. Whenever I made pivots live — a different shirt, I need this — it was always right there a second later. Couldn't have been much better.
+
+The day before the race we went to the race briefing, outside on the high school football field. A pretty stunning backdrop for a briefing. We got the usual spiels, race director warnings, a walkthrough of the course reroute, etc.
+
+Then they handed it over to the original crew: Ken Chlouber and Merilee O'Neal.
+
+This was emotional. Leadville's been through a lot this year. With very little snow in the Rockies, Leadville had a drought early in the season. This contributed to the fires in June and July, doubling the stress on the town. Ken also had multiple back surgeries this year that were tough. You could tell it had taken its toll on them and the town as a whole. They live for this race, and were just so excited it was still going on.
+
+![](/races/leadville-100-9.jpg)
+
+Towards the end, we got one of the things I had seen in videos and was looking forward to. Ken Chlouber makes everyone stand and say "I commit, I won't quit." Goosebumps. *I commit. I'm definitely not going to quit.*
+
+It's funny that the race has a ~50% finish rate. That's a lot of people quitting.
+
+We head over to the bib pickup. I run into Isaac and Samantha and we say hi and chat for a bit. I met them in Tokyo on a shakeout run before the Tokyo Marathon. We stayed in touch, and now we're here in Leadville for the 100. Crazy. It's a small world sometimes.
+
+I get my bib. Bib 116. Nice. (I actually ended up finishing the race in 116th place overall. Surely I'm the only person to finish in their bib place.) We get some pictures under the start/finish line. *I can't wait to recreate this picture with a belt buckle instead of a bib.*
+
+![](/races/leadville-100-26.jpg)
+
+Some pasta for dinner. Some race prep and walkthrough on gear with the crew. What I want where, how to fill bottles, what to expect in certain parts. What not to forget while pacing. Don't forget my poles before Hope Pass.
+
+Pretty soon it's time for bed. Man, I'm nervous. It's Leadville day. Been planning this for 10 months. Been thinking about this for 8 years. That's crazy. It's finally here.
 
 ## The Race
 
@@ -486,6 +512,8 @@ We go to sleep when it's light out, and wake up when it's still light out. Woah,
 I check in with my body. My legs are sore, but not horrible. I generally feel ok. My feet are blistered and raw — those hurt. But overall, I'll take it.
 
 Time to pack up and head back to NYC. I love Leadville. I'm coming back. I need that sub 25, and I need more of the mountains. Somehow I feel at home here, at peace. It's so pretty. So calm. So remote.
+
+I'm not sure when I'll be back, but I know it won't be long.
 
 "The mountains are calling, and I must go." — John Muir
 
