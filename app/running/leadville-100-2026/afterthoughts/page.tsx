@@ -12,28 +12,32 @@ export const metadata: Metadata = {
 };
 
 // diffMin: actual minus predicted, in minutes. Positive = behind schedule, negative = ahead.
+// place: overall position (of 657) at that timing mat, from the official splits.
+// Merilee's Corner Out is the timing mat closest to Carter Summit. Merilee's Corner In
+// and Kick to Finish aren't in this list since they aren't stops in the plan above.
 type Split = {
   mile: string;
   name: string;
   predicted: string;
   actual: string;
   diffMin: number;
+  place: number;
 };
 
 const splits: Split[] = [
-  { mile: "10.6", name: "Carter Summit", predicted: "5:51a", actual: "5:57 AM", diffMin: 6 },
-  { mile: "20.5", name: "Turquoise Lake Dam — out", predicted: "7:40a", actual: "7:44 AM", diffMin: 4 },
-  { mile: "26.0", name: "Outward Bound — out", predicted: "8:34a", actual: "8:43 AM", diffMin: 9 },
-  { mile: "31.8", name: "Half Pipe — out", predicted: "9:42a", actual: "9:52 AM", diffMin: 10 },
-  { mile: "40.5", name: "Twin Lakes — out", predicted: "11:47a", actual: "11:54 AM", diffMin: 7 },
-  { mile: "45.6", name: "Hopeless — out", predicted: "1:54p", actual: "1:55 PM", diffMin: 1 },
-  { mile: "52.3", name: "Winfield", predicted: "4:02p", actual: "3:55 PM", diffMin: -7 },
-  { mile: "59.1", name: "Hopeless — in", predicted: "6:48p", actual: "6:45 PM", diffMin: -3 },
-  { mile: "64.2", name: "Twin Lakes — in", predicted: "8:11p", actual: "7:55 PM", diffMin: -16 },
-  { mile: "72.8", name: "Half Pipe — in", predicted: "10:44p", actual: "10:37 PM", diffMin: -7 },
-  { mile: "78.7", name: "Outward Bound — in", predicted: "11:54p", actual: "11:55 PM", diffMin: 1 },
-  { mile: "84.2", name: "Turquoise Lake Dam — in", predicted: "1:07a Sun", actual: "1:15 AM Sun", diffMin: 8 },
-  { mile: "100", name: "Finish", predicted: "4:59a Sun", actual: "5:35 AM Sun", diffMin: 36 },
+  { mile: "10.6", name: "Carter Summit", predicted: "5:51a", actual: "5:57 AM", diffMin: 6, place: 197 },
+  { mile: "20.5", name: "Turquoise Lake Dam — out", predicted: "7:40a", actual: "7:44 AM", diffMin: 4, place: 191 },
+  { mile: "26.0", name: "Outward Bound — out", predicted: "8:34a", actual: "8:43 AM", diffMin: 9, place: 172 },
+  { mile: "31.8", name: "Half Pipe — out", predicted: "9:42a", actual: "9:52 AM", diffMin: 10, place: 183 },
+  { mile: "40.5", name: "Twin Lakes — out", predicted: "11:47a", actual: "11:54 AM", diffMin: 7, place: 176 },
+  { mile: "45.6", name: "Hopeless — out", predicted: "1:54p", actual: "1:55 PM", diffMin: 1, place: 166 },
+  { mile: "52.3", name: "Winfield", predicted: "4:02p", actual: "3:55 PM", diffMin: -7, place: 146 },
+  { mile: "59.1", name: "Hopeless — in", predicted: "6:48p", actual: "6:45 PM", diffMin: -3, place: 150 },
+  { mile: "64.2", name: "Twin Lakes — in", predicted: "8:11p", actual: "7:55 PM", diffMin: -16, place: 149 },
+  { mile: "72.8", name: "Half Pipe — in", predicted: "10:44p", actual: "10:37 PM", diffMin: -7, place: 129 },
+  { mile: "78.7", name: "Outward Bound — in", predicted: "11:54p", actual: "11:55 PM", diffMin: 1, place: 122 },
+  { mile: "84.2", name: "Turquoise Lake Dam — in", predicted: "1:07a Sun", actual: "1:15 AM Sun", diffMin: 8, place: 112 },
+  { mile: "100", name: "Finish", predicted: "4:59a Sun", actual: "5:35 AM Sun", diffMin: 36, place: 116 },
 ];
 
 export default function Afterthoughts() {
@@ -81,35 +85,54 @@ export default function Afterthoughts() {
                 <th className="py-2 px-3 font-bold">Predicted</th>
                 <th className="py-2 px-3 font-bold">Actual</th>
                 <th className="py-2 px-3 font-bold">Diff</th>
+                <th className="py-2 px-3 font-bold">Place (of 657)</th>
               </tr>
             </thead>
             <tbody>
-              {splits.map((s) => (
-                <tr key={s.mile} className="border-b border-fg/10">
-                  <td className="py-2 px-3 tabular-nums text-fg/60">
-                    {s.mile}
-                  </td>
-                  <td className="py-2 px-3 font-bold text-fg">{s.name}</td>
-                  <td className="py-2 px-3 tabular-nums text-fg/70">
-                    {s.predicted}
-                  </td>
-                  <td className="py-2 px-3 tabular-nums font-bold text-fg">
-                    {s.actual}
-                  </td>
-                  <td
-                    className={`py-2 px-3 tabular-nums font-bold ${
-                      s.diffMin > 0
-                        ? "text-red-700"
-                        : s.diffMin < 0
+              {splits.map((s, i) => {
+                const prevPlace = i > 0 ? splits[i - 1].place : undefined;
+                const placeUp = prevPlace !== undefined && s.place < prevPlace;
+                const placeDown = prevPlace !== undefined && s.place > prevPlace;
+                return (
+                  <tr key={s.mile} className="border-b border-fg/10">
+                    <td className="py-2 px-3 tabular-nums text-fg/60">
+                      {s.mile}
+                    </td>
+                    <td className="py-2 px-3 font-bold text-fg">{s.name}</td>
+                    <td className="py-2 px-3 tabular-nums text-fg/70">
+                      {s.predicted}
+                    </td>
+                    <td className="py-2 px-3 tabular-nums font-bold text-fg">
+                      {s.actual}
+                    </td>
+                    <td
+                      className={`py-2 px-3 tabular-nums font-bold ${
+                        s.diffMin > 0
+                          ? "text-red-700"
+                          : s.diffMin < 0
+                            ? "text-emerald-700"
+                            : "text-fg/40"
+                      }`}
+                    >
+                      {s.diffMin > 0 ? "+" : ""}
+                      {s.diffMin}m
+                    </td>
+                    <td
+                      className={`py-2 px-3 tabular-nums font-bold ${
+                        placeUp
                           ? "text-emerald-700"
-                          : "text-fg/40"
-                    }`}
-                  >
-                    {s.diffMin > 0 ? "+" : ""}
-                    {s.diffMin}m
-                  </td>
-                </tr>
-              ))}
+                          : placeDown
+                            ? "text-red-700"
+                            : "text-fg"
+                      }`}
+                    >
+                      {s.place}
+                      {placeUp && " ↑"}
+                      {placeDown && " ↓"}
+                    </td>
+                  </tr>
+                );
+              })}
             </tbody>
           </table>
         </div>
@@ -183,6 +206,40 @@ export default function Afterthoughts() {
             think it would&apos;ve changed the finish. For next time, on
             both the pacing and the projections: build in a bit more fade
             late, and go out with a bit more trust early.
+          </p>
+
+          <h2>Placing</h2>
+          <p>
+            I generally don&apos;t care what place I finish these races,
+            especially this one &mdash; the field is huge, the race is
+            long, and I&apos;m mostly just running my own race, not
+            worried about anyone else. But it is a decent relative
+            indicator of how I&apos;m doing, and this race shows that
+            pretty clearly. I went out relatively slow over the first 26
+            miles, then steadily moved up all day. Never any massive jumps
+            &mdash; it always felt under control, just steady climbing. And
+            that&apos;s net, obviously; I was getting passed some too, just
+            passing more.
+          </p>
+          <p>
+            The stretch I noticed it most was with Brooks, Twin Lakes
+            inbound to the Dam &mdash; twenty miles where it really felt
+            like we were just passing people, passing people, passing
+            people. Maybe got passed once or twice ourselves, nothing more.
+            The numbers back that up: I moved from 149th to 112th over
+            those twenty miles, which is exactly what it felt like.
+          </p>
+          <p>
+            From the Dam to the finish I dropped a few places. Some of that
+            might be tracking noise &mdash; it says I dropped seven spots
+            in the last mile, but I didn&apos;t see anyone out there, and
+            no one was within fifteen minutes of me. It still felt like we
+            were closing on people the whole way, but I finished 116th, so
+            who knows. Either way: the places are the places. I never
+            really thought about racing anyone or passing people out
+            there, but it&apos;s kind of cool in hindsight to see the
+            relative speed &mdash; how well I ran compared to everyone else
+            who was out there.
           </p>
 
           <h2>The math</h2>
