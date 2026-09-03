@@ -45,6 +45,10 @@ This year for crew, I had the best team. From Half Dome last year to Kilimanjaro
 
 In addition to my crew, other changes I made for this race were in preparation. I ran the most miles I've ever run, having 6 out of 7 weeks in a row over 70 miles with a peak week at 88 miles (including 63 in 3 days... with 10 on Friday, 33 on Saturday, and 20 on Sunday). I also did more vert than ever, averaging around 7,000 ft during these weeks via a mixture of incline treadmill sessions and trails. I also didn't skimp on gear for Leadville. I added a second pair of trail shoes, a Raide 2L belt in addition to my pack, a new headlamp, etc. All of these had a bigger impact than anticipated on my race and I think I was pretty glad I made all of those changes.
 
+One other big change I made for this race was my hair. Before last 100, I was thinking of buzzing my head, but chickened out. I was dangerously close to the same fate this year but decided fuck it. If nothing else I'll be more aerodynamic.
+
+![](/races/leadville-100-24.jpg)
+
 The last big change going in was nutrition. From my ultras over the past few years, I learned that gels go down a lot easier than food, and carb mix in my bottles was a big winner too. I didn't have an exact plan, but was roughly targeting 75-90g of carbs per hour and 500mg of electrolytes per hour, mostly in the form of 1 40-50g gel + 30-45g in a 500ml soft flask / hour. I stayed remarkably on track for these goals, though was probably a little low on electrolytes especially in the morning (which I paid for a bit).
 
 I spent a lot more time prepping my crew for splits, what I needed at each location in terms of gear + calories, drop bags, etc. Sadie took my plan and ran with it too. According to her (newly acquired) Garmin, her heart rate was over 115 for some of the crew spots when I was coming in, so to say she was stressed about things going right was probably an understatement.
