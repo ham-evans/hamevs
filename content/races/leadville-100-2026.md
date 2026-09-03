@@ -489,6 +489,8 @@ Last 100 we didn't get any pictures of the whole crew at the finish line. Wasn't
 
 ![](/races/leadville-100-17.jpg)
 
+Like last time, crew makes a huge difference. Having someone to support, prep, and be ready for anything you may need takes a lot of mental stress away, in addition to just being faster. And pacers are no different. Who doesn't want a buddy to run with during the night? Couldn't have done it without Brooks and Sadie. Definitely not as fast and enjoyably at least.
+
 We get some hot chocolate. A blanket. Damn. This was awesome. I don't even feel that bad. That was hard work, but I can walk, and stand, and I'm not entirely destroyed. Only mostly.
 
 <div class="figure-row">
