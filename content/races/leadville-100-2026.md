@@ -13,7 +13,7 @@ One of the first videos that got me into ultra running was called [THE WHY | Run
 
 It was only fitting that, 9 years later, as I toed the start line for my own attempt at the Leadville 100, I saw Billy standing there, out crewing for another runner.
 
-![Start line + Billy Yang](/races/leadville-100-2.jpg)
+![](/races/leadville-100-2.jpg)
 
 My first 100 miler was the [Run Rabbit Run 100](/running/run-rabbit-run-100-2024) in 2024. This race was a mess to say the least. I finished, but that was about all I did (in all fairness, my only goal for this race was to finish). I spent 2 days and one night out, suffered for 35 hours 21 minutes, and crossed the line merely 39 minutes before the cutoff. I couldn't stand after, could barely walk for a few days, but I had my first belt buckle and taste of the 100 mile distance.
 
@@ -21,7 +21,7 @@ This experience was bad enough that I didn't sign up for another one for 2 years
 
 When I first did Run Rabbit Run, I actually started with the [50 mile race](/running/run-rabbit-run-50-2023) the year before. My first 50, about 9 months after a stress fracture in my shin. The 100 barely overlaps with the 50 at all, and both were grueling. Mirroring my experience at Run Rabbit Run, I ran the [Leadville Silver Rush 50](/running/leadville-50-2025) last year, and now was coming back for the belt buckle.
 
-![Leadville 50 mile finish line](/races/leadville-100-3.jpg)
+![](/races/leadville-100-3.jpg)
 
 Leadville is a pretty special place. It sits between a slew of ski towns, including Vail, Aspen, and Breckenridge. These towns all have ski money, shiny edges, ice cream shops, stores selling t-shirts with the town name, etc. Leadville not so much. Leadville is the highest incorporated city in the United States at 10,152 ft. It has a population of 2,633 and is an old mining town.
 
@@ -39,7 +39,7 @@ The week before was brutal elevation-wise. Living in New York City, going to 10,
 
 This year for crew, I had the best team. From Half Dome last year to Kilimanjaro later this year, Sadie, Brooks and I have been on a few adventures.
 
-![Crew pic](/races/leadville-100-1.jpg)
+![](/races/leadville-100-1.jpg)
 
 In addition to my crew, other changes I made for this race were in preparation. I ran the most miles I've ever run, having 6 out of 7 weeks in a row over 70 miles with a peak week at 88 miles (including 63 in 3 days... with 10 on Friday, 33 on Saturday, and 20 on Sunday). I also did more vert than ever, averaging around 7,000 ft during these weeks via a mixture of incline treadmill sessions and trails. I also didn't skimp on gear for Leadville. I added a second pair of trail shoes, a Raide 2L belt in addition to my pack, a new headlamp, etc. All of these had a bigger impact than anticipated on my race and I think I was pretty glad I made all of those changes.
 
@@ -57,7 +57,7 @@ I didn't sleep very well the week before the race. Some combination of uncomfort
 
 The usual routine in the morning for me. Coffee, some toast with jam and a banana, bathroom, shower, get dressed. All went pretty smoothly. Pre race jitters were definitely there, but nothing to do now except get started. We made our way to the start line, and it definitely wasn't as cold as I was expecting (maybe a theme throughout the day?). I ditched my beanie and jacket before the race, opting for a long sleeve, half tights, and gloves which I took off shortly after the start too.
 
-![Crew pic at the start](/races/leadville-100-4.jpg)
+![](/races/leadville-100-4.jpg)
 
 Next thing I knew it was time for the national anthem, another inspirational speech from Ken Chlouber, and boom. The gun went off. *Wow this is it. I'm running the Leadville 100.*
 
@@ -69,7 +69,7 @@ The first section to Carter Summit was about as smooth going as you could imagin
 
 My only goal for this section was to stay as in control as possible. Keep the effort low but moving swiftly at the same time. I struck up conversation with a handful of people during this section, and we were just chilling. It was cool, dark, and the headlamps of 700 runners were bouncing both in front and behind me. Finally the sun came up in this section, illuminating the trail just enough that we could get by without headlamps.
 
-![Sunrise on the way to Carter Summit](/races/leadville-100-5.jpg)
+![](/races/leadville-100-5.jpg)
 
 Before I knew it we hit Carter Summit, 10 miles in. This was a mad scramble to get water. So many people were here and it was a zoo. I quickly added some Tailwind high carb to my front bottles, topped off with water, and got out of there.
 
@@ -83,7 +83,7 @@ This section was about as painless as the first one, although I did get caught i
 
 This section dragged on a bit but it was early enough it didn't feel like that big of a deal. Slowly we made our way around the lake, but had some spectacular views while we were at it.
 
-![Turquoise Lake](/races/leadville-100-6.jpg)
+![](/races/leadville-100-6.jpg)
 
 Before I knew it we were at the Dam aid station.
 
@@ -129,7 +129,7 @@ Finally about a half mile out we could hear the sounds of Twin Lakes. We got off
 
 What a cool aid station again! The whole town (there's not much) was lined with tents, people, and cameras. I came running in and once again found Brooks and Sadie, and we went over to the Life Time Foundation tent which they nicely provided for the foundation runners. Matt (legend!) the head of the Life Time Foundation was there and helping out.
 
-![Heading out of Twin Lakes with Brooks](/races/leadville-100-7.jpg)
+![](/races/leadville-100-7.jpg)
 
 I had planned on Twin Lakes being one of my longer stops (10-12 minutes) and think I nailed that. I felt decently rough when I came in here. I think the stretch from Half Pipe to Twin Lakes outbound was one of the hardest stretches of the race, and just much harder than anticipated. I took a quick cry when I sat down here, a nice little mental reset (lol). I got my shirt changed, pack reloaded with water and carb mix. Trash out, gels in. Had some snacks, got some lube, and geared myself up for the crux of the race.
 
@@ -177,7 +177,7 @@ I kept on moving up. For a long time. Finally second, third, and fourth came thr
 
 Pretty quickly I heard some cowbells and we were at the Hopeless aid station, about 0.75 miles below the summit. This aid station is supplied by burros and some legendary volunteers.
 
-![Hopeless aid station](/races/leadville-100-8.jpg)
+![](/races/leadville-100-8.jpg)
 
 A 3 minute stop here to refill my bottles with high carb and grab a bite, and we were off.
 
@@ -193,7 +193,7 @@ Nope. It's Grady Morrissey, one of my brother's cross country teammates from hig
 
 He hopped in for a few minutes of climbing as we chatted briefly. So fun.
 
-![With Grady high on Hope Pass](/races/leadville-100-10.jpg)
+![](/races/leadville-100-10.jpg)
 
 Switchback, switchback, switchback. Woah — finally a straight shot to nothing.
 
@@ -255,7 +255,7 @@ Slowly, over the next mile, we kick out right on the slope. The climb gets sligh
 
 I'm still just chugging along slowly, but this wasn't quite as bad as I thought. We can see the summit. Just powering on. This whole climb there's been some rain clouds looming close behind us. Damn, I hope that doesn't come our way. At least I have my rain jacket if it does.
 
-![View off the back of Hope Pass, rain in the distance](/races/leadville-100-11.jpg)
+![](/races/leadville-100-11.jpg)
 
 We gotta be getting close now. The people up near the top are getting bigger, and there are fewer of them. Switchback. I've been with this guy for the last mile or more, and we start chatting. Shoutout to Eric (finished in 27:26)! He's got a wife and 3 kids waiting for him at Twin Lakes. He's gotta be more motivated than me. But he just keeps sitting on my back as we're climbing. "Just let me know if you want to pass, I've got one speed here." "Nope, all good, this is perfect."
 
@@ -265,7 +265,7 @@ We get to the top, I give Eric a hug and we take a few pictures.
 
 Summit #2. Time to get back to Leadville.
 
-![Summit #2 on Hope Pass](/races/leadville-100-12.jpg)
+![](/races/leadville-100-12.jpg)
 
 ![](/races/profile/twin-lakes-in.svg)
 
@@ -305,7 +305,7 @@ Not far out of the aid station I was explaining to Brooks that we need to follow
 
 I was dreading the climb out of Twin Lakes. The descent down it was so brutal I was scared about the way up. But somehow it felt like we were barely climbing. We were running flats and even some of the uphill here. And not jogging either, like full on running at a pretty good clip. And running a lot of the time. Mixing in some walking when the terrain got too steep but that was about it.
 
-![Night ops](/races/leadville-100-13.jpg)
+![](/races/leadville-100-13.jpg)
 
 Brooks and I were chatting. Having a good time. Gels in. Easy. I remember this now. All of a sudden we were at the top of the climb. *That was it?* Wow, that was way harder down than it was up. That doesn't happen much. Now we get a long rolling descent. We were still moving well in here. Passing tons of headlamps on the trail. Clipping along nicely.
 
@@ -313,9 +313,183 @@ I almost don't remember much from this section other than I was feeling pretty g
 
 ![](/races/profile/outward-bound-in.svg)
 
+About 100 meters out of Half Pipe, jogging again, we came across Eli Wehbe. From a distance I could tell he didn't look great, and sure enough, as we got closer he was doubled over on the side of the trail puking up just about everything he had. Yikes. We were close enough to the aid station and he had his pacer with him, so I didn't say anything and figured they'd sort it out.
+
+This section got harder. Running wasn't coming quite as easily anymore. The miles weren't coming as easily. But we were still pushing. 12, 13 minute miles. I'll take that for being 70+ miles in.
+
+![](/races/leadville-100-14.jpg)
+
+We leveled off, took a left, and started the stretch into Pipeline. Still moving well. A group of 5 guys up ahead. *Let's get them.* The Jaws theme started playing in my head as we put in a surge and ran clean by them. Nice.
+
+Music, cowbells, lights. Pipeline. "Let's run the whole Pipeline stretch," I said. Ouch. I didn't think it was going to be so long. There are 2 people dressed like butterflies with rainbow lights on, dancing ahead of us. I think I'm hallucinating, but I know it's real. Ultras get weird at night.
+
+Pipeline is fun. It's nice to see a lot of crews again after a big stretch in the backcountry. People are cheering. They change the music and put on the Rocky song as I'm running up. *Damn. That's sick.*
+
+We picked the pace up a little. I guess not that many people had been running straight through this section in a while? At least that's what I told myself.
+
+Out of Pipeline we turn right, a long stretch down to the road. Gradual downhills were the best thing going for me at this point — maybe in general — and we flew on this part, running most of it again. Another mile down. Left onto the road.
+
+Ugh. I remember this stretch. The road running begins. There's going to be a lot of road between here and the finish.
+
+![](/races/leadville-100-15.jpg)
+
+Jog for 90 seconds. Woof. Walk for a bit. *I should walk faster.* Pick up the tempo. Ok, I'm recovered enough, let's go again. Jog for 100 seconds. Ouch. Power hike. Sip of water. *Where is this aid station.* Jog for 75 seconds. Walk. *I swear the left turn should be here.* Jog for 95 seconds. Walk. *Man, I'm pushing. Sub 25 is going to be close.* Jog for 90 seconds.
+
+A lot of that. After about 2 miles on the road we finally turned off onto the grassy section into Outward Bound.
+
+I wanted a quick stop here. We were on pace for sub 25, but barely. I didn't need much. Just a water refill and a gel and let's go.
+
+Into Outward Bound. Wow, this is dead compared to this morning. There's no one here. There's Sadie. Water swap. A gel. I'm good to go. 90 seconds in and out. Back on the road.
+
 ![](/races/profile/dam-in.svg)
 
+We jogged out of Outward Bound. An uphill section now for a bit, then the descent. 5-6 miles to the Dam, mostly on roads. Let's go.
+
+I pass a guy I'd seen a few times earlier in the day with a sign on his back: "Wish me happy birthday after midnight, I'm turning 50!" I check my watch. 12:06. "Happy birthday brother. Go get that belt buckle!"
+
+We reach the top of the hill and start down the back side of the road. Let's run a bit. We come up on a basketball hoop where they're getting runners to shoot. I've got no interest. We run right by it.
+
+We're with a group of maybe 8 runners and their pacers spread over 100 meters or so, and we're all leapfrogging each other. I'm running better than a lot of them but I can't sustain it. When I stop to walk, they come chugging back by. Go your own pace. Running slower isn't any easier for me, so I might as well keep doing this.
+
+Leapfrog. Leapfrog. Finally the left turn next to the golf course. Our group of 8 had sorted itself out by then. There were 2 runners in front of me — the 2 who were mostly running — and I was ahead of the rest by a bit, sitting in the gap between.
+
+Brooks is really pushing me. *I think he wants me to get sub 25 more than I do. I just want this to be over.*
+
+I do some quick math. ~18 miles to go. That's like 4.5 hours best case scenario given some of the climbs left in the last section. Ouch. Let's keep moving.
+
+![](/races/leadville-100-16.jpg)
+
+Running more than walking turns into walking more than running. I'm going as fast as I can. I feel like I'm pretty close to my limit aerobically — which is a funny thing to say when you're doing 14 minute miles. "I've got a lot of race left here," I tell Brooks. Wow, he's pushing me.
+
+Left onto the dirt road. Gradual uphill. Ugh. Running what I can. Walking mostly. Right turn. Steep, steep climb. I did this one in race recon and knew it was short. But ouch.
+
+Finally we come over the top. There's the aid station, which marks the end of Brooks's section. I guess we should jog it in.
+
 ![](/races/profile/finish.svg)
+
+We reach the Dam. I'm doubled over on my poles. There's Sadie. I give Brooks a hug. What a legend.
+
+Brooks hands off the pack. I haven't been drinking much so we don't really need to refill water or anything. I guess let's get moving. I should take a gel. Still have hours to go.
+
+16 miles to the end is brutal. I talked about this in my [Canyons 100k](/running/canyons-100k-2026) recap — there the last 16 miles is 8, then 4, then 4, with 2 aid stations in between. That sounded so much better than 16. Well, here I've gotten exactly what I dreaded. 16 straight to the end.
+
+Some quick mental math. We got to the Dam at 1:15 am. 15 minutes behind schedule. Sub 25 isn't impossible, but it's pretty close to that now. 16 miles to go and 3 hours 45 minutes. At 4 hours it would be 15 minute miles, so now we need 14 minute miles. I'm not sure I could do that on flat trails right now, and we've got 2 climbs in here too. Damn. I'm not going to make it.
+
+Who cares. I'm on a day. Let's just run our best in.
+
+I did the first mile out of the Dam the week before and it's relatively chill on the road. I knew there was a climb somewhere in here but didn't scout it out. (That was a mistake.) Sadie and I jog the downhill a bit, then it gradually kicks up.
+
+We start hiking up. There are a few people around, but not many. Maybe 1-2 runners ahead of us and the same number behind. We're moving uphill on this winding road. I'm power hiking the best I can. *This shouldn't be that long before we turn off right.*
+
+I'm feeling a bit out of it. I'm not sure in what way though. It's almost like a dizziness. Loopy. *Just stay focused.* Do I need caffeine? Or carbs? Or calories? Or water? Probably all of the above.
+
+We keep hiking.
+
+Man, this road isn't ending. 14 minute mile. 15 minute mile. We've been going for what feels like forever. 15 minute mile. This is steep. *This is going on FOREVER.* Surely this has to end soon. Where is this right turn.
+
+The road gets steeper. 17 minute mile. I don't want to talk anymore. I don't even want Sadie to talk anymore. Around every bend I think we must be at that right turn, but it just doesn't come. I keep looking up the road and my headlamp lights up the trail markers way off in the distance. How is it that far still. An 18 minute mile. The road is steep now.
+
+Finally we hit the turn. Instead of a square pink flag reflector, there's an arrow pointing right. Thank GOD. We take the right and it gets impossibly even steeper, but it's trail now. Surely it must end soon. We climb up a third of a mile. Finally, a right turn off the summit.
+
+The downhill is a nice respite, but it doesn't feel much better on the legs. At least I can run some of this. We're with more people again, 5-6 runners and their pacers. Leapfrog. Leapfrog.
+
+I try to roll the downs the best I can. The steep parts are hard to run but we try. Other people are moving fast. I try to move fast. Ouch. Time to walk a bit. The descent lasts 2.5 miles or so. Soon we're at the bottom.
+
+We enter into this valley. It's cold and misty. Really misty. So misty it's hard to see. The wind blows the thick mist around, and my headlamp is lighting up the mist more than the trail. When I breathe, my breath condenses, creating fog in front of me on top of the mist. I can barely see the trail. Trying to look around, I can't see more than 5 meters in any direction. Spooky.
+
+I get dizzy again. *This is just the mist messing with my head.* Breathe. That makes it worse. Can I breathe off to the side? Let's just keep moving.
+
+Mile 93. *14:47.* I'll tell you what, that's not bad. Mile 94. *15:16.* "That's a LOT of work for a 15 minute mile," I say. Sadie laughs.
+
+Run 60 seconds. Stop and walk. I'm breathing like I just ran an all out 5k. Try to recover while power hiking. Run another 60 seconds. My earlier stretches of running a few minutes are now down to a few seconds. I try not to look at my watch but I glimpse anyway. That running stretch was 0.05 miles. Ouch. This is a grind.
+
+Mile 95. *15:21.* At least these miles are consistent. 15 minutes on the flat is crazy though. The effort feels like 6:30 miles. Literally.
+
+Getting close now. Not getting any easier. We finally leave the area around the lake, take a left and a quick right, and we're back in Leadville. We traverse across on a road. Still jogging where I can. Every mile, when I hit 0.85 or so, I try to run it in the rest of the way. Sometimes I can't make it and break it into 2. Mile 96. *15:18.*
+
+We pass the street our Airbnb is on. There's a cop there stopping traffic. It's 4:30 am. Not much for him to do. He says nice work. Onto a dirt road, still traversing. Moving where I can. *Where is this left arrow.* I see the arrow ahead. Finally. We get to it and it turns out I made it up. Still moving straight. Mile 97. *15:38.*
+
+Finally the left turn onto the Boulevard. 3.7 miles to go. The Boulevard is steep at the start and pretty rocky. Not great. About 0.4 miles later it turns into a smooth dirt road.
+
+This dirt road is frustrating. I know I could run it. But I can't run it right now. 0.05 mile sections are all I have. I try for 0.1 running. Ouch. Didn't make it. I'm basically grunting every time I stop running now. The effort is so high. Mile 98. *18:09.*
+
+We're power hiking the best we can but it's steep. Everything looks the same. We keep seeing the same sign over and over again, something about using the bathrooms and keeping Leadville trails clean. Why do they have 50 of these. Mile 99. *17:09.*
+
+We're still climbing. It's gotta be super close now. Finally, a timing station. That's a good sign. The road kicks up steeper but it ends now. Left turn, right turn. We're in the parking lot where I started this morning. Left turn onto the road, and a right turn onto 6th St.
+
+Finally onto 6th St. 1 mile to go.
+
+The road is steep. Really steep. We hike up. There's no one out. It's dark and 5:20 in the morning. Eerily quiet. 0.4 miles later we crest the hill, finally. My watch buzzes. Mile 100. *18:10.*
+
+*Mile 100.*
+
+Over the top of the hill. We can see the finish. 0.6 miles to go. I start a slow jog. I want to jog it in but I haven't run more than 0.15 miles straight in hours. At least this is downhill. I jog. It feels ok, so I keep jogging.
+
+We get to the bottom of the hill. Might as well keep going. There's a family out with their dogs on the right. I jog over and give them a pet. A little doggo power up.
+
+The road kicks up. *Wow, that finish line is still far away.* Still jogging. Finally we cross the last road open to cars. I'm still running up. It's actually getting closer now. I hear my name on the speaker. There's the red carpet. A lean at the line.
+
+I finished.
+
+*I just finished the Leadville 100.*
+
+<figure><video src="/races/leadville-100-finish.mp4" width="720" height="1280" controls playsinline preload="metadata"></video></figure>
+
+## After the Finish
+
+"That was hard." I get some laughs. Yea. That was hard.
+
+I get my medal, and they hand me a box. *The box.* My belt buckle. I love belt buckles.
+
+Last 100 we didn't get any pictures of the whole crew at the finish line. Wasn't making that mistake this time.
+
+![](/races/leadville-100-17.jpg)
+
+We get some hot chocolate. A blanket. Damn. This was awesome. I don't even feel that bad. That was hard work, but I can walk, and stand, and I'm not entirely destroyed. Only mostly.
+
+<div class="figure-row">
+  <figure><img src="/races/leadville-100-18.jpg" alt=""></figure>
+  <figure><img src="/races/leadville-100-19.jpg" alt=""></figure>
+</div>
+
+We hang out at the finish line for a few minutes, but there's not much going on. It's early enough that not too many people are out, and there was no one in front of me for 15 minutes — or, as it turned out, behind me for 15 minutes either. A nice little window to myself.
+
+We head back to the car. I'm shivering now. I'm spilling hot chocolate on myself because I'm shivering so much. Where is this damn car. Brooks puts the heat on full blast. That's nice. I update my Strava to have the title. A necessity.
+
+We drive back down 10 minutes to the Airbnb. I can barely walk up the stairs. *This is the best feeling ever.*
+
+I go collapse in the shower. Warm water helps stop the shivering. My feet are a mess. I still have them taped up and the blisters are so big they're coming out around the tape. Ouch.
+
+Brooks doesn't last long. He'd moved his flight up and left pretty quickly to drive back and make it. Dude's insane.
+
+I need a nap, but I'm so hungry too. I should eat something. I remember I had a frozen pizza unused from Thursday. Sadie makes it for me as I lay in bed. Fuck yea.
+
+![](/races/leadville-100-20.jpg)
+
+We sleep for 2.5 hours. That was much needed. I wake up feeling so hungry. We head into town to the Golden Burro for breakfast. There are tons of people wearing race shirts (me included). They're all walking a bit funny (me included).
+
+<div class="figure-row">
+  <figure><img src="/races/leadville-100-21.jpg" alt=""></figure>
+  <figure><img src="/races/leadville-100-22.jpg" alt=""></figure>
+</div>
+
+Breakfast, and a beer, and back to sleep. Another 2 hour nap. Nice.
+
+Damn, I'm still hungry. We get pizza from High Mountain Pies. My favorite. Even after all that I'm surely still so far behind on calories.
+
+![](/races/leadville-100-23.jpg)
+
+It's 7pm. Think that's good enough. Bedtime.
+
+We go to sleep when it's light out, and wake up when it's still light out. Woah, was that a quick nap? I check the time. 6:30 am. Nice. Needed that one.
+
+I check in with my body. My legs are sore, but not horrible. I generally feel ok. My feet are blistered and raw — those hurt. But overall, I'll take it.
+
+Time to pack up and head back to NYC. I love Leadville. I'm coming back. I need that sub 25, and I need more of the mountains. Somehow I feel at home here, at peace. It's so pretty. So calm. So remote.
+
+"The mountains are calling, and I must go." — John Muir
+
+![](/races/leadville-100-25.jpg)
 
 ---
 
