@@ -435,7 +435,9 @@ We enter into this valley. It's cold and misty. Really misty. So misty it's hard
 
 I get dizzy again. *This is just the mist messing with my head.* Breathe. That makes it worse. Can I breathe off to the side? Let's just keep moving.
 
-Mile 93. *14:47.* I'll tell you what, that's not bad. Mile 94. *15:16.* "That's a LOT of work for a 15 minute mile," I say. Sadie laughs.
+This section got weird. The group of 6-8 people who were around us slowly disappeared. We couldn't see much of the trail in front of us, and now we couldn't see any headlamps in either direction either. Slightly spooky. In the end, we didn't see any other runners for the rest of the race (I ended up finishing with no one 15 minutes in front or behind me. Pretty wild.)
+
+Mile 93. *14:47.* That wasn't that easy of a mile, but that's not bad. Mile 94. *15:16.* That mile was a grind. Running as much and as hard as I could. Still over 15 minutes. "That's a LOT of work for a 15 minute mile," I say. Sadie laughs.
 
 Run 60 seconds. Stop and walk. I'm breathing like I just ran an all out 5k. Try to recover while power hiking. Run another 60 seconds. My earlier stretches of running a few minutes are now down to a few seconds. I try not to look at my watch but I glimpse anyway. That running stretch was 0.05 miles. Ouch. This is a grind.
 
