@@ -2,10 +2,10 @@ import Link from "next/link";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Afterthoughts",
+  title: "Leadville Afterthoughts",
   description: "Reflections in the weeks after the Leadville Trail 100.",
   openGraph: {
-    title: "Afterthoughts",
+    title: "Leadville Afterthoughts",
     description: "Reflections in the weeks after the Leadville Trail 100.",
     type: "article",
   },
@@ -47,14 +47,14 @@ export default function Afterthoughts() {
           &larr; Leadville Trail 100
         </Link>
         <h1 className="mt-6 text-2xl font-bold tracking-tight text-fg">
-          Afterthoughts
+          Leadville Afterthoughts
         </h1>
-        <p className="mt-2 text-sm text-fg/50">September 2, 2026 &middot; eleven days out</p>
+        <p className="mt-2 text-sm text-fg/50">2026-09-02 &middot; eleven days out</p>
 
         <img
           src="/races/leadville-100-27.jpg"
           alt="Crossing the Leadville Trail 100 finish line, 25:35:08 on the clock"
-          className="mx-auto mt-8 max-h-[40rem] w-auto"
+          className="mt-8 w-full"
         />
 
         <div className="prose mt-8 text-fg/80 prose-a:text-fg prose-a:underline prose-p:mb-6 prose-h2:text-xl prose-h2:font-bold prose-h2:text-fg prose-h2:mt-10 prose-h2:mb-4">
@@ -67,6 +67,122 @@ export default function Afterthoughts() {
             I&apos;ve ever run, by a lot &mdash; a stepwise jump above the next
             best one, not just a gradual improvement. Learnings from a lot of different races
             and runs all landed at once here, and almost every one of them hit.
+          </p>
+
+          <h2>Predicted split analysis</h2>
+        </div>
+
+        <div className="not-prose mt-6 overflow-x-auto">
+          <table className="w-full border-collapse text-center text-sm">
+            <thead>
+              <tr className="border-b border-fg/20 text-fg/50">
+                <th className="py-2 px-3 font-bold">Mile</th>
+                <th className="py-2 px-3 font-bold">Aid Station</th>
+                <th className="py-2 px-3 font-bold">Predicted</th>
+                <th className="py-2 px-3 font-bold">Actual</th>
+                <th className="py-2 px-3 font-bold">Diff</th>
+              </tr>
+            </thead>
+            <tbody>
+              {splits.map((s) => (
+                <tr key={s.mile} className="border-b border-fg/10">
+                  <td className="py-2 px-3 tabular-nums text-fg/60">
+                    {s.mile}
+                  </td>
+                  <td className="py-2 px-3 font-bold text-fg">{s.name}</td>
+                  <td className="py-2 px-3 tabular-nums text-fg/70">
+                    {s.predicted}
+                  </td>
+                  <td className="py-2 px-3 tabular-nums font-bold text-fg">
+                    {s.actual}
+                  </td>
+                  <td
+                    className={`py-2 px-3 tabular-nums font-bold ${
+                      s.diffMin > 0
+                        ? "text-red-700"
+                        : s.diffMin < 0
+                          ? "text-emerald-700"
+                          : "text-fg/40"
+                    }`}
+                  >
+                    {s.diffMin > 0 ? "+" : ""}
+                    {s.diffMin}m
+                  </td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+
+        <div className="prose mt-6 text-fg/80 prose-a:text-fg prose-a:underline prose-p:mb-6 prose-h2:text-xl prose-h2:font-bold prose-h2:text-fg prose-h2:mt-10 prose-h2:mb-4">
+          <p>
+            Going in, I built three sets of splits: an A-goal (25 hours,
+            everything goes perfect), a B-goal (27 hours, what I actually
+            thought was realistic), and a C-goal (the official cutoffs
+            &mdash; just finish the thing).
+          </p>
+          <p>
+            I mapped those across the aid stations by working with Claude. I
+            fed it a few of my previous races &mdash; last year&apos;s
+            Leadville 50, this year&apos;s Canyons 100k, Rock the Ridge
+            &mdash; full GPX files and all, and had it learn how I run on
+            flats, downhills, and climbs, and how I fade over the course of
+            a race, especially on climbs versus flats. Then I pointed it at
+            the Leadville course, had it account for the altitude and the
+            extra distance, and told it to target a 25-hour finish. What
+            came back wasn&apos;t just an average &mdash; it was grounded in
+            actual data on how fast I move on different terrain, projected
+            out to what a perfect day at Leadville could look like for me
+            specifically.
+          </p>
+          <p>
+            The splits above are that perfect-day, A-goal set. And it turns
+            out I had exactly that kind of day &mdash; it did a genuinely
+            good job predicting when I&apos;d hit each spot, which is kind
+            of awesome and kind of crazy.
+          </p>
+          <p>
+            Looking back, there are two things I&apos;d feed into the model
+            differently next time. First, the climbs. I thought climbing and
+            descending were one of my weaker parts of the course &mdash; I
+            felt like I was crawling, making no progress at all. But
+            that&apos;s actually where I was gaining time relative to the
+            model, which feels backwards from how it felt in the moment.
+          </p>
+          <p>
+            Second, the end. I was pushing as hard as I could, but I
+            don&apos;t think the model fully accounted for the wear and tear
+            that many miles put on me &mdash; or maybe that&apos;s just me
+            not being in as good shape as I could&apos;ve been. Either way,
+            it had me moving faster than I actually could over the last
+            sixteen miles, and really the last twenty-two to twenty-five
+            miles from Outward Bound on.
+          </p>
+          <p>
+            Still, crazy how close it was overall. I was super stoked
+            looking at this.
+          </p>
+          <p>
+            Looking forward, where could I have improved the most? That
+            first 26 miles &mdash; I ran it super conservatively. I split
+            the marathon at 4:43, which is nothing for me, effort-wise.
+            Sure, there are climbs, two aid stations, some walking built in,
+            but 4:43 is still way conservative. I think I was scared of the
+            rest of the race, scared of trashing my legs for what was
+            coming. That&apos;s fair, but also kind of dumb. I should run
+            that harder next time &mdash; have more faith in the training,
+            more faith that the vert and the distance are going to be fine,
+            and just send it a bit more through the first 40 miles.
+          </p>
+          <p>
+            That said, these were my aggressive splits &mdash; I
+            didn&apos;t know yet that I&apos;d be having the day I was
+            having, so I was pacing to where I thought I&apos;d land.
+            Looking back, I was chilling at mile 26 when I could&apos;ve
+            been working a bit harder and banking time, though I don&apos;t
+            think it would&apos;ve changed the finish. For next time, on
+            both the pacing and the projections: build in a bit more fade
+            late, and go out with a bit more trust early.
           </p>
 
           <h2>The math</h2>
@@ -137,7 +253,7 @@ export default function Afterthoughts() {
             runner, which is what I am. But semi-pro doesn&apos;t feel
             unachievable, and I think that&apos;s interesting. I have the
             appetite to get there. When I think about what the big gaps are, it
-            comes down to one word: more.
+            comes down to one word: <strong>more</strong>.
           </p>
           <p>
             <strong>More miles.</strong> This block is what I relied on and what
@@ -258,122 +374,6 @@ export default function Afterthoughts() {
             what I&apos;ve been doing.
           </p>
           <p>I don&apos;t think top 10 at Leadville is impossible.</p>
-
-          <h2>Predicted split analysis</h2>
-        </div>
-
-        <div className="not-prose mt-6 overflow-x-auto">
-          <table className="w-full border-collapse text-center text-sm">
-            <thead>
-              <tr className="border-b border-fg/20 text-fg/50">
-                <th className="py-2 px-3 font-bold">Mile</th>
-                <th className="py-2 px-3 font-bold">Aid Station</th>
-                <th className="py-2 px-3 font-bold">Predicted</th>
-                <th className="py-2 px-3 font-bold">Actual</th>
-                <th className="py-2 px-3 font-bold">Diff</th>
-              </tr>
-            </thead>
-            <tbody>
-              {splits.map((s) => (
-                <tr key={s.mile} className="border-b border-fg/10">
-                  <td className="py-2 px-3 tabular-nums text-fg/60">
-                    {s.mile}
-                  </td>
-                  <td className="py-2 px-3 font-bold text-fg">{s.name}</td>
-                  <td className="py-2 px-3 tabular-nums text-fg/70">
-                    {s.predicted}
-                  </td>
-                  <td className="py-2 px-3 tabular-nums font-bold text-fg">
-                    {s.actual}
-                  </td>
-                  <td
-                    className={`py-2 px-3 tabular-nums font-bold ${
-                      s.diffMin > 0
-                        ? "text-red-700"
-                        : s.diffMin < 0
-                          ? "text-emerald-700"
-                          : "text-fg/40"
-                    }`}
-                  >
-                    {s.diffMin > 0 ? "+" : ""}
-                    {s.diffMin}m
-                  </td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
-        </div>
-
-        <div className="prose mt-6 text-fg/80 prose-p:mb-6">
-          <p>
-            Going in, I built three sets of splits: an A-goal (25 hours,
-            everything goes perfect), a B-goal (27 hours, what I actually
-            thought was realistic), and a C-goal (the official cutoffs
-            &mdash; just finish the thing).
-          </p>
-          <p>
-            I mapped those across the aid stations by working with Claude. I
-            fed it a few of my previous races &mdash; last year&apos;s
-            Leadville 50, this year&apos;s Canyons 100k, Rock the Ridge
-            &mdash; full GPX files and all, and had it learn how I run on
-            flats, downhills, and climbs, and how I fade over the course of
-            a race, especially on climbs versus flats. Then I pointed it at
-            the Leadville course, had it account for the altitude and the
-            extra distance, and told it to target a 25-hour finish. What
-            came back wasn&apos;t just an average &mdash; it was grounded in
-            actual data on how fast I move on different terrain, projected
-            out to what a perfect day at Leadville could look like for me
-            specifically.
-          </p>
-          <p>
-            The splits above are that perfect-day, A-goal set. And it turns
-            out I had exactly that kind of day &mdash; it did a genuinely
-            good job predicting when I&apos;d hit each spot, which is kind
-            of awesome and kind of crazy.
-          </p>
-          <p>
-            Looking back, there are two things I&apos;d feed into the model
-            differently next time. First, the climbs. I thought climbing and
-            descending were one of my weaker parts of the course &mdash; I
-            felt like I was crawling, making no progress at all. But
-            that&apos;s actually where I was gaining time relative to the
-            model, which feels backwards from how it felt in the moment.
-          </p>
-          <p>
-            Second, the end. I was pushing as hard as I could, but I
-            don&apos;t think the model fully accounted for the wear and tear
-            that many miles put on me &mdash; or maybe that&apos;s just me
-            not being in as good shape as I could&apos;ve been. Either way,
-            it had me moving faster than I actually could over the last
-            sixteen miles, and really the last twenty-two to twenty-five
-            miles from Outward Bound on.
-          </p>
-          <p>
-            Still, crazy how close it was overall. I was super stoked
-            looking at this.
-          </p>
-          <p>
-            Looking forward, where could I have improved the most? That
-            first 26 miles &mdash; I ran it super conservatively. I split
-            the marathon at 4:43, which is nothing for me, effort-wise.
-            Sure, there are climbs, two aid stations, some walking built in,
-            but 4:43 is still way conservative. I think I was scared of the
-            rest of the race, scared of trashing my legs for what was
-            coming. That&apos;s fair, but also kind of dumb. I should run
-            that harder next time &mdash; have more faith in the training,
-            more faith that the vert and the distance are going to be fine,
-            and just send it a bit more through the first 40 miles.
-          </p>
-          <p>
-            That said, these were my aggressive splits &mdash; I
-            didn&apos;t know yet that I&apos;d be having the day I was
-            having, so I was pacing to where I thought I&apos;d land.
-            Looking back, I was chilling at mile 26 when I could&apos;ve
-            been working a bit harder and banking time, though I don&apos;t
-            think it would&apos;ve changed the finish. For next time, on
-            both the pacing and the projections: build in a bit more fade
-            late, and go out with a bit more trust early.
-          </p>
         </div>
       </article>
     </main>

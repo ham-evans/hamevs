@@ -74,6 +74,14 @@ export default async function RacePage({
         crew &amp; fueling guide
       </Link>
     );
+    meta.push(
+      <Link
+        href={`/running/${slug}/afterthoughts`}
+        className="underline underline-offset-4 hover:text-fg"
+      >
+        afterthoughts
+      </Link>
+    );
   }
 
   return (
