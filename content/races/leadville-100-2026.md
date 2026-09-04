@@ -95,7 +95,7 @@ The usual routine in the morning for me. Coffee, some toast with jam and a banan
 
 Next thing I knew it was time for the national anthem, another inspirational speech from Ken Chlouber, and boom. The gun went off. *Wow this is it. I'm running the Leadville 100.*
 
-<figure><video src="/races/leadville-100-start-wide.mp4" width="720" height="1072" controls playsinline preload="metadata"></video><figcaption>4am on 6th &amp; Harrison</figcaption></figure>
+<figure><video src="/races/leadville-100-start-wide.mp4" width="1280" height="960" controls playsinline preload="metadata"></video><figcaption>4am on 6th &amp; Harrison</figcaption></figure>
 
 ![](/races/profile/carter-summit.svg)
 
