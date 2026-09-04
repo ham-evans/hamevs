@@ -1,4 +1,5 @@
 import { getAllRaces, getRace } from "@/lib/races";
+import VideoPlayOverlay from "./video-play-overlay";
 import Link from "next/link";
 import { Fragment, type ReactNode } from "react";
 import type { Metadata } from "next";
@@ -105,10 +106,13 @@ export default async function RacePage({
           ))}
         </p>
         {race.recap ? (
-          <div
-            className="prose mt-8 text-fg/80 prose-a:text-fg prose-a:underline prose-p:mb-6 prose-img:my-8 prose-img:max-h-[40rem] prose-img:w-auto prose-img:mx-auto prose-h2:text-xl prose-h2:font-bold prose-h2:text-fg prose-h2:mt-10 prose-h2:mb-4"
-            dangerouslySetInnerHTML={{ __html: race.contentHtml }}
-          />
+          <>
+            <div
+              className="prose mt-8 text-fg/80 prose-a:text-fg prose-a:underline prose-p:mb-6 prose-img:my-8 prose-img:max-h-[40rem] prose-img:w-auto prose-img:mx-auto prose-h2:text-xl prose-h2:font-bold prose-h2:text-fg prose-h2:mt-10 prose-h2:mb-4"
+              dangerouslySetInnerHTML={{ __html: race.contentHtml }}
+            />
+            <VideoPlayOverlay />
+          </>
         ) : (
           <p className="mt-8 text-fg/50 italic">recap coming soon</p>
         )}

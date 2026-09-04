@@ -71,9 +71,61 @@ figure img[src="/races/leadville-100-11.jpg"],
 figure img[src="/races/leadville-100-17.jpg"],
 figure img[src="/races/leadville-100-25.jpg"],
 figure img[src="/races/leadville-100-26.jpg"],
-figure img[src="/races/leadville-100-28.jpg"] {
+figure img[src="/races/leadville-100-28.jpg"],
+figure img[src="/races/leadville-100-29.jpg"] {
   max-width: none;
   max-height: none;
+}
+
+/* Centered play button, swapped in for the native bottom-left one by
+   VideoPlayOverlay. Once playback starts the native controls take over. */
+.video-wrap {
+  position: relative;
+  display: block;
+}
+
+.video-play {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+  pointer-events: none;
+}
+
+.video-wrap.started .video-play {
+  display: none;
+}
+
+.video-play::before {
+  content: "";
+  position: absolute;
+  width: 4.5rem;
+  height: 4.5rem;
+  border-radius: 9999px;
+  background: rgb(0 0 0 / 0.5);
+  transition: background 0.15s ease;
+  pointer-events: auto;
+  cursor: pointer;
+}
+
+.video-play:hover::before,
+.video-play:focus-visible::before {
+  background: rgb(0 0 0 / 0.72);
+}
+
+.video-play svg {
+  position: relative;
+  width: 2rem;
+  height: 2rem;
+  fill: #fff;
+  /* the triangle reads off-center when it sits on the true middle */
+  margin-left: 0.2rem;
 }
 
 /* Video sizes to its own aspect ratio rather than being stretched to the column.

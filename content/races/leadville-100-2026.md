@@ -143,6 +143,8 @@ The section to Pipeline was pretty chill. About a km in the meadow out of Outwar
 
 I was feeling good and told Brooks and Sadie to skip Pipeline and I'll see them at Twin Lakes.
 
+![](/races/leadville-100-29.jpg)
+
 Through Pipeline, the trail continued to roll, pretty chill with slight uphills for about 3 more miles. I was pretty alone through this section, but had people around in front and behind. I started walking a bit in here as it was getting hot and there were a few punchy climbs, but was still rolling well into Half Pipe.
 
 Half Pipe is around mile 32, a bit over 50km. This first 50k I only had 3 miles over 13 minutes despite over 2,700 ft of climbing, and split around 5:43 (or 11:04 minute pace). This was ballpark where I was expecting, but was a bit more running than I had anticipated this early on in the race.
@@ -341,7 +343,7 @@ It was dark by the time we left the aid station, so we had our headlamps on at t
 
 I was dreading the climb out of Twin Lakes. The descent down it was so brutal I was scared about the way up. But somehow it felt like we were barely climbing. We were running flats and even a good bit of the uphill here. And not jogging either, like full on running at a pretty good clip. And running a lot of the time. Mixing in some walking when the terrain got too steep but that was about it.
 
-![](/races/leadville-100-13.jpg)
+<figure><video src="/races/leadville-100-night.mp4" width="1280" height="960" controls playsinline preload="metadata"></video></figure>
 
 Brooks and I were chatting. Having a good time. Gels in. Easy. I remember this now, there's the bridge. We made it to the top of the climb. *That was it?* *Wow, that was way harder down than it was up.* That doesn't happen much. Now we get a long rolling descent. We were still moving well in here. Passing tons of headlamps on the trail. Clipping along nicely.
 
