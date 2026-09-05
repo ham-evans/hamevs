@@ -69,6 +69,14 @@ export default async function RacePage({
   if (slug === "leadville-100-2026") {
     meta.push(
       <Link
+        href={`/running/${slug}/video`}
+        className="underline underline-offset-4 hover:text-fg"
+      >
+        video
+      </Link>
+    );
+    meta.push(
+      <Link
         href={`/running/${slug}/crew`}
         className="underline underline-offset-4 hover:text-fg"
       >

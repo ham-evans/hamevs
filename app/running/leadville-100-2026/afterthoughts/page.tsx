@@ -3,10 +3,10 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Leadville Afterthoughts",
-  description: "Reflections in the weeks after the Leadville Trail 100.",
+  description: "Some thoughts from after the Leadville Trail 100.",
   openGraph: {
     title: "Leadville Afterthoughts",
-    description: "Reflections in the weeks after the Leadville Trail 100.",
+    description: "Some thoughts from after the Leadville Trail 100.",
     type: "article",
   },
 };
@@ -54,6 +54,7 @@ export default function Afterthoughts() {
           Leadville Afterthoughts
         </h1>
         <p className="mt-2 text-sm text-fg/50">2026-09-02 &middot; eleven days post</p>
+        <p className="mt-4 text-fg/80">Some thoughts from after the race.</p>
 
         <img
           src="/races/leadville-100-27.jpg"

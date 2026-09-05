@@ -546,3 +546,5 @@ I'm not sure when I'll be back, but I know it won't be long.
 ---
 
 Some thoughts from after the race: [Afterthoughts](/running/leadville-100-2026/afterthoughts).
+
+A video of me, Brooks and Sadie throughout the race: [Video](/running/leadville-100-2026/video).
